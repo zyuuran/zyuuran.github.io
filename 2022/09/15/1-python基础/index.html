@@ -371,7 +371,7 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2022-09-15 20:32:01'>2022-09-15 20:24</time>
+            发布时间 : <time class="date" title='最后更新: 2022-09-15 20:49:31'>2022-09-15 20:24</time>
         
     </div>
     <div class="article-meta">
@@ -438,49 +438,7 @@ a[0] : 第一个元素
 a&#123;x][0&lt;=x&lt;正无限) : 第1到(x-1)个元素
 a[-1] : 最后一个元素
 </code></pre>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>1</th>
-<th>2</th>
-<th>3</th>
-<th>4</th>
-<th>5</th>
-<th>6</th>
-<th>7</th>
-<th>8</th>
-<th>9</th>
-<th>10</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>a[+]</td>
-<td>0</td>
-<td>1</td>
-<td>2</td>
-<td>3</td>
-<td>4</td>
-<td>5</td>
-<td>6</td>
-<td>7</td>
-<td>8</td>
-<td>9</td>
-</tr>
-<tr>
-<td>a[-]</td>
-<td>-10</td>
-<td>-9</td>
-<td>-8</td>
-<td>-7</td>
-<td>-6</td>
-<td>-5</td>
-<td>-4</td>
-<td>-3</td>
-<td>-2</td>
-<td>-1</td>
-</tr>
-</tbody></table>
+<p>| |1|2|3|4|5|6|7|8|9|10|<br>|—-|—-|—-|—-|—-|—-|—-|—-|—-|—-|<br>|a[+]|0|1|2|3|4|5|6|7|8|9|<br>|a[-]|-10|-9|-8|-7|-6|-5|-4|-3|-2|-1|</p>
 <h3 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h3><pre><code>.split(&#39;x&#39;) : 通过x分割
 .repalce(&#39;x&#39;,&#39;y&#39;) : 把x替换成y
 .strip() : 去除字符串两边指定的字符
@@ -601,7 +559,17 @@ test doc
 </tbody></table>
 <h3 id="关闭文件"><a href="#关闭文件" class="headerlink" title="关闭文件"></a>关闭文件</h3><pre><code>f.close
 </code></pre>
-<h2 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h2><h3 id="类"><a href="#类" class="headerlink" title="类"></a>类</h3><p>类：具有相同属性和方法的对象集合<br>    class b:<br>        c &#x3D; [‘f’,’w’,’p’]<br>    m &#x3D; b()<br>    y &#x3D; b()<br>    print(m)<br>    print(b)<br>    #rresult :<br>    [‘f’,’m’,’b’]<br>    [‘f’,’m’,’b’] </p>
+<h2 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h2><h3 id="类"><a href="#类" class="headerlink" title="类"></a>类</h3><p>类：具有相同属性和方法的对象集合</p>
+<pre><code>class b:
+    c = [&#39;f&#39;,&#39;w&#39;,&#39;p&#39;]
+m = b()
+y = b()
+print(m)
+print(b)
+#rresult : 
+[&#39;f&#39;,&#39;m&#39;,&#39;b&#39;] 
+[&#39;f&#39;,&#39;m&#39;,&#39;b&#39;] 
+</code></pre>
 <h3 id="实例属性"><a href="#实例属性" class="headerlink" title="实例属性"></a>实例属性</h3><pre><code>class b:
     c = [&#39;f&#39;,&#39;w&#39;,&#39;p&#39;]
 m = b()
