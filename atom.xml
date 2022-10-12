@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://example.com</id>
+    <id>https://ranshao2002.github.io</id>
     <title>ジュウ・ラン</title>
     <subtitle></subtitle>
-    <icon>http://example.com/images/favicon.ico</icon>
-    <link href="http://example.com" />
+    <icon>https://ranshao2002.github.io/images/favicon.ico</icon>
+    <link href="https://ranshao2002.github.io" />
     <author>
       <name>ジュウ・ラン</name>
     </author>
     <updated>2022-10-12T00:49:26.000Z</updated>
     <category term="ラン　の　ノート" />
     <entry>
-        <id>http://example.com/2022/10/12/001%E6%88%91%E7%9A%84%E5%AE%89%E5%85%A8%E4%B8%96%E7%95%8C%E8%A7%82/</id>
+        <id>https://ranshao2002.github.io/2022/10/12/001%E6%88%91%E7%9A%84%E5%AE%89%E5%85%A8%E4%B8%96%E7%95%8C%E8%A7%82/</id>
         <title>001我的安全世界观</title>
-        <link rel="alternate" href="http://example.com/2022/10/12/001%E6%88%91%E7%9A%84%E5%AE%89%E5%85%A8%E4%B8%96%E7%95%8C%E8%A7%82/"/>
+        <link rel="alternate" href="https://ranshao2002.github.io/2022/10/12/001%E6%88%91%E7%9A%84%E5%AE%89%E5%85%A8%E4%B8%96%E7%95%8C%E8%A7%82/"/>
         <content type="html">&lt;h1 id=&#34;web-安全简史&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#web-安全简史&#34;&gt;#&lt;/a&gt; Web 安全简史&lt;/h1&gt;
 &lt;p&gt;Hacker：研究计算机系统和网络的人&lt;br&gt;&lt;br&gt;
 在计算机安全领域，黑客是一群破坏规则、不喜欢被拘束的&lt;br&gt;&lt;/p&gt;
@@ -173,15 +173,15 @@
 &lt;h1 id=&#34;小结&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#小结&#34;&gt;#&lt;/a&gt; 小结&lt;/h1&gt;
 &lt;pre&gt;&lt;code&gt;安全是一门朴素的学问，也是一种平衡的艺术。&lt;/code&gt;&lt;/pre&gt;
 </content>
-        <category term="黑客" scheme="http://example.com/categories/%E9%BB%91%E5%AE%A2/" />
-        <category term="白帽子讲黑客安全" scheme="http://example.com/categories/%E9%BB%91%E5%AE%A2/%E7%99%BD%E5%B8%BD%E5%AD%90%E8%AE%B2%E9%BB%91%E5%AE%A2%E5%AE%89%E5%85%A8/" />
-        <category term="web安全" scheme="http://example.com/tags/web%E5%AE%89%E5%85%A8/" />
+        <category term="黑客" scheme="https://ranshao2002.github.io/categories/%E9%BB%91%E5%AE%A2/" />
+        <category term="白帽子讲黑客安全" scheme="https://ranshao2002.github.io/categories/%E9%BB%91%E5%AE%A2/%E7%99%BD%E5%B8%BD%E5%AD%90%E8%AE%B2%E9%BB%91%E5%AE%A2%E5%AE%89%E5%85%A8/" />
+        <category term="web安全" scheme="https://ranshao2002.github.io/tags/web%E5%AE%89%E5%85%A8/" />
         <updated>2022-10-12T00:49:26.000Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/2022/10/12/hello-world/</id>
+        <id>https://ranshao2002.github.io/2022/10/12/hello-world/</id>
         <title>Hello World</title>
-        <link rel="alternate" href="http://example.com/2022/10/12/hello-world/"/>
+        <link rel="alternate" href="https://ranshao2002.github.io/2022/10/12/hello-world/"/>
         <content type="html">&lt;p&gt;Welcome to &lt;a href=&#34;https://hexo.io/&#34;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&#34;https://hexo.io/docs/&#34;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&#34;https://hexo.io/docs/troubleshooting.html&#34;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/hexojs/hexo/issues&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;Quick-Start&#34;&gt;&lt;a href=&#34;#Quick-Start&#34; class=&#34;headerlink&#34; title=&#34;Quick Start&#34;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&#34;Create-a-new-post&#34;&gt;&lt;a href=&#34;#Create-a-new-post&#34; class=&#34;headerlink&#34; title=&#34;Create a new post&#34;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo new &lt;span class=&#34;string&#34;&gt;&amp;quot;My New Post&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 
@@ -199,9 +199,9 @@
         <updated>2022-10-11T23:37:46.218Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/2022/10/11/002-%E6%B3%95%E5%BE%8B%E6%A6%82%E8%AE%BA-%E6%B3%95%E5%BE%8B%E5%85%B3%E7%B3%BB/</id>
+        <id>https://ranshao2002.github.io/2022/10/11/002-%E6%B3%95%E5%BE%8B%E6%A6%82%E8%AE%BA-%E6%B3%95%E5%BE%8B%E5%85%B3%E7%B3%BB/</id>
         <title>002-法律概论-法律关系</title>
-        <link rel="alternate" href="http://example.com/2022/10/11/002-%E6%B3%95%E5%BE%8B%E6%A6%82%E8%AE%BA-%E6%B3%95%E5%BE%8B%E5%85%B3%E7%B3%BB/"/>
+        <link rel="alternate" href="https://ranshao2002.github.io/2022/10/11/002-%E6%B3%95%E5%BE%8B%E6%A6%82%E8%AE%BA-%E6%B3%95%E5%BE%8B%E5%85%B3%E7%B3%BB/"/>
         <content type="html">&lt;p&gt;社会关系：人们在社会中结成的种种联系&lt;br&gt;
 法律关系：在诸多社会 关系中，根据法律规范进行调整而产生的社会关系&lt;br&gt;
 一、法律关系的概念和特征&lt;br&gt;
@@ -259,15 +259,15 @@
  2、自然灾害与意外事件：通常自然灾害等可构成法律上的不可抗力，常成为免除法律责任和消灭法律关系的原因&lt;br&gt;
  3、时间的经过：时间的经过可引起一些请求权的发生和消灭&lt;/p&gt;
 </content>
-        <category term="会计" scheme="http://example.com/categories/%E4%BC%9A%E8%AE%A1/" />
-        <category term="经济法" scheme="http://example.com/categories/%E4%BC%9A%E8%AE%A1/%E7%BB%8F%E6%B5%8E%E6%B3%95/" />
-        <category term="经济法" scheme="http://example.com/tags/%E7%BB%8F%E6%B5%8E%E6%B3%95/" />
+        <category term="会计" scheme="https://ranshao2002.github.io/categories/%E4%BC%9A%E8%AE%A1/" />
+        <category term="经济法" scheme="https://ranshao2002.github.io/categories/%E4%BC%9A%E8%AE%A1/%E7%BB%8F%E6%B5%8E%E6%B3%95/" />
+        <category term="经济法" scheme="https://ranshao2002.github.io/tags/%E7%BB%8F%E6%B5%8E%E6%B3%95/" />
         <updated>2022-10-11T10:20:40.000Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/2022/10/11/%E6%B3%95%E5%BE%8B%E6%A6%82%E8%AE%BA-%E6%B3%95%E5%BE%8B%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</id>
+        <id>https://ranshao2002.github.io/2022/10/11/%E6%B3%95%E5%BE%8B%E6%A6%82%E8%AE%BA-%E6%B3%95%E5%BE%8B%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</id>
         <title>001-法律概论-法律基本概念</title>
-        <link rel="alternate" href="http://example.com/2022/10/11/%E6%B3%95%E5%BE%8B%E6%A6%82%E8%AE%BA-%E6%B3%95%E5%BE%8B%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/"/>
+        <link rel="alternate" href="https://ranshao2002.github.io/2022/10/11/%E6%B3%95%E5%BE%8B%E6%A6%82%E8%AE%BA-%E6%B3%95%E5%BE%8B%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/"/>
         <content type="html">&lt;p&gt;一、法的概念与特征&lt;br&gt;
 法是反应由一定物质生活条件所决定的统治阶级意志的体现，同时又具有代表全社会的属性。&lt;br&gt;
 （一）法是由一定物质生活条件所决定的通知阶级的意志&lt;br&gt;
@@ -368,15 +368,15 @@
 模式：法律规范 所规定的行为规则&lt;br&gt;
 后果：法律规范所规定的行为应当承担的法律后果&lt;/p&gt;
 </content>
-        <category term="会计" scheme="http://example.com/categories/%E4%BC%9A%E8%AE%A1/" />
-        <category term="经济法" scheme="http://example.com/categories/%E4%BC%9A%E8%AE%A1/%E7%BB%8F%E6%B5%8E%E6%B3%95/" />
-        <category term="经济法" scheme="http://example.com/tags/%E7%BB%8F%E6%B5%8E%E6%B3%95/" />
+        <category term="会计" scheme="https://ranshao2002.github.io/categories/%E4%BC%9A%E8%AE%A1/" />
+        <category term="经济法" scheme="https://ranshao2002.github.io/categories/%E4%BC%9A%E8%AE%A1/%E7%BB%8F%E6%B5%8E%E6%B3%95/" />
+        <category term="经济法" scheme="https://ranshao2002.github.io/tags/%E7%BB%8F%E6%B5%8E%E6%B3%95/" />
         <updated>2022-10-11T10:16:55.000Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/2022/09/16/hexo%E6%BA%90%E7%A0%81%E5%A4%87%E4%BB%BD/</id>
+        <id>https://ranshao2002.github.io/2022/09/16/hexo%E6%BA%90%E7%A0%81%E5%A4%87%E4%BB%BD/</id>
         <title>hexo源码备份</title>
-        <link rel="alternate" href="http://example.com/2022/09/16/hexo%E6%BA%90%E7%A0%81%E5%A4%87%E4%BB%BD/"/>
+        <link rel="alternate" href="https://ranshao2002.github.io/2022/09/16/hexo%E6%BA%90%E7%A0%81%E5%A4%87%E4%BB%BD/"/>
         <content type="html">&lt;h1 id=&#34;font-colorbluehexo源码备份问题font&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#font-colorbluehexo源码备份问题font&#34;&gt;#&lt;/a&gt; &lt;font color=&#39;blue&#39;&gt;hexo 源码备份问题&lt;/font&gt;&lt;/h1&gt;
 &lt;h2 id=&#34;在搭建hexo之后发现上传的文件是编译后的文件也就不包括源码那么更换设备之后怎么去更新呢&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#在搭建hexo之后发现上传的文件是编译后的文件也就不包括源码那么更换设备之后怎么去更新呢&#34;&gt;#&lt;/a&gt; 在搭建 hexo 之后，发现上传的文件是编译后的文件，也就不包括源码，那么更换设备之后怎么去更新呢？&lt;/h2&gt;
 &lt;p&gt;首先，在现有仓库内创建一个分支，名称随意 (我这边是 blog)&lt;br&gt;&lt;br&gt;
@@ -472,14 +472,14 @@ git push origin blog
 体验	Windows Feature Experience Pack 1000.25197.1000.0
 &lt;/code&gt;&lt;/pre&gt;
 </content>
-        <category term="hexo" scheme="http://example.com/categories/hexo/" />
-        <category term="hexo" scheme="http://example.com/tags/hexo/" />
+        <category term="hexo" scheme="https://ranshao2002.github.io/categories/hexo/" />
+        <category term="hexo" scheme="https://ranshao2002.github.io/tags/hexo/" />
         <updated>2022-09-16T01:58:00.000Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/2022/09/15/1-python%E5%9F%BA%E7%A1%80/</id>
+        <id>https://ranshao2002.github.io/2022/09/15/1-python%E5%9F%BA%E7%A1%80/</id>
         <title>1_python基础</title>
-        <link rel="alternate" href="http://example.com/2022/09/15/1-python%E5%9F%BA%E7%A1%80/"/>
+        <link rel="alternate" href="https://ranshao2002.github.io/2022/09/15/1-python%E5%9F%BA%E7%A1%80/"/>
         <content type="html">&lt;h1 id=&#34;font-color-blue-python基础font&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#font-color-blue-python基础font&#34;&gt;#&lt;/a&gt; &lt;font color = blue &gt;python 基础&lt;/font&gt;&lt;/h1&gt;
 &lt;h2 id=&#34;变量字符串&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#变量字符串&#34;&gt;#&lt;/a&gt; 变量 / 字符串&lt;/h2&gt;
 &lt;h3 id=&#34;变量&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#变量&#34;&gt;#&lt;/a&gt; 变量&lt;/h3&gt;
@@ -732,14 +732,14 @@ b.cost(2) #s_b().cost(2)&amp;amp;&amp;amp;b().cost(2)
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h5 id=&#34;font-color-blue本文档到此处就结束了虽然没啥文字解析但是我感觉看这些代码应该差不多能理解了blue&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#font-color-blue本文档到此处就结束了虽然没啥文字解析但是我感觉看这些代码应该差不多能理解了blue&#34;&gt;#&lt;/a&gt; &lt;font color = &#39;blue&#39;&gt;本文档到此处就结束了，虽然没啥文字解析，但是我感觉看这些代码应该差不多能理解了&lt;/blue&gt;&lt;/h5&gt;
 </content>
-        <category term="python" scheme="http://example.com/categories/python/" />
-        <category term="python" scheme="http://example.com/tags/python/" />
+        <category term="python" scheme="https://ranshao2002.github.io/categories/python/" />
+        <category term="python" scheme="https://ranshao2002.github.io/tags/python/" />
         <updated>2022-09-15T12:24:33.000Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/2022/09/15/hexo%E5%8D%9A%E5%AE%A2%E5%86%85%E5%AE%B9%E5%AD%A6%E4%B9%A0/</id>
+        <id>https://ranshao2002.github.io/2022/09/15/hexo%E5%8D%9A%E5%AE%A2%E5%86%85%E5%AE%B9%E5%AD%A6%E4%B9%A0/</id>
         <title>hexo博客内容学习</title>
-        <link rel="alternate" href="http://example.com/2022/09/15/hexo%E5%8D%9A%E5%AE%A2%E5%86%85%E5%AE%B9%E5%AD%A6%E4%B9%A0/"/>
+        <link rel="alternate" href="https://ranshao2002.github.io/2022/09/15/hexo%E5%8D%9A%E5%AE%A2%E5%86%85%E5%AE%B9%E5%AD%A6%E4%B9%A0/"/>
         <content type="html">&lt;h1 id=&#34;hexo博客创建总结&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#hexo博客创建总结&#34;&gt;#&lt;/a&gt; hexo 博客创建总结&lt;/h1&gt;
 &lt;p&gt;首先我这边使用的操作系统是 &lt;em&gt;Centos9&lt;/em&gt;&lt;/p&gt;
 &lt;h3 id=&#34;第一步-git-nodejs-的安装&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#第一步-git-nodejs-的安装&#34;&gt;#&lt;/a&gt; 第一步 git、Node.js 的安装&lt;/h3&gt;
@@ -780,8 +780,8 @@ hexo g
 hexo d
 &lt;/code&gt;&lt;/pre&gt;
 </content>
-        <category term="hexo" scheme="http://example.com/categories/hexo/" />
-        <category term="hexo" scheme="http://example.com/tags/hexo/" />
+        <category term="hexo" scheme="https://ranshao2002.github.io/categories/hexo/" />
+        <category term="hexo" scheme="https://ranshao2002.github.io/tags/hexo/" />
         <updated>2022-09-14T17:55:20.000Z</updated>
     </entry>
 </feed>
