@@ -10,9 +10,113 @@
         </author>
         <description>ジュウ・ラン の ノート</description>
         <language>zh-CN</language>
-        <pubDate>Thu, 13 Oct 2022 08:30:48 +0800</pubDate>
-        <lastBuildDate>Thu, 13 Oct 2022 08:30:48 +0800</lastBuildDate>
+        <pubDate>Thu, 13 Oct 2022 14:28:18 +0800</pubDate>
+        <lastBuildDate>Thu, 13 Oct 2022 14:28:18 +0800</lastBuildDate>
         <category term="ラン　の　ノート" />
+        <item>
+            <guid isPermalink="true">https://ranshao2002.github.io/2022/10/13/Web%E5%AE%89%E5%85%A8/005%E7%82%B9%E5%87%BB%E5%8A%AB%E6%8C%81-ClikJacking/</guid>
+            <title>005点击劫持(ClikJacking)</title>
+            <link>https://ranshao2002.github.io/2022/10/13/Web%E5%AE%89%E5%85%A8/005%E7%82%B9%E5%87%BB%E5%8A%AB%E6%8C%81-ClikJacking/</link>
+            <category term="黑客" scheme="https://ranshao2002.github.io/categories/%E9%BB%91%E5%AE%A2/" />
+            <category term="白帽子讲黑客安全" scheme="https://ranshao2002.github.io/categories/%E9%BB%91%E5%AE%A2/%E7%99%BD%E5%B8%BD%E5%AD%90%E8%AE%B2%E9%BB%91%E5%AE%A2%E5%AE%89%E5%85%A8/" />
+            <category term="web安全" scheme="https://ranshao2002.github.io/tags/web%E5%AE%89%E5%85%A8/" />
+            <pubDate>Thu, 13 Oct 2022 14:28:18 +0800</pubDate>
+            <description><![CDATA[  ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://ranshao2002.github.io/2022/10/13/Web%E5%AE%89%E5%85%A8/004%E8%B7%A8%E7%AB%99%E7%82%B9%E8%AF%B7%E6%B1%82%E4%BC%AA%E9%80%A0-CSRF/</guid>
+            <title>004跨站点请求伪造(CSRF)</title>
+            <link>https://ranshao2002.github.io/2022/10/13/Web%E5%AE%89%E5%85%A8/004%E8%B7%A8%E7%AB%99%E7%82%B9%E8%AF%B7%E6%B1%82%E4%BC%AA%E9%80%A0-CSRF/</link>
+            <category term="黑客" scheme="https://ranshao2002.github.io/categories/%E9%BB%91%E5%AE%A2/" />
+            <category term="白帽子讲黑客安全" scheme="https://ranshao2002.github.io/categories/%E9%BB%91%E5%AE%A2/%E7%99%BD%E5%B8%BD%E5%AD%90%E8%AE%B2%E9%BB%91%E5%AE%A2%E5%AE%89%E5%85%A8/" />
+            <category term="web安全" scheme="https://ranshao2002.github.io/tags/web%E5%AE%89%E5%85%A8/" />
+            <pubDate>Thu, 13 Oct 2022 13:28:49 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;&lt;span class=&#34;kbd red&#34;&gt;CSRF&lt;/span&gt;&lt;span class=&#34;red&#34;&gt; (Cross Site Request Forgery) 跨站请求伪造&lt;/span&gt;&lt;/p&gt;
+&lt;h1 id=&#34;csrf-简介&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#csrf-简介&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;red&#34;&gt;CSRF 简介&lt;/span&gt;&lt;/h1&gt;
+&lt;p&gt;什么是 CSRF？&lt;br /&gt;
+&lt;span class=&#34;blue&#34;&gt;攻击者利用用户的身份操作用户账户的一种攻击方式&lt;/span&gt;&lt;/p&gt;
+&lt;h1 id=&#34;csrf-进阶&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#csrf-进阶&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;red&#34;&gt;CSRF 进阶&lt;/span&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;浏览器的cookie策略&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#浏览器的cookie策略&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;浏览器的 Cookie 策略&lt;/span&gt;&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;英文&lt;/th&gt;
+&lt;th&gt;中文&lt;/th&gt;
+&lt;th&gt;区别&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Session Cookie&lt;/td&gt;
+&lt;td&gt;临时 Cookie&lt;/td&gt;
+&lt;td&gt;没有指定 Expire 时间，浏览器关闭后 Cookie 失效&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Third-party Cookie&lt;/td&gt;
+&lt;td&gt;本地 Cookie&lt;/td&gt;
+&lt;td&gt;服务器在 Set-Cookie 指定了 Expire 时间，只有到了时间才会失效，该 Cookie 保存在本地&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;p3p头的副作用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#p3p头的副作用&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;P3P 头的副作用&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&#34;red&#34;&gt;P3P Header&lt;/span&gt; 是&lt;span class=&#34;red&#34;&gt; W3C&lt;/span&gt; 指定的一项关于隐私的标准，全称&lt;span class=&#34;red&#34;&gt; The Platform for Privacy Preferences&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight php&#34;&gt;&lt;figcaption&gt;&lt;span&gt;www.a.com&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;iframe width=&lt;span class=&#34;number&#34;&gt;300&lt;/span&gt; height=&lt;span class=&#34;number&#34;&gt;300&lt;/span&gt; src=&lt;span class=&#34;string&#34;&gt;&amp;quot;http://www.a.com/test.php&amp;quot;&lt;/span&gt;&amp;gt;&amp;lt;/iframe&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br /&gt;
+&lt;figure class=&#34;highlight php&#34;&gt;&lt;figcaption&gt;&lt;span&gt;www.b.com&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;&amp;lt;?php&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;title function_ invoke__&#34;&gt;header&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&amp;quot;Set-Cookie: test=axis; domain =.a.com;path=/&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;当请求www.b.com/test.html 时，它的 iframe 会告诉浏览器跨域请求 www.a.com/test.php
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;getpost&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#getpost&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;GET?POST?&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;用户尝试构造 GET 请求&lt;br /&gt;
+&lt;span class=&#34;kbd&#34;&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2hvc3QvcmVnaXN0ZXI/dXNlcm5hbWU9dGVzdCZhbXA7cGFzc3dvcmQ9cGFzc3dk&#34;&gt; http://host/register?username=test&amp;amp;password=passwd&lt;/span&gt;&lt;/span&gt;&lt;br /&gt;
+ 如果服务器没有对请求方法做限制，这个请求就会通过&lt;/p&gt;
+&lt;h2 id=&#34;flash-csrf&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#flash-csrf&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;Flash CSRF&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight php&#34;&gt;&lt;figcaption&gt;&lt;span&gt;flash&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;import flash.net.URLRequest;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;import flash.system.Security;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; url = &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;title class_&#34;&gt;URLRequest&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&amp;quot;http://traget/page&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;param = &lt;span class=&#34;string&#34;&gt;&amp;quot;test=123&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;url.method = &lt;span class=&#34;string&#34;&gt;&amp;quot;POST&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;url.date = param;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;title function_ invoke__&#34;&gt;sendToURL&lt;/span&gt;(url);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;title function_ invoke__&#34;&gt;stop&lt;/span&gt;();&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br /&gt;
+ 还可以使用 getURL，loadVars&lt;/p&gt;
+&lt;h2 id=&#34;csrf&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#csrf&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;CSRF&lt;/span&gt;&lt;/h2&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Step1&lt;/td&gt;
+&lt;td&gt;模拟服务器端取得 request 参数&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Step2&lt;/td&gt;
+&lt;td&gt;好友 json 数据的动态获取&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Step3&lt;/td&gt;
+&lt;td&gt;感染信息输出和消息发送的核心部分&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1 id=&#34;csrf的防御&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#csrf的防御&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;red&#34;&gt;CSRF 的防御&lt;/span&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;验证码&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#验证码&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;验证码&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&#34;blue&#34;&gt;因为 CSRF 攻击的过程中，通常是在用户不知情的情况下，添加验证码，强制用户与该网站进行交互，才能完成请求。但是验证码只能作为防御 CSRF 的辅助手段&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;referer-check&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#referer-check&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;Referer Check&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&#34;blue&#34;&gt;因为页面与页面之间有一定的逻辑，这使得 Referer 具有一定的规律&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;red&#34;&gt;缺陷&lt;/span&gt;&lt;span class=&#34;blue&#34;&gt;服务器并非什么时候都能取到 Referer&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;anti-csrf-token&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#anti-csrf-token&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;Anti CSRF Token&lt;/span&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;csrf的本质&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#csrf的本质&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;CSRF 的本质&lt;/span&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;span class=&#34;blue&#34;&gt;重复操作的所有参数都是可以被攻击者猜测到的&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;red&#34;&gt;解决方案&lt;/span&gt;&lt;span class=&#34;blue&#34;&gt;参数加密或者使用随机数&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;token的使用原则&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#token的使用原则&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;Token 的使用原则&lt;/span&gt;&lt;/h3&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;需要使用安全的随机数生成 token&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;当前 token 使用过一次后，需要生成一个新的 token&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;使用 token 时需要注意 token 的保密性&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;尽量将 token 放在表单中，避免泄漏&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://ranshao2002.github.io/2022/10/13/Web%E5%AE%89%E5%85%A8/003%E8%B7%A8%E7%AB%99%E8%84%9A%E6%9C%AC%E6%94%BB%E5%87%BB-XSS/</guid>
             <title>003跨站脚本攻击(XSS)</title>
