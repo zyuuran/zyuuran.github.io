@@ -10,15 +10,82 @@
         </author>
         <description>ジュウ・ラン の ノート</description>
         <language>zh-CN</language>
-        <pubDate>Thu, 13 Oct 2022 15:39:49 +0800</pubDate>
-        <lastBuildDate>Thu, 13 Oct 2022 15:39:49 +0800</lastBuildDate>
+        <pubDate>Thu, 13 Oct 2022 16:08:15 +0800</pubDate>
+        <lastBuildDate>Thu, 13 Oct 2022 16:08:15 +0800</lastBuildDate>
         <category term="ラン　の　ノート" />
+        <item>
+            <guid isPermalink="true">https://ranshao2002.github.io/2022/10/13/HTML/002%E6%96%87%E6%9C%AC%E6%A0%87%E8%AE%B0/</guid>
+            <title>002文本标记</title>
+            <link>https://ranshao2002.github.io/2022/10/13/HTML/002%E6%96%87%E6%9C%AC%E6%A0%87%E8%AE%B0/</link>
+            <category term="开发" scheme="https://ranshao2002.github.io/categories/%E5%BC%80%E5%8F%91/" />
+            <category term="html" scheme="https://ranshao2002.github.io/categories/%E5%BC%80%E5%8F%91/html/" />
+            <category term="web" scheme="https://ranshao2002.github.io/tags/web/" />
+            <category term="html" scheme="https://ranshao2002.github.io/tags/html/" />
+            <pubDate>Thu, 13 Oct 2022 16:08:15 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;文本标记概述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#文本标记概述&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;red&#34;&gt;文本标记概述&lt;/span&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;文本标记的作用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#文本标记的作用&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;文本标记的作用&lt;/span&gt;&lt;/h2&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;文本是网页上的重要组成部分&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;直接书写的文本会用浏览器默认的样式显示&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;包含在标记中的文本则会被显示为标记所拥有的样式&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;文本与特殊字符&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#文本与特殊字符&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;文本与特殊字符&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&#34;kbd red&#34;&gt;空格折叠&lt;/span&gt;&lt;span class=&#34;blue&#34;&gt;多个空格或制表符压缩成单个空格，即只显示一个空格&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;kbd red&#34;&gt;特殊字符&lt;/span&gt;&lt;span class=&#34;blue&#34;&gt;需要转译&lt;/span&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;The &amp;amp;lt;p&amp;amp;gt;element.&amp;amp;nbsp;&amp;amp;nbsp;&amp;amp;nbsp;&amp;amp;copy;2022 by tarena.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;The &amp;lt;p&amp;gt;element.   ©2022 by tarena.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1 id=&#34;使用文本标记&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#使用文本标记&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;red&#34;&gt;使用文本标记&lt;/span&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;标题元素hn&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#标题元素hn&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;标题元素 &amp;lt;hn&amp;gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&#34;blue&#34;&gt;标题元素让文字以醒目的方式显示，往往用于文章的标题&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption&gt;&lt;span&gt;html&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;h1&lt;/span&gt;&amp;gt;&lt;/span&gt;h1 text&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;h1&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;h2&lt;/span&gt;&amp;gt;&lt;/span&gt;h2 text&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;h2&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;h3&lt;/span&gt;&amp;gt;&lt;/span&gt;h3 text&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;h3&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;h4&lt;/span&gt;&amp;gt;&lt;/span&gt;h4 text&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;h4&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;h5&lt;/span&gt;&amp;gt;&lt;/span&gt;h5 text&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;h5&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;h6&lt;/span&gt;&amp;gt;&lt;/span&gt;h6 text&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;h6&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&#34;段落元素p&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#段落元素p&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;段落元素 &amp;lt;p&amp;gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&#34;blue&#34;&gt;&amp;lt;p&amp;gt; 元素提供了结构化文本的一种方式&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;blue&#34;&gt; &amp;lt;p&amp;gt; 元素中的文本会用单独的段落显示&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption&gt;&lt;span&gt;html&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;p&lt;/span&gt;&amp;gt;&lt;/span&gt;The First paragraph.&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;p&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;p&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;align&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;right&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;The second paragraph.&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;p&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;kbd red&#34;&gt;换行元素 &amp;lt;br&amp;gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption&gt;&lt;span&gt;html&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;p&lt;/span&gt;&amp;gt;&lt;/span&gt;This is a&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;br&lt;/span&gt;/&amp;gt;&lt;/span&gt;paragraph.&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;p&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;&amp;lt;!-- 显示效果 --&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;This is a&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;paragraph&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&#34;分区元素span和div&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#分区元素span和div&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;分区元素 &amp;lt;span&amp;gt; 和 &amp;lt; div&amp;gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&#34;blue&#34;&gt;分区元素用于元素分租，常用于页面布局&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption&gt;&lt;span&gt;html&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;&amp;lt;!DOCTYPE &lt;span class=&#34;keyword&#34;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;meta&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;http-equiv&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;Content-Type&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;content&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;text/html;charset=UTF-8&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;style&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;color:blue;&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;p&lt;/span&gt;&amp;gt;&lt;/span&gt;first&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;p&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;p&lt;/span&gt;&amp;gt;&lt;/span&gt;second&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;p&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;p&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            一周畅销&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;span&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;style&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;color:red;&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;榜&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;p&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;/imags/002.2.4%E5%88%86%E5%8C%BA%E5%85%83%E7%B4%A0.png&#34; alt=&#34;网页图&#34; title=&#34;网页图&#34; /&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://ranshao2002.github.io/2022/10/13/HTML/index/</guid>
             <title></title>
             <link>https://ranshao2002.github.io/2022/10/13/HTML/index/</link>
             <pubDate>Thu, 13 Oct 2022 15:39:49 +0800</pubDate>
-            <description><![CDATA[  ]]></description>
+            <description><![CDATA[ &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta http-equiv=&#34;Content-Type&#34; content=&#34;text/html;charset=UTF-8&#34;&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div style=&#34;color:blue;&#34;&gt;
+            &lt;p&gt;first&lt;/p&gt;
+            &lt;p&gt;second&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;p&gt;
+            一周畅销&lt;span style=&#34;color:red;&#34;&gt;榜&lt;/span&gt;
+        &lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt; ]]></description>
         </item>
         <item>
             <guid isPermalink="true">https://ranshao2002.github.io/2022/10/13/HTML/001HTML%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/</guid>
