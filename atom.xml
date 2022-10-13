@@ -8,16 +8,257 @@
     <author>
       <name>ジュウ・ラン</name>
     </author>
-    <updated>2022-10-12T00:49:26.000Z</updated>
+    <updated>2022-10-13T00:30:48.000Z</updated>
     <category term="ラン　の　ノート" />
     <entry>
-        <id>https://ranshao2002.github.io/2022/10/12/001%E6%88%91%E7%9A%84%E5%AE%89%E5%85%A8%E4%B8%96%E7%95%8C%E8%A7%82/</id>
+        <id>https://ranshao2002.github.io/2022/10/13/Web%E5%AE%89%E5%85%A8/003%E8%B7%A8%E7%AB%99%E8%84%9A%E6%9C%AC%E6%94%BB%E5%87%BB-XSS/</id>
+        <title>003跨站脚本攻击(XSS)</title>
+        <link rel="alternate" href="https://ranshao2002.github.io/2022/10/13/Web%E5%AE%89%E5%85%A8/003%E8%B7%A8%E7%AB%99%E8%84%9A%E6%9C%AC%E6%94%BB%E5%87%BB-XSS/"/>
+        <content type="html">&lt;h1 id=&#34;xss简介&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#xss简介&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;red&#34;&gt;XSS 简介&lt;/span&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;span class=&#34;kbd red&#34;&gt;网站脚本攻击&lt;/span&gt;（Cross Site Script）缩写 (XSS)&lt;span class=&#34;blue&#34;&gt; 本来缩写为 CSS，但是为了和层叠样式表&lt;/span&gt;&lt;span class=&#34;kbd red&#34;&gt; Cascading Style Sheet,CSS&lt;/span&gt;&lt;span class=&#34;blue&#34;&gt; 有区别，所以叫做&lt;/span&gt;&lt;span class=&#34;kbd red&#34;&gt; XSS&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;kbd red&#34;&gt;XSS&lt;/span&gt; &lt;span class=&#34;blue&#34;&gt;指黑客通过 “HTML 注入” 篡改了网页，插入了恶意脚本，从而在用户浏览网页时，控制用户浏览器的一种攻击&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight php&#34;&gt;&lt;figcaption&gt;&lt;span&gt;php&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;&amp;lt;?php&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;variable&#34;&gt;$input&lt;/span&gt; = &lt;span class=&#34;variable&#34;&gt;$_GET&lt;/span&gt;[&lt;span class=&#34;string&#34;&gt;&amp;quot;param&amp;quot;&lt;/span&gt;];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;&amp;lt;div&amp;gt;&amp;quot;&lt;/span&gt;.&lt;span class=&#34;variable&#34;&gt;$input&lt;/span&gt;.&lt;span class=&#34;string&#34;&gt;&amp;quot;&amp;lt;/div&amp;gt;&amp;quot;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br /&gt;
+ 正常情况下&lt;br /&gt;
+ &lt;figure class=&#34;highlight php&#34;&gt;&lt;figcaption&gt;&lt;span&gt;php&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;*.php?param=测试！&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br /&gt;
+ 它会返回一个&lt;br /&gt;
+ &lt;figure class=&#34;highlight php&#34;&gt;&lt;figcaption&gt;&lt;span&gt;php&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;div&amp;gt;测试!&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br /&gt;
+ 如果提交&lt;br /&gt;
+ &lt;figure class=&#34;highlight php&#34;&gt;&lt;figcaption&gt;&lt;span&gt;php&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;*.php?param=&amp;lt;script&amp;gt;&lt;span class=&#34;title function_ invoke__&#34;&gt;alert&lt;/span&gt;(/xss/)&amp;lt;/script&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br /&gt;
+ 它会返回&lt;br /&gt;
+ &lt;figure class=&#34;highlight php&#34;&gt;&lt;figcaption&gt;&lt;span&gt;php&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;div&amp;gt;&amp;lt;script&amp;gt;&lt;span class=&#34;title function_ invoke__&#34;&gt;alert&lt;/span&gt;(/xss/)&amp;lt;/script&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br /&gt;
+ 根据效果的不同分为：&lt;br /&gt;
+&lt;span class=&#34;kbd red&#34;&gt;反射型 XSS&lt;/span&gt;&lt;span class=&#34;blue&#34;&gt; 只是简单的把用户输入的数据 “反射” 给浏览器&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;kbd red&#34;&gt;存储型 XSS&lt;/span&gt;&lt;span class=&#34;blue&#34;&gt; 会把用户输入的数据 “存储” 在服务器中&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;kbd red&#34;&gt; DOM Based XSS&lt;/span&gt;&lt;span class=&#34;blue&#34;&gt; 修改页面的 DOM 节点&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption&gt;&lt;span&gt;html&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;language-javascript&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;language-javascript&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;title function_&#34;&gt;test&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;&lt;/span&gt;)&amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;language-javascript&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; str = &lt;span class=&#34;variable language_&#34;&gt;document&lt;/span&gt;.&lt;span class=&#34;title function_&#34;&gt;getElementById&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&amp;quot;test&amp;quot;&lt;/span&gt;).&lt;span class=&#34;property&#34;&gt;value&lt;/span&gt;;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;language-javascript&#34;&gt;        &lt;span class=&#34;variable language_&#34;&gt;document&lt;/span&gt;.&lt;span class=&#34;title function_&#34;&gt;getElementById&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&amp;quot;t&amp;quot;&lt;/span&gt;).&lt;span class=&#34;property&#34;&gt;innerHTML&lt;/span&gt; = &lt;span class=&#34;language-xml&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;href&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;#x27;&amp;quot;+str     +&amp;quot;&amp;#x27;&lt;/span&gt;&amp;gt;&lt;/span&gt;testLink&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;language-javascript&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;language-javascript&#34;&gt;&lt;/span&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;id&lt;/span&gt; = &lt;span class=&#34;string&#34;&gt;&amp;quot;t&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;input&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;type&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;text&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;id&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;text&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;value&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;&amp;quot;&lt;/span&gt; /&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;input&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;type&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;button&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;id&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;s&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;value&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;write&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;onclick&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;test()&amp;quot;&lt;/span&gt; /&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br /&gt;
+ 在&lt;span class=&#34;kbd red&#34;&gt; id=&amp;quot;text&amp;quot;&lt;/span&gt; 中构造数据&lt;br /&gt;
+ &lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption&gt;&lt;span&gt;html&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;#x27; onclick=alert(/xss/) //&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br /&gt;
+ 页面代码变成&lt;br /&gt;
+ &lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption&gt;&lt;span&gt;html&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;href&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;#x27;&amp;#x27;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;onlick&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;alert(/xss/)&lt;/span&gt; //&amp;#x27;&amp;gt;&lt;/span&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br /&gt;
+ 另外一种&lt;br /&gt;
+ &lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption&gt;&lt;span&gt;html&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;#x27;&amp;gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;img&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;src&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;#&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;onerror&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;alert(/xss2/)&lt;/span&gt; /&amp;gt;&lt;/span&gt;&amp;lt;&amp;#x27;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br /&gt;
+ 页面代码变成&lt;br /&gt;
+ &lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption&gt;&lt;span&gt;html&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;href&lt;/span&gt; = &lt;span class=&#34;string&#34;&gt;&amp;#x27;&amp;#x27;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;img&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;src&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;#&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;onerror&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;alert(/xss2/)&lt;/span&gt; /&amp;gt;&lt;/span&gt;&amp;lt;&amp;#x27;&amp;#x27; &amp;gt;testLink&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h1 id=&#34;xss-攻击进阶&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#xss-攻击进阶&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;red&#34;&gt;XSS 攻击进阶&lt;/span&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;初探xss-payload&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#初探xss-payload&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;初探 XSS Payload&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&#34;kbd red&#34;&gt;XSS Payload&lt;/span&gt;&lt;span class=&#34;blue&#34;&gt;XSS 攻击成功后，攻击者能够对用户当前浏览的页面植入 恶意脚本，控制用户的浏览器。&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;强大的xss-payload&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#强大的xss-payload&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;强大的 XSS Payload&lt;/span&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;构建-get-与-post-请求&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#构建-get-与-post-请求&#34;&gt;#&lt;/a&gt; 构建 GET 与 POST 请求&lt;/h3&gt;
+&lt;h3 id=&#34;xss-钓鱼&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#xss-钓鱼&#34;&gt;#&lt;/a&gt; XSS 钓鱼&lt;/h3&gt;
+&lt;h3 id=&#34;识别用户浏览器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#识别用户浏览器&#34;&gt;#&lt;/a&gt; 识别用户浏览器&lt;/h3&gt;
+&lt;h3 id=&#34;识别用户安装的软件&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#识别用户安装的软件&#34;&gt;#&lt;/a&gt; 识别用户安装的软件&lt;/h3&gt;
+&lt;h3 id=&#34;css-history-hack&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#css-history-hack&#34;&gt;#&lt;/a&gt; CSS History Hack&lt;/h3&gt;
+&lt;h3 id=&#34;获取用户的真实ip地址&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#获取用户的真实ip地址&#34;&gt;#&lt;/a&gt; 获取用户的真实 IP 地址&lt;/h3&gt;
+&lt;h2 id=&#34;xss攻击平台&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#xss攻击平台&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;xss 攻击平台&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&#34;kbd red&#34;&gt;Attack API&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;kbd red&#34;&gt;BeEF&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;kbd red&#34;&gt;XSS-Proxy&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;终极武器xss-worm&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#终极武器xss-worm&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;终极武器：XSS Worm&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&#34;kbd red&#34;&gt;Samy Worm&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;blue&#34;&gt; 一般来说，用户之间发生交互行为的页面，如果存在存储型 XSS，则比较容易发起 XSS Worm 攻击&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;kbd red&#34;&gt;百度空间蠕虫&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;调试javascript&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#调试javascript&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;调试 Javascript&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&#34;kbd red&#34;&gt;Firebug&lt;/span&gt;&lt;span class=&#34;blue&#34;&gt; 可以查看 DOM 节点&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;kbd red&#34;&gt; IE 8 Developer Tools&lt;/span&gt;&lt;span class=&#34;blue&#34;&gt; 可以动态调试 Javascript&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;kbd red&#34;&gt;Fiddler&lt;/span&gt;&lt;span class=&#34;blue&#34;&gt; 一个本地代理服务器。支持脚本编程&lt;/span&gt;&lt;/p&gt;
+&lt;h2 class=&#34;kbd red&#34; id=&#34;xss构造技巧&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#xss构造技巧&#34;&gt;#&lt;/a&gt; [XSS 构造技巧}&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&#34;kbd red&#34;&gt;利用字符编码&lt;/span&gt;&lt;span class=&#34;blue&#34;&gt;系统转译导致&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;kbd red&#34;&gt;绕过长度限制&lt;/span&gt;&lt;span class=&#34;blue&#34;&gt;可以通过 Event 来缩短所需要的字节数以及 &amp;lt;!-- --&amp;gt;&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;kbd red&#34;&gt; 使用 &amp;lt;base&amp;gt; 标签&lt;/span&gt;&lt;span class=&#34;blue&#34;&gt;定义页面上所有使用相对路径的 hosting 地址&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;kbd red&#34;&gt; window.name 的妙用&lt;/span&gt;&lt;span class=&#34;blue&#34;&gt;对当前窗口的 window.name 对象赋值&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;变废为宝&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#变废为宝&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;变废为宝&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&#34;kbd red&#34;&gt;Apache Expect Heder XSS&lt;/span&gt;&lt;span class=&#34;blue&#34;&gt; 使用 Flash 构造请求&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;kbd red&#34;&gt; Anehta 的回旋镖&lt;/span&gt;&lt;span class=&#34;blue&#34;&gt;不是一个完美的漏洞&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;被忽视的角落flash-xss&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#被忽视的角落flash-xss&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;被忽视的角落：Flash XSS&lt;/span&gt;&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;可选值&lt;/th&gt;
+&lt;th&gt;allowScriptAccess 参数&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;always&lt;/td&gt;
+&lt;td&gt;对于 HTML 的通信也就是执行 JavaScript 不做任何限制&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;sameDomain&lt;/td&gt;
+&lt;td&gt;只允许来自于笨域的 Flash 与 Html 通信，这是默认值&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;never&lt;/td&gt;
+&lt;td&gt;绝对禁止 Flash 与页面通信&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;可选值&lt;/th&gt;
+&lt;th&gt;allowNetworking&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;all&lt;/td&gt;
+&lt;td&gt;允许使用所有的网络通信，默认值&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;internal&lt;/td&gt;
+&lt;td&gt;Flash 不能与浏览器通信，但是可以调用其他的 API&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;none&lt;/td&gt;
+&lt;td&gt;禁止任何网络通信&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;javascript-开发框架&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#javascript-开发框架&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;JavaScript 开发框架&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&#34;kbd red&#34;&gt;Dojo&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;kbd red&#34;&gt;YUI&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;kbd red&#34;&gt;jQuery&lt;/span&gt;&lt;/p&gt;
+&lt;h1 id=&#34;xss的防御&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#xss的防御&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;red&#34;&gt;XSS 的防御&lt;/span&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;httponlyy&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#httponlyy&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;HttpOnlyy&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;最早实现与于 IE6&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;Cookie 使用过程&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Step1&lt;/td&gt;
+&lt;td&gt;浏览器向服务器发起请求，这时候没有 Cookie&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Step2&lt;/td&gt;
+&lt;td&gt;服务器返回时发送 Set-Cookie 头，向客户浏览器卸乳 Cookie&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Step3&lt;/td&gt;
+&lt;td&gt;在该 Cookie 到期前，浏览器访问该域下的所有页面，都将发送该 Cookie&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;输入检查&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#输入检查&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;输入检查&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;XSS FIllter 对语境的理解并不完整&lt;br /&gt;
+用户输入&lt;br /&gt;
+ &lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption&gt;&lt;span&gt;html&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$nickname = &amp;#x27;我是&amp;quot;ZyuuRan&amp;quot;&amp;#x27;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br /&gt;
+XSS Filter 转义&lt;br /&gt;
+ &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;figcaption&gt;&lt;span&gt;xss&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$nickname = &amp;#x27;我是\&amp;quot;ZyuuRan\&amp;quot;&amp;#x27;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br /&gt;
+ 在 HTML 显示&lt;br /&gt;
+ &lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption&gt;&lt;span&gt;html&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;我是\&amp;quot;ZyuuRan\&amp;quot;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br /&gt;
+ 在 JacaScript 中&lt;br /&gt;
+ &lt;figure class=&#34;highlight js&#34;&gt;&lt;figcaption&gt;&lt;span&gt;js&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;script&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; nick = &lt;span class=&#34;string&#34;&gt;&amp;#x27;我是\&amp;quot;ZyuuRan\&amp;quot;&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;variable language_&#34;&gt;document&lt;/span&gt;.&lt;span class=&#34;title function_&#34;&gt;write&lt;/span&gt;(nick);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br /&gt;
+ 分别会得到&lt;/p&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;html&lt;/td&gt;
+&lt;td&gt;我是 \&amp;quot;ZyuuRan\&amp;quot;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;js&lt;/td&gt;
+&lt;td&gt;我是 &amp;quot;ZyuuRan&amp;quot;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;输出检查&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#输出检查&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;输出检查&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&#34;kbd red&#34;&gt;安全的编码函数&lt;/span&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;amp;&lt;/td&gt;
+&lt;td&gt;&amp;amp;amp;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;lt;&lt;/td&gt;
+&lt;td&gt;&amp;amp;lt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;gt;&lt;/td&gt;
+&lt;td&gt;&amp;amp;gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;quot;&lt;/td&gt;
+&lt;td&gt;&amp;amp;quot;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&#39;&lt;/td&gt;
+&lt;td&gt;&amp;amp;#x27;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;/&lt;/td&gt;
+&lt;td&gt;&amp;amp;#x2F;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;span class=&#34;kbd red&#34;&gt;只需一种编码吗&lt;/span&gt;&lt;br /&gt;
+ XSS 攻击主要发生在 MVC 架构中的 View 层。&lt;/p&gt;
+&lt;h2 id=&#34;正确的防御-xss&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#正确的防御-xss&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;正确的防御 XSS&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&#34;kbd red&#34;&gt;在 HTML 标签中输出&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption&gt;&lt;span&gt;html&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;$var&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;href&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;#&lt;/span&gt; &amp;gt;&lt;/span&gt;$var&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br /&gt;
+ 该场景下&lt;br /&gt;
+ &lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption&gt;&lt;span&gt;html&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;language-javascript&#34;&gt;&lt;span class=&#34;title function_&#34;&gt;alert&lt;/span&gt;(&lt;span class=&#34;regexp&#34;&gt;/xss/&lt;/span&gt;)&lt;/span&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br /&gt;
+ 或者&lt;br /&gt;
+ &lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption&gt;&lt;span&gt;html&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;href&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;#&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;img&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;src&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;#&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;onerror&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;alert(1)&lt;/span&gt; /&amp;gt;&lt;/span&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br /&gt;
+ 防御方法：变量使用 &lt;span class=&#34;kbd red&#34;&gt;HtmlEncode&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;kbd red&#34;&gt;在 HTML 属性中输出&lt;/span&gt;&lt;br /&gt;
+ &lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption&gt;&lt;span&gt;html&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;id&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;abc&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;name&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;$var&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br /&gt;
+ 可能的攻击方式&lt;br /&gt;
+ &lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption&gt;&lt;span&gt;html&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;id&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;abc&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;name&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;language-javascript&#34;&gt;&lt;span class=&#34;title function_&#34;&gt;alert&lt;/span&gt;(&lt;span class=&#34;regexp&#34;&gt;/xss/&lt;/span&gt;)&lt;/span&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;&amp;lt;&amp;quot;&amp;quot; &amp;gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;kbd red&#34;&gt;在 &amp;lt;script&amp;gt; 中输出&lt;/span&gt;&lt;br /&gt;
+ &lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption&gt;&lt;span&gt;html&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;language-javascript&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;language-javascript&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; x = &lt;span class=&#34;string&#34;&gt;&amp;quot;$var&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;language-javascript&#34;&gt;&lt;/span&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br /&gt;
+ 攻击者需要先闭合&lt;br /&gt;
+ &lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption&gt;&lt;span&gt;html&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;language-javascript&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;language-javascript&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; x = &lt;span class=&#34;string&#34;&gt;&amp;quot;&amp;quot;&lt;/span&gt;;&lt;span class=&#34;title function_&#34;&gt;alert&lt;/span&gt;(&lt;span class=&#34;regexp&#34;&gt;/xss/&lt;/span&gt;);&lt;span class=&#34;comment&#34;&gt;//&amp;quot;;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;language-javascript&#34;&gt;&lt;/span&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;kbd red&#34;&gt;在事件中输出&lt;/span&gt;&lt;br /&gt;
+ &lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption&gt;&lt;span&gt;html&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;href&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;#&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;onclick&lt;/span&gt; = &lt;span class=&#34;string&#34;&gt;&amp;quot;funcA(&amp;#x27;$var&amp;#x27;)&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;test&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br /&gt;
+ 可能的攻击方式&lt;br /&gt;
+ &lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption&gt;&lt;span&gt;html&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;href&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;#&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;onclick&lt;/span&gt; = &lt;span class=&#34;string&#34;&gt;&amp;quot;funcA(&amp;#x27;&amp;#x27;);alert(/xss/);//&amp;#x27;)&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;test&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;kbd red&#34;&gt;在 CSS 中输出&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;kbd red&#34;&gt;在地址中输出&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;处理富文本&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#处理富文本&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;处理富文本&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&#34;kbd blue&#34;&gt;应该使用白名单，避免使用黑名单&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;防御-dom-based-xss&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#防御-dom-based-xss&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;防御 DOM Based XSS&lt;/span&gt;&lt;/h2&gt;
+&lt;h1 id=&#34;小结&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#小结&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;red&#34;&gt;小结&lt;/span&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;span class=&#34;blue&#34;&gt;XSS 漏洞是可以彻底解决的。应该深入理解 XSS 攻击的原理&lt;/span&gt;&lt;/p&gt;
+</content>
+        <category term="黑客" scheme="https://ranshao2002.github.io/categories/%E9%BB%91%E5%AE%A2/" />
+        <category term="白帽子讲黑客安全" scheme="https://ranshao2002.github.io/categories/%E9%BB%91%E5%AE%A2/%E7%99%BD%E5%B8%BD%E5%AD%90%E8%AE%B2%E9%BB%91%E5%AE%A2%E5%AE%89%E5%85%A8/" />
+        <category term="web安全" scheme="https://ranshao2002.github.io/tags/web%E5%AE%89%E5%85%A8/" />
+        <updated>2022-10-13T00:30:48.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://ranshao2002.github.io/2022/10/13/Web%E5%AE%89%E5%85%A8/002%E6%B5%8F%E8%A7%88%E5%99%A8%E5%AE%89%E5%85%A8/</id>
+        <title>002浏览器安全</title>
+        <link rel="alternate" href="https://ranshao2002.github.io/2022/10/13/Web%E5%AE%89%E5%85%A8/002%E6%B5%8F%E8%A7%88%E5%99%A8%E5%AE%89%E5%85%A8/"/>
+        <content type="html">&lt;pre&gt;&lt;code&gt;浏览器：
+    1、浏览器天生就是一个客户端，如果具备安全功能，就可以像安全软件一样对用户上网起到很好的保护作用
+    2、浏览器安全也成为了浏览器厂商之间竞争的遗憾啊个底牌，浏览器厂商希望能够针对安全建立起技术门槛，以获得竞争优势
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;同源政策&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#同源政策&#34;&gt;#&lt;/a&gt; 同源政策&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;同源政策是一种约定，它是浏览器最核心最基本的安全功能，如果缺少了同源政策，则浏览器的正常功能可能都受到影响。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;span class=&#34;red&#34;&gt;浏览器的同源政策，限制了来自不同源的 &amp;quot;document&amp;quot; 或脚本，对当前 “document” 读取或设置某种属性&lt;/span&gt;&lt;/p&gt;
+&lt;h1 id=&#34;浏览器沙箱&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#浏览器沙箱&#34;&gt;#&lt;/a&gt; 浏览器沙箱&lt;/h1&gt;
+&lt;h1 id=&#34;该章节已废&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#该章节已废&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;red&#34;&gt;该章节已废&lt;/span&gt;&lt;/h1&gt;
+</content>
+        <category term="黑客" scheme="https://ranshao2002.github.io/categories/%E9%BB%91%E5%AE%A2/" />
+        <category term="白帽子讲黑客安全" scheme="https://ranshao2002.github.io/categories/%E9%BB%91%E5%AE%A2/%E7%99%BD%E5%B8%BD%E5%AD%90%E8%AE%B2%E9%BB%91%E5%AE%A2%E5%AE%89%E5%85%A8/" />
+        <category term="web安全" scheme="https://ranshao2002.github.io/tags/web%E5%AE%89%E5%85%A8/" />
+        <updated>2022-10-13T00:11:33.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://ranshao2002.github.io/2022/10/12/Web%E5%AE%89%E5%85%A8/001%E6%88%91%E7%9A%84%E5%AE%89%E5%85%A8%E4%B8%96%E7%95%8C%E8%A7%82/</id>
         <title>001我的安全世界观</title>
-        <link rel="alternate" href="https://ranshao2002.github.io/2022/10/12/001%E6%88%91%E7%9A%84%E5%AE%89%E5%85%A8%E4%B8%96%E7%95%8C%E8%A7%82/"/>
-        <content type="html">&lt;h1 id=&#34;web-安全简史&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#web-安全简史&#34;&gt;#&lt;/a&gt; Web 安全简史&lt;/h1&gt;
-&lt;p&gt;Hacker：研究计算机系统和网络的人&lt;br&gt;&lt;br&gt;
-在计算机安全领域，黑客是一群破坏规则、不喜欢被拘束的&lt;br&gt;&lt;/p&gt;
-&lt;h2 id=&#34;中国黑客简史&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#中国黑客简史&#34;&gt;#&lt;/a&gt; 中国黑客简史&lt;/h2&gt;
+        <link rel="alternate" href="https://ranshao2002.github.io/2022/10/12/Web%E5%AE%89%E5%85%A8/001%E6%88%91%E7%9A%84%E5%AE%89%E5%85%A8%E4%B8%96%E7%95%8C%E8%A7%82/"/>
+        <content type="html">&lt;h1 id=&#34;web-安全简史&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#web-安全简史&#34;&gt;#&lt;/a&gt; Web 安全简史&lt;/h1&gt;
+&lt;p&gt;Hacker：研究计算机系统和网络的人 &amp;lt;br&amp;gt;&lt;br /&gt;
+ 在计算机安全领域，黑客是一群破坏规则、不喜欢被拘束的 &amp;lt;br&amp;gt;&lt;/p&gt;
+&lt;h2 id=&#34;中国黑客简史&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#中国黑客简史&#34;&gt;#&lt;/a&gt; 中国黑客简史&lt;/h2&gt;
 &lt;p&gt;1、启蒙时代&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;时间：20世纪90年代
 &lt;/code&gt;&lt;/pre&gt;
@@ -27,38 +268,38 @@
 &lt;p&gt;3、黑暗时代&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;一直持续到今天
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;中国黑客的发展历程&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#中国黑客的发展历程&#34;&gt;#&lt;/a&gt; 中国黑客的发展历程&lt;/h2&gt;
+&lt;h2 id=&#34;中国黑客的发展历程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#中国黑客的发展历程&#34;&gt;#&lt;/a&gt; 中国黑客的发展历程&lt;/h2&gt;
 &lt;pre&gt;&lt;code&gt;在早期，黑客的攻击目标以系统软件居多。
 一方面：这个时期web技术发展远远不成熟
 另一方面：通过攻击系统软件，往往可以直接获取 root 权限
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;web安全的兴起&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#web安全的兴起&#34;&gt;#&lt;/a&gt; Web 安全的兴起&lt;/h2&gt;
+&lt;h2 id=&#34;web安全的兴起&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#web安全的兴起&#34;&gt;#&lt;/a&gt; Web 安全的兴起&lt;/h2&gt;
 &lt;p&gt;1、SQL 注入&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;是Web安全上的第一个里程碑，最早出现在1999年
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;2、XSS&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;被重视时间：2003年
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h1 id=&#34;黑帽子白帽子&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#黑帽子白帽子&#34;&gt;#&lt;/a&gt; 黑帽子，白帽子&lt;/h1&gt;
+&lt;h1 id=&#34;黑帽子白帽子&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#黑帽子白帽子&#34;&gt;#&lt;/a&gt; 黑帽子，白帽子&lt;/h1&gt;
 &lt;pre&gt;&lt;code&gt;黑帽子：能够找到系统的一个弱点，就可以达到入侵的目的
 白帽子：必须找到系统的所有弱点，不能有遗漏，才能保证系统不会出现此问题
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h1 id=&#34;安全的本质&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#安全的本质&#34;&gt;#&lt;/a&gt; 安全的本质&lt;/h1&gt;
+&lt;h1 id=&#34;安全的本质&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#安全的本质&#34;&gt;#&lt;/a&gt; 安全的本质&lt;/h1&gt;
 &lt;pre&gt;&lt;code&gt;安全的本质是信任的问题
 安全是一个持续的过程
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h1 id=&#34;安全三要素&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#安全三要素&#34;&gt;#&lt;/a&gt; 安全三要素&lt;/h1&gt;
+&lt;h1 id=&#34;安全三要素&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#安全三要素&#34;&gt;#&lt;/a&gt; 安全三要素&lt;/h1&gt;
 &lt;pre&gt;&lt;code&gt;机密性：要求保护数据内容不能泄漏
 完整性：要求保护数据内容是完整的、没有被篡改的
 可用性：要求保护资源是“随需而得”
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h1 id=&#34;如何实施安全评估&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#如何实施安全评估&#34;&gt;#&lt;/a&gt; 如何实施安全评估&lt;/h1&gt;
+&lt;h1 id=&#34;如何实施安全评估&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#如何实施安全评估&#34;&gt;#&lt;/a&gt; 如何实施安全评估&lt;/h1&gt;
 &lt;pre&gt;&lt;code&gt;资产等级划分 --&amp;gt; 威胁分析 --&amp;gt; 风险分析 --&amp;gt; 确认解决方案
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;资产等级划分&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#资产等级划分&#34;&gt;#&lt;/a&gt; 资产等级划分&lt;/h2&gt;
+&lt;h2 id=&#34;资产等级划分&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#资产等级划分&#34;&gt;#&lt;/a&gt; 资产等级划分&lt;/h2&gt;
 &lt;pre&gt;&lt;code&gt;互联网安全的核心问题，是数据安全的问题
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;威胁分析&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#威胁分析&#34;&gt;#&lt;/a&gt; 威胁分析&lt;/h2&gt;
+&lt;h2 id=&#34;威胁分析&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#威胁分析&#34;&gt;#&lt;/a&gt; 威胁分析&lt;/h2&gt;
 &lt;p&gt;&lt;span class=&#34;red&#34;&gt;STRIDE 模型&lt;/span&gt;&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -101,7 +342,7 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h2 id=&#34;风险分析&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#风险分析&#34;&gt;#&lt;/a&gt; 风险分析&lt;/h2&gt;
+&lt;h2 id=&#34;风险分析&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#风险分析&#34;&gt;#&lt;/a&gt; 风险分析&lt;/h2&gt;
 &lt;pre&gt;&lt;code&gt;Risk = Probability * Damage Potential
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;span class=&#34;red&#34;&gt;DEEAD 模型&lt;/span&gt;&lt;/p&gt;
@@ -147,7 +388,7 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h2 id=&#34;设计安全方案&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#设计安全方案&#34;&gt;#&lt;/a&gt; 设计安全方案&lt;/h2&gt;
+&lt;h2 id=&#34;设计安全方案&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#设计安全方案&#34;&gt;#&lt;/a&gt; 设计安全方案&lt;/h2&gt;
 &lt;p&gt;一个优秀的安全方案应该具备以下特点&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;能够有效解决问题
 用户体验好
@@ -155,22 +396,22 @@
 低耦合
 易于扩展与升级
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h1 id=&#34;白帽子兵法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#白帽子兵法&#34;&gt;#&lt;/a&gt; 白帽子兵法&lt;/h1&gt;
-&lt;h2 id=&#34;secure-by-default原则&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#secure-by-default原则&#34;&gt;#&lt;/a&gt; Secure By Default 原则&lt;/h2&gt;
-&lt;h3 id=&#34;黑名单-白名单&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#黑名单-白名单&#34;&gt;#&lt;/a&gt; 黑名单、白名单&lt;/h3&gt;
-&lt;h3 id=&#34;最小权限原则&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#最小权限原则&#34;&gt;#&lt;/a&gt; 最小权限原则&lt;/h3&gt;
-&lt;h2 id=&#34;纵深防御原则&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#纵深防御原则&#34;&gt;#&lt;/a&gt; 纵深防御原则&lt;/h2&gt;
+&lt;h1 id=&#34;白帽子兵法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#白帽子兵法&#34;&gt;#&lt;/a&gt; 白帽子兵法&lt;/h1&gt;
+&lt;h2 id=&#34;secure-by-default原则&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#secure-by-default原则&#34;&gt;#&lt;/a&gt; Secure By Default 原则&lt;/h2&gt;
+&lt;h3 id=&#34;黑名单-白名单&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#黑名单-白名单&#34;&gt;#&lt;/a&gt; 黑名单、白名单&lt;/h3&gt;
+&lt;h3 id=&#34;最小权限原则&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#最小权限原则&#34;&gt;#&lt;/a&gt; 最小权限原则&lt;/h3&gt;
+&lt;h2 id=&#34;纵深防御原则&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#纵深防御原则&#34;&gt;#&lt;/a&gt; 纵深防御原则&lt;/h2&gt;
 &lt;pre&gt;&lt;code&gt;1、在🧍各个不同层面、不同方向实施安全方案，避免出现疏漏，不同安全方案之间需要互相配合，构成一个整体
 2、要在正确的地方做正确的事情
 即：在解决根本问题的地方实施针对性的安全方案
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;数据与代码分离原则&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#数据与代码分离原则&#34;&gt;#&lt;/a&gt; 数据与代码分离原则&lt;/h2&gt;
+&lt;h2 id=&#34;数据与代码分离原则&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数据与代码分离原则&#34;&gt;#&lt;/a&gt; 数据与代码分离原则&lt;/h2&gt;
 &lt;pre&gt;&lt;code&gt;广泛适用于各种由于“注入”而引发安全问题的场景
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;不可预测性原则&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#不可预测性原则&#34;&gt;#&lt;/a&gt; 不可预测性原则&lt;/h2&gt;
+&lt;h2 id=&#34;不可预测性原则&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#不可预测性原则&#34;&gt;#&lt;/a&gt; 不可预测性原则&lt;/h2&gt;
 &lt;pre&gt;&lt;code&gt;从克服攻击方法的角度看问题
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h1 id=&#34;小结&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#小结&#34;&gt;#&lt;/a&gt; 小结&lt;/h1&gt;
+&lt;h1 id=&#34;小结&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#小结&#34;&gt;#&lt;/a&gt; 小结&lt;/h1&gt;
 &lt;pre&gt;&lt;code&gt;安全是一门朴素的学问，也是一种平衡的艺术。&lt;/code&gt;&lt;/pre&gt;
 </content>
         <category term="黑客" scheme="https://ranshao2002.github.io/categories/%E9%BB%91%E5%AE%A2/" />
