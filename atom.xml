@@ -8,8 +8,224 @@
     <author>
       <name>ジュウ・ラン</name>
     </author>
-    <updated>2022-10-13T06:28:18.000Z</updated>
+    <updated>2022-10-13T07:39:49.546Z</updated>
     <category term="ラン　の　ノート" />
+    <entry>
+        <id>https://ranshao2002.github.io/2022/10/13/HTML/index/</id>
+        <title></title>
+        <link rel="alternate" href="https://ranshao2002.github.io/2022/10/13/HTML/index/"/>
+        <content type="html"></content>
+        <updated>2022-10-13T07:39:49.546Z</updated>
+    </entry>
+    <entry>
+        <id>https://ranshao2002.github.io/2022/10/13/HTML/001HTML%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/</id>
+        <title>001HTML基础语法</title>
+        <link rel="alternate" href="https://ranshao2002.github.io/2022/10/13/HTML/001HTML%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/"/>
+        <content type="html">&lt;h1 id=&#34;html概述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#html概述&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;red&#34;&gt;HTML 概述&lt;/span&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;web的工作原理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#web的工作原理&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;Web 的工作原理&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&#34;kbd&#34;&gt;服务器通过 HTTP 协议进行通信，HTTP 协议采用的是请求、响应模式，即客户端发起 HTTP 请求，web 服务器接收并解析处理 HTTP 请求，然后将 HTTP 响应发送给客户端。&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;相关技术&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#相关技术&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;相关技术&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&#34;red&#34;&gt;客户端技术：&lt;/span&gt;&lt;span class=&#34;blue&#34;&gt;运行于客户端，由浏览器解析运行&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;kbd&#34;&gt; HTML&lt;/span&gt;&lt;span class=&#34;kbd&#34;&gt;CSS&lt;/span&gt;&lt;span class=&#34;kbd&#34;&gt;JavaScript&lt;/span&gt;&lt;span class=&#34;kbd&#34;&gt; 浏览器兼容&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;red&#34;&gt;服务器端技术：&lt;/span&gt;运行于服务端，可以和数据库进行交互&lt;br /&gt;
+&lt;span class=&#34;kbd&#34;&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL0FTUC5ORVQ=&#34;&gt; ASP.NET&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;kbd&#34;&gt;PHP&lt;/span&gt;&lt;span class=&#34;kbd&#34;&gt;JSP&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;什么是html&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#什么是html&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;什么是 HTML&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&#34;kbd red&#34;&gt;HTML&lt;/span&gt;(&lt;span class=&#34;kbd&#34;&gt;HyperText Markup Language&lt;/span&gt;)&lt;span class=&#34;kbd blue&#34;&gt; 超文本标记语言&lt;/span&gt;&lt;span class=&#34;blue&#34;&gt;用来设计网页的标记语言&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;kbd red&#34;&gt;后缀&lt;/span&gt;&lt;span class=&#34;kbd&#34;&gt;.html&lt;/span&gt;&lt;span class=&#34;kbd&#34;&gt;.htm&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;web浏览器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#web浏览器&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;Web 浏览器&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&#34;kbd red&#34;&gt;主要功能&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;kbd&#34;&gt;代理访问者提交请求&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;kbd&#34;&gt;作为 HTML 解释器和内嵌脚本程序执行器&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;kbd&#34;&gt;用图形化的方式显示 HTML 文档&lt;/span&gt;&lt;/p&gt;
+&lt;h1 id=&#34;html基础语法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#html基础语法&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;red&#34;&gt;HTML 基础语法&lt;/span&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;标记&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#标记&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;标记&lt;/span&gt;&lt;/h2&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;使用时必须尖括号括起来&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;有封闭类型的标记，也有非封闭类型的&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;封闭类型标记 (双标记)&amp;lt; 标记 &amp;gt; 内容 &amp;lt;/ 标记 &amp;gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;非封闭类型标记 (单标记)&amp;lt; 标记 &amp;gt; 或 &amp;lt; 标记 /&amp;gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption&gt;&lt;span&gt;双标记&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;h1&lt;/span&gt;&amp;gt;&lt;/span&gt;这是标题&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;h1&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;p&lt;/span&gt;&amp;gt;&lt;/span&gt;这是普通、段落&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;p&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br /&gt;
+&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption&gt;&lt;span&gt;单标记&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;文本1&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;br&lt;/span&gt;&amp;gt;&lt;/span&gt;文本2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;文本3&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;br&lt;/span&gt;/&amp;gt;&lt;/span&gt;文本4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&#34;元素和属性&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#元素和属性&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;元素和属性&lt;/span&gt;&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;span class=&#34;red&#34;&gt;元素&lt;/span&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;即标记&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;每一对尖括号包围的部分 如：&amp;lt;body&amp;gt;&amp;lt;/body&amp;gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;span class=&#34;red&#34;&gt;属性&lt;/span&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;用来修饰元素&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;每个属性都有值&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;属性的声明必须位于开始标记里&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;一个标记的属性不只一个，多个属性之间用空格隔开&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;多个属性之间不区分先后顺序&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption&gt;&lt;span&gt;html&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;p&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;align&lt;/span&gt; = &lt;span class=&#34;string&#34;&gt;&amp;#x27;center&amp;#x27;&lt;/span&gt;&amp;gt;&lt;/span&gt;段落&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;p&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;元素&lt;/th&gt;
+&lt;th&gt;属性&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;lt;body&amp;gt;&lt;/td&gt;
+&lt;td&gt;开始标记&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;lt;/body&amp;gt;&lt;/td&gt;
+&lt;td&gt;结束标记&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;lt;p&amp;gt;&amp;lt;/p&amp;gt;&lt;/td&gt;
+&lt;td&gt;P 元素&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;align&lt;/td&gt;
+&lt;td&gt;属性名称&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;center&lt;/td&gt;
+&lt;td&gt;属性值&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;lt;body&amp;gt;&amp;lt;/body&amp;gt;&lt;/td&gt;
+&lt;td&gt;body 元素&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;通用属性&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#通用属性&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;通用属性&lt;/span&gt;&lt;/h2&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;每个元素都有自己所特有的属性&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;有些属性是绝大多数元素都支持的属性，称为通用属性&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;----&lt;/td&gt;
+&lt;td&gt;----&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;id&lt;/td&gt;
+&lt;td&gt;指定元素的唯一 ID&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;title&lt;/td&gt;
+&lt;td&gt;规定元素的额外信息&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;class&lt;/td&gt;
+&lt;td&gt;规定元素的类名&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;style&lt;/td&gt;
+&lt;td&gt;定义样式&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;注释&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#注释&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;注释&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&#34;kbd blue&#34;&gt;&amp;lt;!-- 注释部分 --&amp;gt;&lt;/span&gt;&lt;br /&gt;
+ 不可嵌套&lt;/p&gt;
+&lt;h1 id=&#34;文档结构&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#文档结构&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;red&#34;&gt;文档结构&lt;/span&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;html的文档结构&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#html的文档结构&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;HTML 的文档结构&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption&gt;&lt;span&gt;html&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;&amp;lt;!--  文件头 --&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;&amp;lt;!-- 文档主体部分 --&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&#34;文档声明类型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#文档声明类型&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;文档声明类型&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;让浏览器清楚文档的版本、类型和风格&lt;/p&gt;
+&lt;h2 id=&#34;head元素&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#head元素&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;&amp;lt;head&amp;gt; 元素&lt;/span&gt;&lt;/h2&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;所有其他元素的容器&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;紧跟在 &amp;lt;html&amp;gt; 后&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption&gt;&lt;span&gt;html&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;title&lt;/span&gt;&amp;gt;&lt;/span&gt;HTML 文档&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;title&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;meta&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;http-equiv&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;Content-Type&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;content&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;text/html;charset=UTF-8&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;meta&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;name&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;keywords&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;content&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;html,css&amp;quot;&lt;/span&gt; /&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt; &lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&#34;文档头部内容title&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#文档头部内容title&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;文档头部内容 &amp;lt;title&amp;gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;标题元素出现在浏览器顶部&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;没有属性&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;必须出现在 &amp;lt;head&amp;gt; 元素中&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;一个文档只有一个标题元素&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption&gt;&lt;span&gt;html&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;&amp;lt;!DOCTYPE &lt;span class=&#34;keyword&#34;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;title&lt;/span&gt;&amp;gt;&lt;/span&gt;标题&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;title&lt;/span&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;&amp;lt;!-- 文档头部内容&amp;lt;title&amp;gt; --&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&#34;文档头部内容meta&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#文档头部内容meta&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;文档头部内容 &amp;lt;meta&amp;gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;元数据元素 &amp;lt;meta&amp;gt; 用于定义网页的基本信息&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;空标记&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;常用属性：content、http-equiv&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption&gt;&lt;span&gt;html&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;&amp;lt;!DOCTYPE &lt;span class=&#34;keyword&#34;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;meta&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;http-equiv&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;Content-Type&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;content&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;text/html;charset=UTF-8&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;&amp;lt;!-- 文档头部内容&amp;lt;meta&amp;gt; --&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+</content>
+        <category term="开发" scheme="https://ranshao2002.github.io/categories/%E5%BC%80%E5%8F%91/" />
+        <category term="html" scheme="https://ranshao2002.github.io/categories/%E5%BC%80%E5%8F%91/html/" />
+        <category term="web" scheme="https://ranshao2002.github.io/tags/web/" />
+        <category term="html" scheme="https://ranshao2002.github.io/tags/html/" />
+        <updated>2022-10-13T06:42:32.000Z</updated>
+    </entry>
     <entry>
         <id>https://ranshao2002.github.io/2022/10/13/Web%E5%AE%89%E5%85%A8/005%E7%82%B9%E5%87%BB%E5%8A%AB%E6%8C%81-ClikJacking/</id>
         <title>005点击劫持(ClikJacking)</title>
