@@ -8,24 +8,8 @@
     <author>
       <name>ジュウ・ラン</name>
     </author>
-    <updated>2022-10-14T05:40:44.465Z</updated>
+    <updated>2022-10-14T03:52:18.000Z</updated>
     <category term="ラン　の　ノート" />
-    <entry>
-        <id>https://ranshao2002.github.io/2022/10/14/HTML/index/</id>
-        <title></title>
-        <link rel="alternate" href="https://ranshao2002.github.io/2022/10/14/HTML/index/"/>
-        <content type="html">&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-    &lt;head&gt;
-        &lt;title&gt;隐藏域和文件选择框&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-        &lt;input type=&#34;hidden&#34; name=&#34;test&#34;&gt; &lt;!--隐藏域--&gt;
-        &lt;input type=&#34;file&#34; name=&#34;test&#34; id=&#34;1&#34;&gt; &lt;!-- 文件选择框 --&gt;
-    &lt;/body&gt;
-&lt;/html&gt;</content>
-        <updated>2022-10-14T05:40:44.465Z</updated>
-    </entry>
     <entry>
         <id>https://ranshao2002.github.io/2022/10/14/HTML/006%E8%A1%A8%E5%8D%95/</id>
         <title>006表单</title>

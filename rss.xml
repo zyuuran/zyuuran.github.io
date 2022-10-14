@@ -10,25 +10,9 @@
         </author>
         <description>ジュウ・ラン の ノート</description>
         <language>zh-CN</language>
-        <pubDate>Fri, 14 Oct 2022 13:40:44 +0800</pubDate>
-        <lastBuildDate>Fri, 14 Oct 2022 13:40:44 +0800</lastBuildDate>
+        <pubDate>Fri, 14 Oct 2022 11:52:18 +0800</pubDate>
+        <lastBuildDate>Fri, 14 Oct 2022 11:52:18 +0800</lastBuildDate>
         <category term="ラン　の　ノート" />
-        <item>
-            <guid isPermalink="true">https://ranshao2002.github.io/2022/10/14/HTML/index/</guid>
-            <title></title>
-            <link>https://ranshao2002.github.io/2022/10/14/HTML/index/</link>
-            <pubDate>Fri, 14 Oct 2022 13:40:44 +0800</pubDate>
-            <description><![CDATA[ &lt;!DOCTYPE html&gt;
-&lt;html&gt;
-    &lt;head&gt;
-        &lt;title&gt;隐藏域和文件选择框&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-        &lt;input type=&#34;hidden&#34; name=&#34;test&#34;&gt; &lt;!--隐藏域--&gt;
-        &lt;input type=&#34;file&#34; name=&#34;test&#34; id=&#34;1&#34;&gt; &lt;!-- 文件选择框 --&gt;
-    &lt;/body&gt;
-&lt;/html&gt; ]]></description>
-        </item>
         <item>
             <guid isPermalink="true">https://ranshao2002.github.io/2022/10/14/HTML/006%E8%A1%A8%E5%8D%95/</guid>
             <title>006表单</title>

@@ -7,14 +7,6 @@
     "home_page_url": "https://ranshao2002.github.io",
     "items": [
         {
-            "id": "https://ranshao2002.github.io/2022/10/14/HTML/index/",
-            "url": "https://ranshao2002.github.io/2022/10/14/HTML/index/",
-            "title": "",
-            "date_published": "2022-10-14T05:40:44.465Z",
-            "content_html": "<!DOCTYPE html>\n<html>\n    <head>\n        <title>隐藏域和文件选择框</title>\n    </head>\n    <body>\n        <input type=\"hidden\" name=\"test\"> <!--隐藏域-->\n        <input type=\"file\" name=\"test\" id=\"1\"> <!-- 文件选择框 -->\n    </body>\n</html>",
-            "tags": []
-        },
-        {
             "id": "https://ranshao2002.github.io/2022/10/14/HTML/006%E8%A1%A8%E5%8D%95/",
             "url": "https://ranshao2002.github.io/2022/10/14/HTML/006%E8%A1%A8%E5%8D%95/",
             "title": "006表单",
