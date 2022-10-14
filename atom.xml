@@ -8,13 +8,110 @@
     <author>
       <name>ジュウ・ラン</name>
     </author>
-    <updated>2022-10-14T00:35:08.000Z</updated>
+    <updated>2022-10-14T03:52:18.000Z</updated>
     <category term="ラン　の　ノート" />
     <entry>
-        <id>https://ranshao2002.github.io/2022/10/14/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/001Introduction/</id>
+        <id>https://ranshao2002.github.io/2022/10/14/HTML/006%E8%A1%A8%E5%8D%95/</id>
+        <title>006表单</title>
+        <link rel="alternate" href="https://ranshao2002.github.io/2022/10/14/HTML/006%E8%A1%A8%E5%8D%95/"/>
+        <content type="html"></content>
+        <category term="开发" scheme="https://ranshao2002.github.io/categories/%E5%BC%80%E5%8F%91/" />
+        <category term="html" scheme="https://ranshao2002.github.io/categories/%E5%BC%80%E5%8F%91/html/" />
+        <category term="web" scheme="https://ranshao2002.github.io/tags/web/" />
+        <category term="html" scheme="https://ranshao2002.github.io/tags/html/" />
+        <updated>2022-10-14T03:52:18.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://ranshao2002.github.io/2022/10/14/HTML/005%E8%A1%A8%E6%A0%BC/</id>
+        <title>005表格</title>
+        <link rel="alternate" href="https://ranshao2002.github.io/2022/10/14/HTML/005%E8%A1%A8%E6%A0%BC/"/>
+        <content type="html"></content>
+        <category term="开发" scheme="https://ranshao2002.github.io/categories/%E5%BC%80%E5%8F%91/" />
+        <category term="html" scheme="https://ranshao2002.github.io/categories/%E5%BC%80%E5%8F%91/html/" />
+        <category term="web" scheme="https://ranshao2002.github.io/tags/web/" />
+        <category term="html" scheme="https://ranshao2002.github.io/tags/html/" />
+        <updated>2022-10-14T03:52:04.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://ranshao2002.github.io/2022/10/14/HTML/007%E6%A1%88%E5%88%97/</id>
+        <title>007案列</title>
+        <link rel="alternate" href="https://ranshao2002.github.io/2022/10/14/HTML/007%E6%A1%88%E5%88%97/"/>
+        <content type="html">&lt;h1 id=&#34;创建-html-文档并设置头元素&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#创建-html-文档并设置头元素&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;red&#34;&gt;创建 HTML 文档并设置头元素&lt;/span&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;span class=&#34;kbd red&#34;&gt;问题&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;blue&#34;&gt;创建一个标准结构的 HTML 文档，并为创建的 HTML 文档添加文件标题，设置文档的编码格式以及页面的刷新率&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;kbd red&#34;&gt;解决方案&lt;/span&gt;&lt;br /&gt;
+ &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption&gt;&lt;span&gt;创建HTML文档&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;touch&lt;/span&gt; 01_doc.html&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br /&gt;
+&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption&gt;&lt;span&gt;01_DOC.html&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;&amp;lt;!DOCTYPE &lt;span class=&#34;keyword&#34;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;title&lt;/span&gt;&amp;gt;&lt;/span&gt;01_DOC&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;title&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;meta&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;http-equiv&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;Content-Type&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;content&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;text/html;charset=UTF-8&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;meta&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;http-equiv&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;refresh&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;content&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;10; url=http://ranshao2002.github.io&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+</content>
+        <category term="开发" scheme="https://ranshao2002.github.io/categories/%E5%BC%80%E5%8F%91/" />
+        <category term="html" scheme="https://ranshao2002.github.io/categories/%E5%BC%80%E5%8F%91/html/" />
+        <category term="web" scheme="https://ranshao2002.github.io/tags/web/" />
+        <category term="html" scheme="https://ranshao2002.github.io/tags/html/" />
+        <updated>2022-10-14T03:32:25.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://ranshao2002.github.io/2022/10/14/HTML/004%E5%88%97%E8%A1%A8/</id>
+        <title>004列表</title>
+        <link rel="alternate" href="https://ranshao2002.github.io/2022/10/14/HTML/004%E5%88%97%E8%A1%A8/"/>
+        <content type="html">&lt;h1 id=&#34;列表的作用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#列表的作用&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;red&#34;&gt;列表的作用&lt;/span&gt;&lt;/h1&gt;
+</content>
+        <category term="开发" scheme="https://ranshao2002.github.io/categories/%E5%BC%80%E5%8F%91/" />
+        <category term="html" scheme="https://ranshao2002.github.io/categories/%E5%BC%80%E5%8F%91/html/" />
+        <category term="web" scheme="https://ranshao2002.github.io/tags/web/" />
+        <category term="html" scheme="https://ranshao2002.github.io/tags/html/" />
+        <updated>2022-10-14T03:27:35.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://ranshao2002.github.io/2022/10/14/HTML/003%E5%9B%BE%E5%83%8F%E5%92%8C%E9%93%BE%E6%8E%A5/</id>
+        <title>003图像和链接</title>
+        <link rel="alternate" href="https://ranshao2002.github.io/2022/10/14/HTML/003%E5%9B%BE%E5%83%8F%E5%92%8C%E9%93%BE%E6%8E%A5/"/>
+        <content type="html">&lt;h1 id=&#34;url&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#url&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;red&#34;&gt;URL&lt;/span&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;url-2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#url-2&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;url&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&#34;kbd red&#34;&gt;url&lt;/span&gt;&lt;span class=&#34;kbd&#34;&gt;(Uniform Resource Locator)&lt;/span&gt;&lt;span class=&#34;blue&#34;&gt; 统一资源定位器，用来识别网络中的任何文件&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;kbd red&#34;&gt;组成&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;kbd blue&#34;&gt;协议&lt;/span&gt; &lt;span class=&#34;kbd blue&#34;&gt;主机名&lt;/span&gt; &lt;span class=&#34;kbd blue&#34;&gt;路径名&lt;/span&gt; &lt;span class=&#34;kbd blue&#34;&gt;文件名&lt;/span&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;https://ranshao2002.github.io/2022/10/14/HTML/003图像和链接/index.html
+https:协议名
+ranshao2002.github.io:主机名
+/2022/10/14/HTML/003图像和链接/:路径
+index.html:文件名
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;相对路径和绝对路径&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#相对路径和绝对路径&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;相对路径和绝对路径&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&#34;kbd red&#34;&gt;相对路径&lt;/span&gt;&lt;span class=&#34;blue&#34;&gt;以当前文件目录为准&lt;/span&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;test/index.html
+./test/index.html
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;span class=&#34;kbd red&#34;&gt;绝对路径&lt;/span&gt;&lt;span class=&#34;blue&#34;&gt;以服务器主机为根目录&lt;/span&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;https://127.0.0.1:10000/index.html
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;图像元素img&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#图像元素img&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;图像元素 &amp;lt;img&amp;gt;&lt;/span&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;span class=&#34;kbd red&#34;&gt;必用属性&lt;/span&gt;&lt;span class=&#34;bblue&#34;&gt; src&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;kbd red&#34;&gt; 可选属性&lt;/span&gt;&lt;span class=&#34;bblue&#34;&gt; width&lt;/span&gt;&lt;span class=&#34;blue&#34;&gt;height&lt;/span&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;img width=&amp;quot;100px&amp;quot; src=&amp;quot;./test.jpg&amp;quot; /&amp;gt;
+表示加载test.jpg这张图片，高度缩放至100像素
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;链接&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#链接&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;链接&lt;/span&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;链接元素a&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#链接元素a&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;链接元素 &amp;lt;a&amp;gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&#34;kbd red&#34;&gt;语法&lt;/span&gt;&lt;br /&gt;
+ &amp;lt;a href=&amp;quot;&amp;quot;target=&amp;quot;&amp;quot;&amp;gt; 文本 &amp;lt;/a&amp;gt;&lt;br /&gt;
+href : 链接 URL&lt;br /&gt;
+target : 目标&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption&gt;&lt;span&gt;html&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;href&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;https://www.google.co.jp&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;Google&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;href&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;./../index.html&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;target&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;_bank&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    test&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&#34;锚点&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#锚点&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;锚点&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&#34;blue&#34;&gt;是文档中某行的一个记号&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption&gt;&lt;span&gt;html&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;name&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;top&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;&amp;lt;!-- 定义锚点 --&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;br&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;br&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;href&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;#top&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;回到顶部&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;&amp;lt;!-- 回到锚点 --&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+</content>
+        <category term="开发" scheme="https://ranshao2002.github.io/categories/%E5%BC%80%E5%8F%91/" />
+        <category term="html" scheme="https://ranshao2002.github.io/categories/%E5%BC%80%E5%8F%91/html/" />
+        <category term="web" scheme="https://ranshao2002.github.io/tags/web/" />
+        <category term="html" scheme="https://ranshao2002.github.io/tags/html/" />
+        <updated>2022-10-14T02:58:33.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://ranshao2002.github.io/2022/10/14/AI%20for%20Computer%20Architecture/001Introduction/</id>
         <title>001Introduction</title>
-        <link rel="alternate" href="https://ranshao2002.github.io/2022/10/14/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/001Introduction/"/>
-        <content type="html">&lt;h1 id=&#34;首先我的英语水平几乎为0因此该分类文章通用学习英语并不单纯只是学习ai&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#首先我的英语水平几乎为0因此该分类文章通用学习英语并不单纯只是学习ai&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;首先我的英语水平几乎为 0，因此该分类文章通用学习英语，并不单纯只是学习 AI&lt;/span&gt;&lt;/h1&gt;
+        <link rel="alternate" href="https://ranshao2002.github.io/2022/10/14/AI%20for%20Computer%20Architecture/001Introduction/"/>
+        <content type="html">&lt;h1 id=&#34;首先我的英语水平几乎为0因此该分类文章通用学习英语并不单纯只是学习ai&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#首先我的英语水平几乎为0因此该分类文章通用学习英语并不单纯只是学习ai&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;red&#34;&gt;首先我的英语水平几乎为 0，因此该分类文章通用学习英语，并不单纯只是学习 AI&lt;/span&gt;&lt;/h1&gt;
 &lt;h2 id=&#34;文章标记定义规则&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#文章标记定义规则&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;文章标记定义规则&lt;/span&gt;&lt;/h2&gt;
 &lt;table&gt;
 &lt;tbody&gt;
@@ -28,7 +125,7 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h1 id=&#34;the-rise-of-ai-in-architecture&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#the-rise-of-ai-in-architecture&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;THE RISE OF AI IN ARCHITECTURE&lt;/span&gt;&lt;/h1&gt;
+&lt;h1 id=&#34;the-rise-of-ai-in-architecture&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#the-rise-of-ai-in-architecture&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;red&#34;&gt;THE RISE OF AI IN ARCHITECTURE&lt;/span&gt;&lt;/h1&gt;
 &lt;p&gt;&lt;span class=&#34;kbd&#34;&gt;人工智能在建筑领域的兴起&lt;/span&gt;&lt;/p&gt;
 &lt;table&gt;
 &lt;tbody&gt;
@@ -244,6 +341,25 @@ AI application in architecture has, likewise, undergone a transition from being 
 &lt;h2 id=&#34;分区元素span和div&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#分区元素span和div&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;分区元素 &amp;lt;span&amp;gt; 和 &amp;lt; div&amp;gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;span class=&#34;blue&#34;&gt;分区元素用于元素分租，常用于页面布局&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption&gt;&lt;span&gt;html&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;&amp;lt;!DOCTYPE &lt;span class=&#34;keyword&#34;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;meta&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;http-equiv&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;Content-Type&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;content&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;text/html;charset=UTF-8&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;style&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;color:blue;&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;p&lt;/span&gt;&amp;gt;&lt;/span&gt;first&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;p&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;p&lt;/span&gt;&amp;gt;&lt;/span&gt;second&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;p&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;p&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            一周畅销&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;span&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;style&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;color:red;&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;榜&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;p&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&#34;行内元素与块级元素&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#行内元素与块级元素&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;行内元素与块级元素&lt;/span&gt;&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;块级元素&lt;/th&gt;
+&lt;th&gt;行内元素&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;默认情况下，块级元素会独占一行&lt;/td&gt;
+&lt;td&gt;不会换行，可以与其他行内元素位于同一行&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;lt;p&amp;gt;.&amp;lt;div&amp;gt;.&amp;lt;hn&amp;gt;&lt;/td&gt;
+&lt;td&gt;&amp;lt;span&amp;gt;.&amp;lt;a&amp;gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 </content>
         <category term="开发" scheme="https://ranshao2002.github.io/categories/%E5%BC%80%E5%8F%91/" />
         <category term="html" scheme="https://ranshao2002.github.io/categories/%E5%BC%80%E5%8F%91/html/" />
@@ -974,84 +1090,64 @@ XSS Filter 转义&lt;br /&gt;
         <updated>2022-10-12T00:49:26.000Z</updated>
     </entry>
     <entry>
-        <id>https://ranshao2002.github.io/2022/10/12/hello-world/</id>
-        <title>Hello World</title>
-        <link rel="alternate" href="https://ranshao2002.github.io/2022/10/12/hello-world/"/>
-        <content type="html">&lt;p&gt;Welcome to &lt;a href=&#34;https://hexo.io/&#34;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&#34;https://hexo.io/docs/&#34;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&#34;https://hexo.io/docs/troubleshooting.html&#34;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/hexojs/hexo/issues&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;Quick-Start&#34;&gt;&lt;a href=&#34;#Quick-Start&#34; class=&#34;headerlink&#34; title=&#34;Quick Start&#34;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&#34;Create-a-new-post&#34;&gt;&lt;a href=&#34;#Create-a-new-post&#34; class=&#34;headerlink&#34; title=&#34;Create a new post&#34;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo new &lt;span class=&#34;string&#34;&gt;&amp;quot;My New Post&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/writing.html&#34;&gt;Writing&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;Run-server&#34;&gt;&lt;a href=&#34;#Run-server&#34; class=&#34;headerlink&#34; title=&#34;Run server&#34;&gt;&lt;/a&gt;Run server&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo server&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/server.html&#34;&gt;Server&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;Generate-static-files&#34;&gt;&lt;a href=&#34;#Generate-static-files&#34; class=&#34;headerlink&#34; title=&#34;Generate static files&#34;&gt;&lt;/a&gt;Generate static files&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo generate&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/generating.html&#34;&gt;Generating&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;Deploy-to-remote-sites&#34;&gt;&lt;a href=&#34;#Deploy-to-remote-sites&#34; class=&#34;headerlink&#34; title=&#34;Deploy to remote sites&#34;&gt;&lt;/a&gt;Deploy to remote sites&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/one-command-deployment.html&#34;&gt;Deployment&lt;/a&gt;&lt;/p&gt;
-</content>
-        <updated>2022-10-11T23:37:46.218Z</updated>
-    </entry>
-    <entry>
-        <id>https://ranshao2002.github.io/2022/10/11/002-%E6%B3%95%E5%BE%8B%E6%A6%82%E8%AE%BA-%E6%B3%95%E5%BE%8B%E5%85%B3%E7%B3%BB/</id>
+        <id>https://ranshao2002.github.io/2022/10/11/%E7%BB%8F%E6%B5%8E%E6%B3%95/002-%E6%B3%95%E5%BE%8B%E6%A6%82%E8%AE%BA-%E6%B3%95%E5%BE%8B%E5%85%B3%E7%B3%BB/</id>
         <title>002-法律概论-法律关系</title>
-        <link rel="alternate" href="https://ranshao2002.github.io/2022/10/11/002-%E6%B3%95%E5%BE%8B%E6%A6%82%E8%AE%BA-%E6%B3%95%E5%BE%8B%E5%85%B3%E7%B3%BB/"/>
-        <content type="html">&lt;p&gt;社会关系：人们在社会中结成的种种联系&lt;br&gt;
-法律关系：在诸多社会 关系中，根据法律规范进行调整而产生的社会关系&lt;br&gt;
-一、法律关系的概念和特征&lt;br&gt;
-法律关系是根据法律规范产生、以主体间的权利和义务关系为内容表现的特殊的社会关系。&lt;br&gt;
-（一）法律是以法律规范为前提的社会关系&lt;br&gt;
-法律关系是社会关系的一种，但并非所有的社会关系都属于法律关系。&lt;br&gt;
-法律关系是以相应法律规范的存在作为前提的，没有法律规范 就不可能产生相应的法律关系&lt;br&gt;
-（二）法律关系是权利义务为内容的社会关系&lt;br&gt;
-法律关系是特定主体之间的具体的权利义务关系。&lt;br&gt;
-（三）法律关系是以国家强制力为保障的社会关系&lt;br&gt;
-与道德关系等其他社会关系不同，法律关系是由国家强制力作为保障的。&lt;br&gt;
-二、法律 关系的种类&lt;br&gt;
-按照不同的标准可以将法律关系分为不同的种类。&lt;br&gt;
-（一）绝对法律关系和相对法律关系&lt;br&gt;
-根据法律关系的主体是单方确定还是双方确定，可以将法律关系分为绝对法律关系和相对法律关系&lt;br&gt;
-绝对法律关系中主体的一方是确定的、具体的；另一方则是除了权利人以外的所有人。&lt;br&gt;
-相对法律关系的主体，无论权利人还是义务人，都是确定的&lt;br&gt;
-（二）调整法律关系和保护法律关系&lt;br&gt;
-按照法律关系产生的依据是合法行为还是违法行为 、是否适用法律制裁，可以将法律关系分为调整性法律关系和保护法律关系。&lt;br&gt;
-调整性法律关系是不需要适用法律制裁，主体权利能够正常实现的法律关系。&lt;br&gt;
-保护法律关系是在主体的权利和义务不能正常实现的情况下，通过法律制裁而形成的法律关系&lt;br&gt;
-三、法律关系的基本构成&lt;br&gt;
-一般认为，法律由主体、客体、和内容三部分组成&lt;br&gt;
-（一）法律关系的主体&lt;br&gt;
- 1、法律关系主体的种类&lt;br&gt;
-（1）自然人&lt;br&gt;
-包括本国公民、居住在国境内或在境内活动的外国公民和无国籍人&lt;br&gt;
-（2）法人和非法人组织&lt;br&gt;
-法人是具有民事权利能力和民事行为能力，依法独立享有民事权利和承担民事义务的组织。&lt;br&gt;
-非法人组织是不具有法人资格，但是能够依法以自己的名义从事民事活动的组织。&lt;br&gt;
-（3）国家&lt;br&gt;
-在特定情况下，国家可以作为一个整体成为法律关系的主体。&lt;br&gt;
-2、法律关系主体的权利能力和行为能力&lt;br&gt;
-权利能力是指权利主体享有权利和承担义务的能力，它反映了权利主体取得权利和承担义务的资格。&lt;br&gt;
-行为能力是指权利主体能够通过自己的行为取得权利和承担义务的能力。&lt;br&gt;
-（二）法律关系的客体&lt;br&gt;
-是指法律关系主体间权利义务所指向的对象&lt;br&gt;
- 1、物：法律意义上的物是指法律关系主体支配的、在生产上和生活上所需要的客观实体。&lt;br&gt;
-2、行为：一定的行为结果 可以满足权利人的利益和需要&lt;br&gt;
- 3、人格利益：人格利益是人生权法律关系的客体，也是诸多行政、刑事法律关系的客体&lt;br&gt;
- 4、智力成果：人类智力活动创造的成果&lt;br&gt;
-（三）法律关系的内容&lt;br&gt;
-法律关系的内容即法律关系主体享有的权利和承担的义务。&lt;br&gt;
-四、法律关系的变动原因 —— 法律事实&lt;br&gt;
-是指法律规范所规定的，能够引起法律后果及法律关系产生、变更或消灭的客观现象。&lt;br&gt;
-法律事实根据其是否以权利主体的意志为转移可以分为行为和事件两类&lt;br&gt;
-（一）行为&lt;br&gt;
-行为是指以权利主体的意志 与转移、能够引起法律后果的法律事实。&lt;br&gt;
-根据人的行为，可以分为两类&lt;br&gt;
- 1、法律行为：即以行为人的意思表示为要素的行为&lt;br&gt;
- 2、事实行为：即与表达法律效果、特定精神内容无关的行为&lt;br&gt;
-（二）事件&lt;br&gt;
-事实是指与当事人意志无关，但能够引起法律关系发生、变更和消灭的客观情况&lt;br&gt;
- 1、人的出生与死亡：人的出生与死亡能够引起民事主体资格的产生和消灭，也可能导致人格权的产生和继承的开始等&lt;br&gt;
- 2、自然灾害与意外事件：通常自然灾害等可构成法律上的不可抗力，常成为免除法律责任和消灭法律关系的原因&lt;br&gt;
+        <link rel="alternate" href="https://ranshao2002.github.io/2022/10/11/%E7%BB%8F%E6%B5%8E%E6%B3%95/002-%E6%B3%95%E5%BE%8B%E6%A6%82%E8%AE%BA-%E6%B3%95%E5%BE%8B%E5%85%B3%E7%B3%BB/"/>
+        <content type="html">&lt;p&gt;社会关系：人们在社会中结成的种种联系&lt;br /&gt;
+法律关系：在诸多社会 关系中，根据法律规范进行调整而产生的社会关系&lt;br /&gt;
+一、法律关系的概念和特征&lt;br /&gt;
+法律关系是根据法律规范产生、以主体间的权利和义务关系为内容表现的特殊的社会关系。&lt;br /&gt;
+（一）法律是以法律规范为前提的社会关系&lt;br /&gt;
+法律关系是社会关系的一种，但并非所有的社会关系都属于法律关系。&lt;br /&gt;
+法律关系是以相应法律规范的存在作为前提的，没有法律规范 就不可能产生相应的法律关系&lt;br /&gt;
+（二）法律关系是权利义务为内容的社会关系&lt;br /&gt;
+法律关系是特定主体之间的具体的权利义务关系。&lt;br /&gt;
+（三）法律关系是以国家强制力为保障的社会关系&lt;br /&gt;
+与道德关系等其他社会关系不同，法律关系是由国家强制力作为保障的。&lt;br /&gt;
+二、法律 关系的种类&lt;br /&gt;
+按照不同的标准可以将法律关系分为不同的种类。&lt;br /&gt;
+（一）绝对法律关系和相对法律关系&lt;br /&gt;
+根据法律关系的主体是单方确定还是双方确定，可以将法律关系分为绝对法律关系和相对法律关系&lt;br /&gt;
+绝对法律关系中主体的一方是确定的、具体的；另一方则是除了权利人以外的所有人。&lt;br /&gt;
+相对法律关系的主体，无论权利人还是义务人，都是确定的&lt;br /&gt;
+（二）调整法律关系和保护法律关系&lt;br /&gt;
+按照法律关系产生的依据是合法行为还是违法行为 、是否适用法律制裁，可以将法律关系分为调整性法律关系和保护法律关系。&lt;br /&gt;
+调整性法律关系是不需要适用法律制裁，主体权利能够正常实现的法律关系。&lt;br /&gt;
+保护法律关系是在主体的权利和义务不能正常实现的情况下，通过法律制裁而形成的法律关系&lt;br /&gt;
+三、法律关系的基本构成&lt;br /&gt;
+一般认为，法律由主体、客体、和内容三部分组成&lt;br /&gt;
+（一）法律关系的主体&lt;br /&gt;
+ 1、法律关系主体的种类&lt;br /&gt;
+（1）自然人&lt;br /&gt;
+包括本国公民、居住在国境内或在境内活动的外国公民和无国籍人&lt;br /&gt;
+（2）法人和非法人组织&lt;br /&gt;
+法人是具有民事权利能力和民事行为能力，依法独立享有民事权利和承担民事义务的组织。&lt;br /&gt;
+非法人组织是不具有法人资格，但是能够依法以自己的名义从事民事活动的组织。&lt;br /&gt;
+（3）国家&lt;br /&gt;
+在特定情况下，国家可以作为一个整体成为法律关系的主体。&lt;br /&gt;
+2、法律关系主体的权利能力和行为能力&lt;br /&gt;
+权利能力是指权利主体享有权利和承担义务的能力，它反映了权利主体取得权利和承担义务的资格。&lt;br /&gt;
+行为能力是指权利主体能够通过自己的行为取得权利和承担义务的能力。&lt;br /&gt;
+（二）法律关系的客体&lt;br /&gt;
+是指法律关系主体间权利义务所指向的对象&lt;br /&gt;
+ 1、物：法律意义上的物是指法律关系主体支配的、在生产上和生活上所需要的客观实体。&lt;br /&gt;
+2、行为：一定的行为结果 可以满足权利人的利益和需要&lt;br /&gt;
+ 3、人格利益：人格利益是人生权法律关系的客体，也是诸多行政、刑事法律关系的客体&lt;br /&gt;
+ 4、智力成果：人类智力活动创造的成果&lt;br /&gt;
+（三）法律关系的内容&lt;br /&gt;
+法律关系的内容即法律关系主体享有的权利和承担的义务。&lt;br /&gt;
+四、法律关系的变动原因 —— 法律事实&lt;br /&gt;
+是指法律规范所规定的，能够引起法律后果及法律关系产生、变更或消灭的客观现象。&lt;br /&gt;
+法律事实根据其是否以权利主体的意志为转移可以分为行为和事件两类&lt;br /&gt;
+（一）行为&lt;br /&gt;
+行为是指以权利主体的意志 与转移、能够引起法律后果的法律事实。&lt;br /&gt;
+根据人的行为，可以分为两类&lt;br /&gt;
+ 1、法律行为：即以行为人的意思表示为要素的行为&lt;br /&gt;
+ 2、事实行为：即与表达法律效果、特定精神内容无关的行为&lt;br /&gt;
+（二）事件&lt;br /&gt;
+事实是指与当事人意志无关，但能够引起法律关系发生、变更和消灭的客观情况&lt;br /&gt;
+ 1、人的出生与死亡：人的出生与死亡能够引起民事主体资格的产生和消灭，也可能导致人格权的产生和继承的开始等&lt;br /&gt;
+ 2、自然灾害与意外事件：通常自然灾害等可构成法律上的不可抗力，常成为免除法律责任和消灭法律关系的原因&lt;br /&gt;
  3、时间的经过：时间的经过可引起一些请求权的发生和消灭&lt;/p&gt;
 </content>
         <category term="会计" scheme="https://ranshao2002.github.io/categories/%E4%BC%9A%E8%AE%A1/" />
@@ -1060,107 +1156,107 @@ XSS Filter 转义&lt;br /&gt;
         <updated>2022-10-11T10:20:40.000Z</updated>
     </entry>
     <entry>
-        <id>https://ranshao2002.github.io/2022/10/11/%E6%B3%95%E5%BE%8B%E6%A6%82%E8%AE%BA-%E6%B3%95%E5%BE%8B%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</id>
+        <id>https://ranshao2002.github.io/2022/10/11/%E7%BB%8F%E6%B5%8E%E6%B3%95/%E6%B3%95%E5%BE%8B%E6%A6%82%E8%AE%BA-%E6%B3%95%E5%BE%8B%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</id>
         <title>001-法律概论-法律基本概念</title>
-        <link rel="alternate" href="https://ranshao2002.github.io/2022/10/11/%E6%B3%95%E5%BE%8B%E6%A6%82%E8%AE%BA-%E6%B3%95%E5%BE%8B%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/"/>
-        <content type="html">&lt;p&gt;一、法的概念与特征&lt;br&gt;
-法是反应由一定物质生活条件所决定的统治阶级意志的体现，同时又具有代表全社会的属性。&lt;br&gt;
-（一）法是由一定物质生活条件所决定的通知阶级的意志&lt;br&gt;
-现象：法是被奉为法律的国家意志&lt;br&gt;
-本质：法是统治阶级意志的体现&lt;br&gt;
-法所反映的统治阶级意志受到物质生活条件的约束&lt;br&gt;
-（二）法是由国家制定或认可的行为规范&lt;br&gt;
-法由国家制定或认可，突出体现了法的国家的意志性。&lt;br&gt;
-权威性：法的不可违抗性，任何人均应遵守和执行&lt;br&gt;
-统一性：不同法律规范之间在根本原则上是一致的&lt;br&gt;
-（三）法是由国家强制力保证实施的行为 规范&lt;br&gt;
-法具有强制性并不意味着法律范围的实施都是依靠国家强制而实现&lt;br&gt;
-也不等于国家强制力是保证法律实施的唯一力量&lt;br&gt;
-（四）法是调整人的行为和社会关系的行为规范&lt;br&gt;
-社会规范：调整人与人之间的关系，约束人的行为&lt;br&gt;
-技术规范：调整人与自然，人与劳动工具之间的关系&lt;br&gt;
-（五）法是确定社会关系参与者的权利和义务的规范&lt;br&gt;
-权利和义务是法调整社会关系参加者行为的基本表达形式&lt;br&gt;
-法律意识与道德观念紧密联系、相互重叠，法律规范与道德规范的调整范围相互交叉，相互包容&lt;br&gt;
-法律与道德存在区别&lt;br&gt;
-二、法律体系&lt;br&gt;
-法律体系是指一个国家的全部法律规范，按照一定的原则和要求，根据法律规范的调整对象和调整方法的不同，划分为若干法律部门，进而形成的有机联系、内在统一的整体&lt;br&gt;
-（一）宪法及宪法相关性&lt;br&gt;
-宪法是国家的根本大法，规定国家的根本制度和根本任务、公民的基本权利和义务等内容&lt;br&gt;
-相关性：&lt;br&gt;
-1、有关国家机构的产生、组织、职权和基本工作制度的法律&lt;br&gt;
- 2、有关民族区域自治制度、特别行政区制度、基层群众自治组织的法律&lt;br&gt;
- 3、有关维护国家主权、领土完整和国家安全的法律&lt;br&gt;
- 4、有关保障公民基本权利的法律&lt;br&gt;
-（二）刑法&lt;br&gt;
-刑法是规定犯罪、形式责任和刑罚的法律规范的总称&lt;br&gt;
-特点：&lt;br&gt;
-1、刑法所调整的社会关系及其广泛&lt;br&gt;
- 2、强制性最突出&lt;br&gt;
-（三）行政法&lt;br&gt;
-行政法是规定行政主体的组织、职权、行使职权的方式、程序以及行政职权的法治监督，调整行政关系的法律规范的总称，包括有关行政主体、行政行为、行政程序、行政监督以及国家公务员制度等方面的法律规范。&lt;br&gt;
-特点：&lt;br&gt;
-1、从属性&lt;br&gt;
- 2、服从性&lt;br&gt;
-（四）民商法&lt;br&gt;
-民商法是规范民事、商事活动的法律规范的总称。&lt;br&gt;
-民法：调整平等主体的自然人、法人和其他组织之间的人身关系和财产关系&lt;br&gt;
-商法：是在适应现代商事活动需要的基础上，从民法中分离而逐渐发展起来的法律部门&lt;br&gt;
-知识产权法律制度也被划入人民商法部门&lt;br&gt;
-（五）经济法&lt;br&gt;
-经济法是调整因国家从社会整体利益出发对经济 活动实行干预、管理或调控所产生的社会经济关系的法律规范的总称。&lt;br&gt;
-包括：税收法律制度、行为管理和产业促进法律制度、农业法律制度、自然资源法律制度、能源法律制度、产品质量法律制度、企业国有资产法律制度、金融监管法律制度、对外贸易和经济合作法律制度……&lt;br&gt;
-（六）社会法&lt;br&gt;
-社会法是调整劳动关系、社会保障关系、社会福利 和特殊群体权益保障方面关系的法律规范的总称&lt;br&gt;
-一、有关劳动关系、劳动保障和社会保障方面的法律 劳动法、社会保险法、工会法……&lt;br&gt;
- 二、有关特殊社会全体权益保障方面的法律 未成年人保护法、妇女权益保护法、残疾人权益保障法……&lt;br&gt;
-（七）诉讼与非诉讼程序法&lt;br&gt;
-诉讼与非诉讼程序法是规范解决社会纠纷活动与非诉讼活动的法律规范的总称&lt;br&gt;
-一、刑事诉讼&lt;br&gt;
-二、民事诉讼&lt;br&gt;
-三、行政诉讼&lt;br&gt;
-三、法律渊源&lt;br&gt;
-法律渊源是指法律的存在或表现的形式&lt;br&gt;
-（一）宪法&lt;br&gt;
-宪法是由全国人民代表大会依特别程序制定的具有最高效力的根本大法，具有最高效力&lt;br&gt;
-《中华人民共和国宪法》《中华人民共和国选举法》《香港特别行政区基本法》&lt;br&gt;
-（二）法律&lt;br&gt;
-法律是由全国人民代表大会及其常委会制定和修改的规范性法律文件的总称，在地位和效力上仅次于宪法，高于行政法规、地方性法规、规章。&lt;br&gt;
-基本法律：《中华人民共和国刑法》《中华人民共和国民法典》&lt;br&gt;
-一般法律：《中华人民共和国公司法》《中华人民共和国证劵法》&lt;br&gt;
-（三）法规&lt;br&gt;
-法规包括行政法规和地方性法规。&lt;br&gt;
-行政法规是作为国家最高行政机关的国务院在定职权范围内为实施宪法和法律而制定的规范性法律文件。地位和效力仅次于宪法和法律。&lt;br&gt;
-地方性法规 是具有地方立法权的地方人民代表大会及其常委会就地方事务以及根据本地区实际情况执行法律、行政法律的需要所制定的规范性法律文件的总称。不得与宪法、法律和行政法相抵触。只能在本辖区内使用。&lt;br&gt;
-（四）规章&lt;br&gt;
-规章包活部门规章和地方政府规章。&lt;br&gt;
-部门规章：国务院各部、委员会、中国人民银行、审计署和具有行政管理职能的直属机构，就执行法律、国务院行政法规、决定、命令的事项在其职权范围内规定的规范性法律文件的总称。《企业会计准则 —— 基本准则》《支付结算办法》《上市公司信息披露管理办法》&lt;br&gt;
-地方政府规章：是指有权制定规章的人民政府，依据法律、行政法规和本省、自治区、直辖市的地方性法规制定的规范性法律文件。&lt;br&gt;
-（五）司法解释&lt;br&gt;
-司法解释是最高人民法院、最高人民检察院在总结司法审判经验的基础上发布的指导性文件和法律解释的总称&lt;br&gt;
-《关于适用（中华人民共和国民法典）时间效力的若干决定》《关于适用（中华人民共和国国民法典）物权编的解释（一）》&lt;br&gt;
-（六）国际条约和协定&lt;br&gt;
-国际条约和协定是指我国作为国际法主体同其他国家和地区缔结的双边、多边协议和其他具有条约、协定性质的文件&lt;br&gt;
-四、法律规范&lt;br&gt;
-（一）法律规范的概念与特征&lt;br&gt;
-法律规范是由国家制定和认可的，具有规定主体权利、义务法律后果的行为准则。&lt;br&gt;
-特征&lt;br&gt;
- 1、法律规范具体规定权利、义务及法律后果&lt;br&gt;
- 2、法律规范规定主体的行为模式、具有重复适用性和适用的普遍性&lt;br&gt;
- 3、法律规范的可操作性、确定性成都高&lt;br&gt;
-（二）法律规范的种类&lt;br&gt;
-按照不同标准可以将法律规范进行不同的分类&lt;br&gt;
- 1、授权性规范和义务性规范&lt;br&gt;
-这是根据法律规范为主体提供行为模式的方式进行的区分&lt;br&gt;
- 2、强行性规范和任意性规范&lt;br&gt;
-这是根据法律规范是否允许当事人进行自主调整，及按照自己的意愿设定权利和义务的标准进行的区分&lt;br&gt;
- 3、确定性规范和非确定性规范&lt;br&gt;
-这是根据法律规范内容的确定性程度进行区分&lt;br&gt;
-（三）法律规范的逻辑结构&lt;br&gt;
-法律规范的逻辑结构是指法律规范的构成要素及要素间在逻辑上的相互关系。&lt;br&gt;
-一般法律规范由假定（条件）、模式、后果三部分组成&lt;br&gt;
-假定：法律规范所规定的行为规则&lt;br&gt;
-模式：法律规范 所规定的行为规则&lt;br&gt;
+        <link rel="alternate" href="https://ranshao2002.github.io/2022/10/11/%E7%BB%8F%E6%B5%8E%E6%B3%95/%E6%B3%95%E5%BE%8B%E6%A6%82%E8%AE%BA-%E6%B3%95%E5%BE%8B%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/"/>
+        <content type="html">&lt;p&gt;一、法的概念与特征&lt;br /&gt;
+法是反应由一定物质生活条件所决定的统治阶级意志的体现，同时又具有代表全社会的属性。&lt;br /&gt;
+（一）法是由一定物质生活条件所决定的通知阶级的意志&lt;br /&gt;
+现象：法是被奉为法律的国家意志&lt;br /&gt;
+本质：法是统治阶级意志的体现&lt;br /&gt;
+法所反映的统治阶级意志受到物质生活条件的约束&lt;br /&gt;
+（二）法是由国家制定或认可的行为规范&lt;br /&gt;
+法由国家制定或认可，突出体现了法的国家的意志性。&lt;br /&gt;
+权威性：法的不可违抗性，任何人均应遵守和执行&lt;br /&gt;
+统一性：不同法律规范之间在根本原则上是一致的&lt;br /&gt;
+（三）法是由国家强制力保证实施的行为 规范&lt;br /&gt;
+法具有强制性并不意味着法律范围的实施都是依靠国家强制而实现&lt;br /&gt;
+也不等于国家强制力是保证法律实施的唯一力量&lt;br /&gt;
+（四）法是调整人的行为和社会关系的行为规范&lt;br /&gt;
+社会规范：调整人与人之间的关系，约束人的行为&lt;br /&gt;
+技术规范：调整人与自然，人与劳动工具之间的关系&lt;br /&gt;
+（五）法是确定社会关系参与者的权利和义务的规范&lt;br /&gt;
+权利和义务是法调整社会关系参加者行为的基本表达形式&lt;br /&gt;
+法律意识与道德观念紧密联系、相互重叠，法律规范与道德规范的调整范围相互交叉，相互包容&lt;br /&gt;
+法律与道德存在区别&lt;br /&gt;
+二、法律体系&lt;br /&gt;
+法律体系是指一个国家的全部法律规范，按照一定的原则和要求，根据法律规范的调整对象和调整方法的不同，划分为若干法律部门，进而形成的有机联系、内在统一的整体&lt;br /&gt;
+（一）宪法及宪法相关性&lt;br /&gt;
+宪法是国家的根本大法，规定国家的根本制度和根本任务、公民的基本权利和义务等内容&lt;br /&gt;
+相关性：&lt;br /&gt;
+1、有关国家机构的产生、组织、职权和基本工作制度的法律&lt;br /&gt;
+ 2、有关民族区域自治制度、特别行政区制度、基层群众自治组织的法律&lt;br /&gt;
+ 3、有关维护国家主权、领土完整和国家安全的法律&lt;br /&gt;
+ 4、有关保障公民基本权利的法律&lt;br /&gt;
+（二）刑法&lt;br /&gt;
+刑法是规定犯罪、形式责任和刑罚的法律规范的总称&lt;br /&gt;
+特点：&lt;br /&gt;
+1、刑法所调整的社会关系及其广泛&lt;br /&gt;
+ 2、强制性最突出&lt;br /&gt;
+（三）行政法&lt;br /&gt;
+行政法是规定行政主体的组织、职权、行使职权的方式、程序以及行政职权的法治监督，调整行政关系的法律规范的总称，包括有关行政主体、行政行为、行政程序、行政监督以及国家公务员制度等方面的法律规范。&lt;br /&gt;
+特点：&lt;br /&gt;
+1、从属性&lt;br /&gt;
+ 2、服从性&lt;br /&gt;
+（四）民商法&lt;br /&gt;
+民商法是规范民事、商事活动的法律规范的总称。&lt;br /&gt;
+民法：调整平等主体的自然人、法人和其他组织之间的人身关系和财产关系&lt;br /&gt;
+商法：是在适应现代商事活动需要的基础上，从民法中分离而逐渐发展起来的法律部门&lt;br /&gt;
+知识产权法律制度也被划入人民商法部门&lt;br /&gt;
+（五）经济法&lt;br /&gt;
+经济法是调整因国家从社会整体利益出发对经济 活动实行干预、管理或调控所产生的社会经济关系的法律规范的总称。&lt;br /&gt;
+包括：税收法律制度、行为管理和产业促进法律制度、农业法律制度、自然资源法律制度、能源法律制度、产品质量法律制度、企业国有资产法律制度、金融监管法律制度、对外贸易和经济合作法律制度……&lt;br /&gt;
+（六）社会法&lt;br /&gt;
+社会法是调整劳动关系、社会保障关系、社会福利 和特殊群体权益保障方面关系的法律规范的总称&lt;br /&gt;
+一、有关劳动关系、劳动保障和社会保障方面的法律 劳动法、社会保险法、工会法……&lt;br /&gt;
+ 二、有关特殊社会全体权益保障方面的法律 未成年人保护法、妇女权益保护法、残疾人权益保障法……&lt;br /&gt;
+（七）诉讼与非诉讼程序法&lt;br /&gt;
+诉讼与非诉讼程序法是规范解决社会纠纷活动与非诉讼活动的法律规范的总称&lt;br /&gt;
+一、刑事诉讼&lt;br /&gt;
+二、民事诉讼&lt;br /&gt;
+三、行政诉讼&lt;br /&gt;
+三、法律渊源&lt;br /&gt;
+法律渊源是指法律的存在或表现的形式&lt;br /&gt;
+（一）宪法&lt;br /&gt;
+宪法是由全国人民代表大会依特别程序制定的具有最高效力的根本大法，具有最高效力&lt;br /&gt;
+《中华人民共和国宪法》《中华人民共和国选举法》《香港特别行政区基本法》&lt;br /&gt;
+（二）法律&lt;br /&gt;
+法律是由全国人民代表大会及其常委会制定和修改的规范性法律文件的总称，在地位和效力上仅次于宪法，高于行政法规、地方性法规、规章。&lt;br /&gt;
+基本法律：《中华人民共和国刑法》《中华人民共和国民法典》&lt;br /&gt;
+一般法律：《中华人民共和国公司法》《中华人民共和国证劵法》&lt;br /&gt;
+（三）法规&lt;br /&gt;
+法规包括行政法规和地方性法规。&lt;br /&gt;
+行政法规是作为国家最高行政机关的国务院在定职权范围内为实施宪法和法律而制定的规范性法律文件。地位和效力仅次于宪法和法律。&lt;br /&gt;
+地方性法规 是具有地方立法权的地方人民代表大会及其常委会就地方事务以及根据本地区实际情况执行法律、行政法律的需要所制定的规范性法律文件的总称。不得与宪法、法律和行政法相抵触。只能在本辖区内使用。&lt;br /&gt;
+（四）规章&lt;br /&gt;
+规章包活部门规章和地方政府规章。&lt;br /&gt;
+部门规章：国务院各部、委员会、中国人民银行、审计署和具有行政管理职能的直属机构，就执行法律、国务院行政法规、决定、命令的事项在其职权范围内规定的规范性法律文件的总称。《企业会计准则 —— 基本准则》《支付结算办法》《上市公司信息披露管理办法》&lt;br /&gt;
+地方政府规章：是指有权制定规章的人民政府，依据法律、行政法规和本省、自治区、直辖市的地方性法规制定的规范性法律文件。&lt;br /&gt;
+（五）司法解释&lt;br /&gt;
+司法解释是最高人民法院、最高人民检察院在总结司法审判经验的基础上发布的指导性文件和法律解释的总称&lt;br /&gt;
+《关于适用（中华人民共和国民法典）时间效力的若干决定》《关于适用（中华人民共和国国民法典）物权编的解释（一）》&lt;br /&gt;
+（六）国际条约和协定&lt;br /&gt;
+国际条约和协定是指我国作为国际法主体同其他国家和地区缔结的双边、多边协议和其他具有条约、协定性质的文件&lt;br /&gt;
+四、法律规范&lt;br /&gt;
+（一）法律规范的概念与特征&lt;br /&gt;
+法律规范是由国家制定和认可的，具有规定主体权利、义务法律后果的行为准则。&lt;br /&gt;
+特征&lt;br /&gt;
+ 1、法律规范具体规定权利、义务及法律后果&lt;br /&gt;
+ 2、法律规范规定主体的行为模式、具有重复适用性和适用的普遍性&lt;br /&gt;
+ 3、法律规范的可操作性、确定性成都高&lt;br /&gt;
+（二）法律规范的种类&lt;br /&gt;
+按照不同标准可以将法律规范进行不同的分类&lt;br /&gt;
+ 1、授权性规范和义务性规范&lt;br /&gt;
+这是根据法律规范为主体提供行为模式的方式进行的区分&lt;br /&gt;
+ 2、强行性规范和任意性规范&lt;br /&gt;
+这是根据法律规范是否允许当事人进行自主调整，及按照自己的意愿设定权利和义务的标准进行的区分&lt;br /&gt;
+ 3、确定性规范和非确定性规范&lt;br /&gt;
+这是根据法律规范内容的确定性程度进行区分&lt;br /&gt;
+（三）法律规范的逻辑结构&lt;br /&gt;
+法律规范的逻辑结构是指法律规范的构成要素及要素间在逻辑上的相互关系。&lt;br /&gt;
+一般法律规范由假定（条件）、模式、后果三部分组成&lt;br /&gt;
+假定：法律规范所规定的行为规则&lt;br /&gt;
+模式：法律规范 所规定的行为规则&lt;br /&gt;
 后果：法律规范所规定的行为应当承担的法律后果&lt;/p&gt;
 </content>
         <category term="会计" scheme="https://ranshao2002.github.io/categories/%E4%BC%9A%E8%AE%A1/" />
@@ -1169,31 +1265,31 @@ XSS Filter 转义&lt;br /&gt;
         <updated>2022-10-11T10:16:55.000Z</updated>
     </entry>
     <entry>
-        <id>https://ranshao2002.github.io/2022/09/16/hexo%E6%BA%90%E7%A0%81%E5%A4%87%E4%BB%BD/</id>
+        <id>https://ranshao2002.github.io/2022/09/16/hexo/hexo%E6%BA%90%E7%A0%81%E5%A4%87%E4%BB%BD/</id>
         <title>hexo源码备份</title>
-        <link rel="alternate" href="https://ranshao2002.github.io/2022/09/16/hexo%E6%BA%90%E7%A0%81%E5%A4%87%E4%BB%BD/"/>
-        <content type="html">&lt;h1 id=&#34;font-colorbluehexo源码备份问题font&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#font-colorbluehexo源码备份问题font&#34;&gt;#&lt;/a&gt; &lt;font color=&#39;blue&#39;&gt;hexo 源码备份问题&lt;/font&gt;&lt;/h1&gt;
-&lt;h2 id=&#34;在搭建hexo之后发现上传的文件是编译后的文件也就不包括源码那么更换设备之后怎么去更新呢&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#在搭建hexo之后发现上传的文件是编译后的文件也就不包括源码那么更换设备之后怎么去更新呢&#34;&gt;#&lt;/a&gt; 在搭建 hexo 之后，发现上传的文件是编译后的文件，也就不包括源码，那么更换设备之后怎么去更新呢？&lt;/h2&gt;
-&lt;p&gt;首先，在现有仓库内创建一个分支，名称随意 (我这边是 blog)&lt;br&gt;&lt;br&gt;
-把该分支设置为默认分支&lt;br&gt;&lt;br&gt;
-克隆该分支到本地任意一个目录&lt;/p&gt;
+        <link rel="alternate" href="https://ranshao2002.github.io/2022/09/16/hexo/hexo%E6%BA%90%E7%A0%81%E5%A4%87%E4%BB%BD/"/>
+        <content type="html">&lt;h1 id=&#34;font-colorbluehexo源码备份问题font&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#font-colorbluehexo源码备份问题font&#34;&gt;#&lt;/a&gt; &amp;lt;font color=&#39;blue&#39;&amp;gt;hexo 源码备份问题 &amp;lt;/font&amp;gt;&lt;/h1&gt;
+&lt;h2 id=&#34;在搭建hexo之后发现上传的文件是编译后的文件也就不包括源码那么更换设备之后怎么去更新呢&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#在搭建hexo之后发现上传的文件是编译后的文件也就不包括源码那么更换设备之后怎么去更新呢&#34;&gt;#&lt;/a&gt; 在搭建 hexo 之后，发现上传的文件是编译后的文件，也就不包括源码，那么更换设备之后怎么去更新呢？&lt;/h2&gt;
+&lt;p&gt;首先，在现有仓库内创建一个分支，名称随意 (我这边是 blog)&amp;lt;br&amp;gt;&lt;br /&gt;
+ 把该分支设置为默认分支 &amp;lt;br&amp;gt;&lt;br /&gt;
+ 克隆该分支到本地任意一个目录&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;git clone https://github.com/Ranshao2002/Ranshao2002.github.io.git
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;打开克隆文件的&lt;font color = red&gt;Ranshao2002.github.io&lt;/font&gt;目录&lt;/p&gt;
+&lt;p&gt;打开克隆文件的 &amp;lt;font color = red&amp;gt;Ranshao2002.github.io&amp;lt;/font &amp;gt; 目录&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;[root@192 backup]# cd Ranshao2002.github.io/
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;删除该文件夹下除&lt;font color = red&gt;.git&lt;/font&gt;以外的所有文件&lt;/p&gt;
+&lt;p&gt;删除该文件夹下除 &amp;lt;font color = red&amp;gt;.git&amp;lt;/font &amp;gt; 以外的所有文件&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;[root@192 Ranshao2002.github.io]# ls -a
 .  ..  .git
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;把之前写博客的源码除了&lt;font color = red&gt;.deploy_git&lt;/font&gt;&amp;gt; 复制过来&lt;/p&gt;
+&lt;p&gt;把之前写博客的源码除了 &amp;lt;font color = red&amp;gt;.deploy_git&amp;lt;/font&amp;gt;&amp;gt; 复制过来&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;[root@192 Ranshao2002.github.io]# cp -r /root/hexo/ .
 [root@192 Ranshao2002.github.io]# cd hexo
 [root@192 hexo]# rm -rf .deploy_git/
 [root@192 hexo]# cd ..
 [root@192 Ranshao2002.github.io]# mv hexo/* .
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;查看文件夹下是否有&lt;font color = red&gt;.gitignore&lt;/font&gt;文件&lt;br&gt;
+&lt;p&gt;查看文件夹下是否有 &amp;lt;font color = red&amp;gt;.gitignore&amp;lt;/font &amp;gt; 文件&lt;br /&gt;
 没有的话新建一个，文件内容如下&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;[root@192 Ranshao2002.github.io]# touch .gitignore
 [root@192 Ranshao2002.github.io]# vi .gitignore
@@ -1206,12 +1302,12 @@ node_modules/
 public/
 .deploy*/
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;注意删除主题文件夹下栽的主题文件中带有&lt;font color = red&gt;.git&lt;/font&gt;的文件&lt;/p&gt;
+&lt;p&gt;注意删除主题文件夹下栽的主题文件中带有 &amp;lt;font color = red&amp;gt;.git&amp;lt;/font &amp;gt; 的文件&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;[root@192 Ranshao2002.github.io]# git add .
 [root@192 Ranshao2002.github.io]# git commit –m &amp;quot;add branch&amp;quot;
 [root@192 Ranshao2002.github.io]# git push origin blog
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;其中&lt;font color = red&gt;git commit –m &amp;quot;add branch&amp;quot;&lt;/font&gt;报错如下的话&lt;/p&gt;
+&lt;p&gt;其中 &amp;lt;font color = red&amp;gt;git commit –m &amp;quot;add branch&amp;quot;&amp;lt;/font &amp;gt; 报错如下的话&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;error: pathspec &#39;–m&#39; did not match any file(s) known to git
 error: pathspec &#39;add branch&#39; did not match any file(s) known to git
 &lt;/code&gt;&lt;/pre&gt;
@@ -1226,12 +1322,12 @@ fatal: unable to access &#39;https://github.com/Ranshao2002/Ranshao2002.github.i
 &lt;p&gt;这个时候关羽代理，更换代理服务器，我这边是关闭代理服务器&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;[root@192 Ranshao2002.github.io]# git config --global --unset http.proxy
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;更换设备后&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#更换设备后&#34;&gt;#&lt;/a&gt; 更换设备后&lt;/h3&gt;
-&lt;h3 id=&#34;1-安装-git-nodejs&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-安装-git-nodejs&#34;&gt;#&lt;/a&gt; 1、安装 git、nodejs&lt;/h3&gt;
-&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9yYW5zaGFvMjAwMi5naXRodWIuaW8vMjAyMi8wOS8xNS9oZXhvJUU1JThEJTlBJUU1JUFFJUEyJUU1JTg2JTg1JUU1JUFFJUI5JUU1JUFEJUE2JUU0JUI5JUEwLw==&#34;&gt;https://ranshao2002.github.io/2022/09/15/hexo 博客内容学习 /&lt;/span&gt;&lt;/p&gt;
-&lt;h3 id=&#34;2-获取ssh密钥&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-获取ssh密钥&#34;&gt;#&lt;/a&gt; 2、获取 SSh 密钥&lt;/h3&gt;
-&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9yYW5zaGFvMjAwMi5naXRodWIuaW8vMjAyMi8wOS8xNS9oZXhvJUU1JThEJTlBJUU1JUFFJUEyJUU1JTg2JTg1JUU1JUFFJUI5JUU1JUFEJUE2JUU0JUI5JUEwLw==&#34;&gt;https://ranshao2002.github.io/2022/09/15/hexo 博客内容学习 /&lt;/span&gt;&lt;/p&gt;
-&lt;h3 id=&#34;3-安装hexo&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3-安装hexo&#34;&gt;#&lt;/a&gt; 3、安装 hexo&lt;/h3&gt;
+&lt;h3 id=&#34;更换设备后&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#更换设备后&#34;&gt;#&lt;/a&gt; 更换设备后&lt;/h3&gt;
+&lt;h3 id=&#34;1-安装-git-nodejs&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1-安装-git-nodejs&#34;&gt;#&lt;/a&gt; 1、安装 git、nodejs&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://ranshao2002.github.io/2022/09/15/hexo%E5%8D%9A%E5%AE%A2%E5%86%85%E5%AE%B9%E5%AD%A6%E4%B9%A0/&#34;&gt;https://ranshao2002.github.io/2022/09/15/hexo 博客内容学习 /&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;2-获取ssh密钥&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2-获取ssh密钥&#34;&gt;#&lt;/a&gt; 2、获取 SSh 密钥&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://ranshao2002.github.io/2022/09/15/hexo%E5%8D%9A%E5%AE%A2%E5%86%85%E5%AE%B9%E5%AD%A6%E4%B9%A0/&#34;&gt;https://ranshao2002.github.io/2022/09/15/hexo 博客内容学习 /&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;3-安装hexo&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#3-安装hexo&#34;&gt;#&lt;/a&gt; 3、安装 hexo&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;   $ npm install hexo-cli -g
    $ git clone https://github.com/Ranshao2002/Ranshao2002.github.io.git
 &lt;/code&gt;&lt;/pre&gt;
@@ -1272,12 +1368,12 @@ git push origin blog
         <updated>2022-09-16T01:58:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://ranshao2002.github.io/2022/09/15/1-python%E5%9F%BA%E7%A1%80/</id>
+        <id>https://ranshao2002.github.io/2022/09/15/python/1-python%E5%9F%BA%E7%A1%80/</id>
         <title>1_python基础</title>
-        <link rel="alternate" href="https://ranshao2002.github.io/2022/09/15/1-python%E5%9F%BA%E7%A1%80/"/>
-        <content type="html">&lt;h1 id=&#34;font-color-blue-python基础font&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#font-color-blue-python基础font&#34;&gt;#&lt;/a&gt; &lt;font color = blue &gt;python 基础&lt;/font&gt;&lt;/h1&gt;
-&lt;h2 id=&#34;变量字符串&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#变量字符串&#34;&gt;#&lt;/a&gt; 变量 / 字符串&lt;/h2&gt;
-&lt;h3 id=&#34;变量&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#变量&#34;&gt;#&lt;/a&gt; 变量&lt;/h3&gt;
+        <link rel="alternate" href="https://ranshao2002.github.io/2022/09/15/python/1-python%E5%9F%BA%E7%A1%80/"/>
+        <content type="html">&lt;h1 id=&#34;font-color-blue-python基础font&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#font-color-blue-python基础font&#34;&gt;#&lt;/a&gt; &amp;lt;font color = blue&amp;gt;python 基础 &amp;lt;/font&amp;gt;&lt;/h1&gt;
+&lt;h2 id=&#34;变量字符串&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#变量字符串&#34;&gt;#&lt;/a&gt; 变量 / 字符串&lt;/h2&gt;
+&lt;h3 id=&#34;变量&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#变量&#34;&gt;#&lt;/a&gt; 变量&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;= : 赋值      把右边的值赋给左边
 类型 : str,int,bool……
 
@@ -1288,11 +1384,11 @@ a = b
 b = t
 print(a,b) # result 5 4
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;字符串-加法乘法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#字符串-加法乘法&#34;&gt;#&lt;/a&gt; 字符串 加法 / 乘法&lt;/h3&gt;
+&lt;h3 id=&#34;字符串-加法乘法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#字符串-加法乘法&#34;&gt;#&lt;/a&gt; 字符串 加法 / 乘法&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;print(&amp;quot;I&amp;quot;+&amp;quot; Love&amp;quot;+&amp;quot; Python&amp;quot;) #result I Love Python
 print(&amp;quot;python&amp;quot;*3) #result pythonpythonpython
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;切片索引&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#切片索引&#34;&gt;#&lt;/a&gt; 切片 / 索引&lt;/h3&gt;
+&lt;h3 id=&#34;切片索引&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#切片索引&#34;&gt;#&lt;/a&gt; 切片 / 索引&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;a = &#39;xxxxx&#39;
 a[0] : 第一个元素
 a&amp;#123;x][0&amp;lt;=x&amp;lt;正无限) : 第1到(x-1)个元素
@@ -1343,7 +1439,7 @@ a[-1] : 最后一个元素
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h3 id=&#34;方法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#方法&#34;&gt;#&lt;/a&gt; 方法&lt;/h3&gt;
+&lt;h3 id=&#34;方法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#方法&#34;&gt;#&lt;/a&gt; 方法&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;.split(&#39;x&#39;) : 通过x分割
 .repalce(&#39;x&#39;,&#39;y&#39;) : 把x替换成y
 .strip() : 去除字符串两边指定的字符
@@ -1351,8 +1447,8 @@ a[-1] : 最后一个元素
         a = &amp;quot;I love &amp;#123;&amp;#125;&amp;quot;.format(‘Python’)
         print(a) # result I love Python
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;函数控制语句&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#函数控制语句&#34;&gt;#&lt;/a&gt; 函数 / 控制语句&lt;/h2&gt;
-&lt;h3 id=&#34;函数&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#函数&#34;&gt;#&lt;/a&gt; 函数&lt;/h3&gt;
+&lt;h2 id=&#34;函数控制语句&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#函数控制语句&#34;&gt;#&lt;/a&gt; 函数 / 控制语句&lt;/h2&gt;
+&lt;h3 id=&#34;函数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#函数&#34;&gt;#&lt;/a&gt; 函数&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;def 函数名 (参数1，参数2…):  
     return &#39;结果‘
 
@@ -1362,7 +1458,7 @@ def c_number(number):
 c_number(&#39;18888888888&#39;)
 # result 188****8888
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;判断&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#判断&#34;&gt;#&lt;/a&gt; 判断&lt;/h3&gt;
+&lt;h3 id=&#34;判断&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#判断&#34;&gt;#&lt;/a&gt; 判断&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;if 条件:
     do
  else:
@@ -1383,7 +1479,7 @@ def c_login():
         print(&#39;&#39;password)
 c_login() 
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;循环&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#循环&#34;&gt;#&lt;/a&gt; 循环&lt;/h3&gt;
+&lt;h3 id=&#34;循环&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#循环&#34;&gt;#&lt;/a&gt; 循环&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;for 元素 in 集合 :
     do
 
@@ -1400,8 +1496,8 @@ while i &amp;lt; 199:
     sum = sum + i
 print(sum) #result 5050
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;数据结构&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#数据结构&#34;&gt;#&lt;/a&gt; 数据结构&lt;/h2&gt;
-&lt;h3 id=&#34;列表&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#列表&#34;&gt;#&lt;/a&gt; 列表&lt;/h3&gt;
+&lt;h2 id=&#34;数据结构&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数据结构&#34;&gt;#&lt;/a&gt; 数据结构&lt;/h2&gt;
+&lt;h3 id=&#34;列表&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#列表&#34;&gt;#&lt;/a&gt; 列表&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;name = [&#39;w1&#39;,&#39;w2&#39;&#39;w3&#39;]
 age = [12,13,14]
 for name,age in zip(name,age):
@@ -1411,7 +1507,7 @@ w1 12
 w2 13
 w3 14
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;字典&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#字典&#34;&gt;#&lt;/a&gt; 字典&lt;/h3&gt;
+&lt;h3 id=&#34;字典&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#字典&#34;&gt;#&lt;/a&gt; 字典&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;u_info&amp;#123;
     &#39;name&#39;:&#39;w1&#39;,
     &#39;age&#39;:&#39;12&#39;,
@@ -1420,7 +1516,7 @@ w3 14
 print u_info[&#39;name&#39;]
 # result w1
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;元组集合&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#元组集合&#34;&gt;#&lt;/a&gt; 元组 / 集合&lt;/h3&gt;
+&lt;h3 id=&#34;元组集合&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#元组集合&#34;&gt;#&lt;/a&gt; 元组 / 集合&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;tuple =（1，2，3） #只能看不能改
 
 list = [&#39;w1&#39;,&#39;w2&#39;,&#39;w3&#39;]
@@ -1428,12 +1524,12 @@ set = set(list)
 print(set)
 #result &amp;#123;&#39;w1&#39;,&#39;w2&#39;&amp;#125;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;文件操作&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#文件操作&#34;&gt;#&lt;/a&gt; 文件操作&lt;/h2&gt;
-&lt;h3 id=&#34;打开文件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#打开文件&#34;&gt;#&lt;/a&gt; 打开文件&lt;/h3&gt;
+&lt;h2 id=&#34;文件操作&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#文件操作&#34;&gt;#&lt;/a&gt; 文件操作&lt;/h2&gt;
+&lt;h3 id=&#34;打开文件&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#打开文件&#34;&gt;#&lt;/a&gt; 打开文件&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;open(name[, mode[, buffering]]) #name必填 其它可选
 f = open(&#39;/root/hexo/_config.yml&#39;)
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;读写文件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#读写文件&#34;&gt;#&lt;/a&gt; 读写文件&lt;/h3&gt;
+&lt;h3 id=&#34;读写文件&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#读写文件&#34;&gt;#&lt;/a&gt; 读写文件&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;[root@192 hexo]# cat test.txt
 test doc
 [root@192 hexo]# python
@@ -1454,32 +1550,32 @@ test doc
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;‘r’&lt;/td&gt;
+&lt;td&gt;&#39;r&#39;&lt;/td&gt;
 &lt;td&gt;读模式&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;‘w’&lt;/td&gt;
+&lt;td&gt;&#39;w&#39;&lt;/td&gt;
 &lt;td&gt;写模式&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;‘a’&lt;/td&gt;
+&lt;td&gt;&#39;a&#39;&lt;/td&gt;
 &lt;td&gt;追加模式&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;‘b’&lt;/td&gt;
+&lt;td&gt;&#39;b&#39;&lt;/td&gt;
 &lt;td&gt;二进制模式（可添加到其他模式使用）&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;‘+’&lt;/td&gt;
+&lt;td&gt;&#39;+&#39;&lt;/td&gt;
 &lt;td&gt;读写模式（可添加到其他模式使用）&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h3 id=&#34;关闭文件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#关闭文件&#34;&gt;#&lt;/a&gt; 关闭文件&lt;/h3&gt;
+&lt;h3 id=&#34;关闭文件&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#关闭文件&#34;&gt;#&lt;/a&gt; 关闭文件&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;f.close
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;面向对象&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#面向对象&#34;&gt;#&lt;/a&gt; 面向对象&lt;/h2&gt;
-&lt;h3 id=&#34;类&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#类&#34;&gt;#&lt;/a&gt; 类&lt;/h3&gt;
+&lt;h2 id=&#34;面向对象&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#面向对象&#34;&gt;#&lt;/a&gt; 面向对象&lt;/h2&gt;
+&lt;h3 id=&#34;类&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#类&#34;&gt;#&lt;/a&gt; 类&lt;/h3&gt;
 &lt;p&gt;类：具有相同属性和方法的对象集合&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;class b:
     c = [&#39;f&#39;,&#39;w&#39;,&#39;p&#39;]
@@ -1491,7 +1587,7 @@ print(b)
 [&#39;f&#39;,&#39;m&#39;,&#39;b&#39;] 
 [&#39;f&#39;,&#39;m&#39;,&#39;b&#39;] 
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;实例属性&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#实例属性&#34;&gt;#&lt;/a&gt; 实例属性&lt;/h3&gt;
+&lt;h3 id=&#34;实例属性&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#实例属性&#34;&gt;#&lt;/a&gt; 实例属性&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;class b:
     c = [&#39;f&#39;,&#39;w&#39;,&#39;p&#39;]
 m = b()
@@ -1499,7 +1595,7 @@ m.other= &#39;ba&#39; #实例
 print(m.other)
 #result ba
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;实例方法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#实例方法&#34;&gt;#&lt;/a&gt; 实例方法&lt;/h3&gt;
+&lt;h3 id=&#34;实例方法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#实例方法&#34;&gt;#&lt;/a&gt; 实例方法&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;clss b:
     c = [&#39;f&#39;,&#39;w&#39;,&#39;p&#39;]
     def u(self,time):
@@ -1510,7 +1606,7 @@ m.u(10)  #b().U(10)
 
 _init_() 方法 创造实列时，不需要引用自动运行
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;类的继承&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#类的继承&#34;&gt;#&lt;/a&gt; 类的继承&lt;/h3&gt;
+&lt;h3 id=&#34;类的继承&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#类的继承&#34;&gt;#&lt;/a&gt; 类的继承&lt;/h3&gt;
 &lt;p&gt;子类继承父类，子类包含父类的所以属性&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;class b():
     c = [&#39;f&#39;,&#39;w&#39;,&#39;p&#39;]
@@ -1525,51 +1621,51 @@ b = s_b() # S_b()
 print(b.other)
 b.cost(2) #s_b().cost(2)&amp;amp;&amp;amp;b().cost(2)
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h5 id=&#34;font-color-blue本文档到此处就结束了虽然没啥文字解析但是我感觉看这些代码应该差不多能理解了blue&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#font-color-blue本文档到此处就结束了虽然没啥文字解析但是我感觉看这些代码应该差不多能理解了blue&#34;&gt;#&lt;/a&gt; &lt;font color = &#39;blue&#39;&gt;本文档到此处就结束了，虽然没啥文字解析，但是我感觉看这些代码应该差不多能理解了&lt;/blue&gt;&lt;/h5&gt;
+&lt;h5 id=&#34;font-color-blue本文档到此处就结束了虽然没啥文字解析但是我感觉看这些代码应该差不多能理解了blue&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#font-color-blue本文档到此处就结束了虽然没啥文字解析但是我感觉看这些代码应该差不多能理解了blue&#34;&gt;#&lt;/a&gt; &amp;lt;font color = &#39;blue&#39;&amp;gt; 本文档到此处就结束了，虽然没啥文字解析，但是我感觉看这些代码应该差不多能理解了 &amp;lt;/blue&amp;gt;&lt;/h5&gt;
 </content>
         <category term="python" scheme="https://ranshao2002.github.io/categories/python/" />
         <category term="python" scheme="https://ranshao2002.github.io/tags/python/" />
         <updated>2022-09-15T12:24:33.000Z</updated>
     </entry>
     <entry>
-        <id>https://ranshao2002.github.io/2022/09/15/hexo%E5%8D%9A%E5%AE%A2%E5%86%85%E5%AE%B9%E5%AD%A6%E4%B9%A0/</id>
+        <id>https://ranshao2002.github.io/2022/09/15/hexo/hexo%E5%8D%9A%E5%AE%A2%E5%86%85%E5%AE%B9%E5%AD%A6%E4%B9%A0/</id>
         <title>hexo博客内容学习</title>
-        <link rel="alternate" href="https://ranshao2002.github.io/2022/09/15/hexo%E5%8D%9A%E5%AE%A2%E5%86%85%E5%AE%B9%E5%AD%A6%E4%B9%A0/"/>
-        <content type="html">&lt;h1 id=&#34;hexo博客创建总结&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#hexo博客创建总结&#34;&gt;#&lt;/a&gt; hexo 博客创建总结&lt;/h1&gt;
+        <link rel="alternate" href="https://ranshao2002.github.io/2022/09/15/hexo/hexo%E5%8D%9A%E5%AE%A2%E5%86%85%E5%AE%B9%E5%AD%A6%E4%B9%A0/"/>
+        <content type="html">&lt;h1 id=&#34;hexo博客创建总结&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#hexo博客创建总结&#34;&gt;#&lt;/a&gt; hexo 博客创建总结&lt;/h1&gt;
 &lt;p&gt;首先我这边使用的操作系统是 &lt;em&gt;Centos9&lt;/em&gt;&lt;/p&gt;
-&lt;h3 id=&#34;第一步-git-nodejs-的安装&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#第一步-git-nodejs-的安装&#34;&gt;#&lt;/a&gt; 第一步 git、Node.js 的安装&lt;/h3&gt;
+&lt;h3 id=&#34;第一步-git-nodejs-的安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第一步-git-nodejs-的安装&#34;&gt;#&lt;/a&gt; 第一步 git、Node.js 的安装&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;yum -y install git
 yum install -y nodejs
 npm install -g hexo-cli
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;第二步-创建blog文件夹-初始化hexo&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#第二步-创建blog文件夹-初始化hexo&#34;&gt;#&lt;/a&gt; 第二步 创建 blog 文件夹 初始化 hexo&lt;/h3&gt;
+&lt;h3 id=&#34;第二步-创建blog文件夹-初始化hexo&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第二步-创建blog文件夹-初始化hexo&#34;&gt;#&lt;/a&gt; 第二步 创建 blog 文件夹 初始化 hexo&lt;/h3&gt;
 &lt;p&gt;这里我选用的位置是 /root&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;mkdir blog
 hexo init blog
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;第三步-安装依赖&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#第三步-安装依赖&#34;&gt;#&lt;/a&gt; 第三步 安装依赖&lt;/h3&gt;
+&lt;h3 id=&#34;第三步-安装依赖&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第三步-安装依赖&#34;&gt;#&lt;/a&gt; 第三步 安装依赖&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;cd blog/
 npm install
 hexo g
 hexo server
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;第四步-利用github创建仓库&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#第四步-利用github创建仓库&#34;&gt;#&lt;/a&gt; 第四步 利用 github 创建仓库&lt;/h3&gt;
+&lt;h3 id=&#34;第四步-利用github创建仓库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第四步-利用github创建仓库&#34;&gt;#&lt;/a&gt; 第四步 利用 github 创建仓库&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;New repository --&amp;gt; create repository
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;第五步-生成ssh密钥&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#第五步-生成ssh密钥&#34;&gt;#&lt;/a&gt; 第五步 生成 SSH 密钥&lt;/h3&gt;
+&lt;h3 id=&#34;第五步-生成ssh密钥&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第五步-生成ssh密钥&#34;&gt;#&lt;/a&gt; 第五步 生成 SSH 密钥&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;git config --global user.name &amp;quot;yourname&amp;quot;
 git config --global user.email &amp;quot;youremail&amp;quot;
 ssh-keygen -t rsa -C &amp;quot;youremail&amp;quot;
 #在这里会得到一个.pub的文件，cat它
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;em&gt;在 SSH and GPG keys 里面填写&lt;/em&gt;&lt;/p&gt;
-&lt;h3 id=&#34;第六步-更改-_configyml-文件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#第六步-更改-_configyml-文件&#34;&gt;#&lt;/a&gt; 第六步 更改  _config.yml 文件&lt;/h3&gt;
+&lt;h3 id=&#34;第六步-更改-_configyml-文件&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第六步-更改-_configyml-文件&#34;&gt;#&lt;/a&gt; 第六步 更改  _config.yml 文件&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt; deploy:
       type: git
       repo: github仓库SSH地址，复制过来就行
       branch: master
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;第七步-上传&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#第七步-上传&#34;&gt;#&lt;/a&gt; 第七步 上传&lt;/h3&gt;
+&lt;h3 id=&#34;第七步-上传&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第七步-上传&#34;&gt;#&lt;/a&gt; 第七步 上传&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;hexo clean
 hexo g
 hexo d
