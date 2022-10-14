@@ -23,10 +23,6 @@
 &lt;td&gt;aabbccddeeff&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;翻译&lt;/td&gt;
-&lt;td&gt;&lt;span class=&#34;kbd&#34;&gt;aabbccddeeff&lt;/span&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
 &lt;td&gt;笔记&lt;/td&gt;
 &lt;td&gt;&lt;span class=&#34;blue&#34;&gt;aabbccddeeff&lt;/span&gt;&lt;/td&gt;
 &lt;/tr&gt;
@@ -50,11 +46,11 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;In the past decade, artificial intelligence (AI) has rapidly become a revolutionary factor in manyfields, with examples ranging from commercial applications, such as self-driving cars, to medical applications, including improved disease screening and diagnosis.&lt;br /&gt;
+&lt;p&gt;&lt;span class=&#34;kbd blue&#34;&gt;原文&lt;/span&gt;&lt;br /&gt;
+ In the past decade, artificial intelligence (AI) has rapidly become a revolutionary factor in manyfields, with examples ranging from commercial applications, such as self-driving cars, to medical applications, including improved disease screening and diagnosis.&lt;br /&gt;
 AI application in architecture has, likewise, undergone a transition from being a theoretical novelty to being a driving force behind design, control, and simulation in practically all components. This incredible proliferation that we now observe ultimately finds its foundation somewhat earlier, which is where our story of AI in architecture begins.&lt;br /&gt;
-&lt;span class=&#34;kbd&#34;&gt; 在过去的十年里，人工智能迅速在许多领域有了革命性因素，在商业领域中，比如汽车自动驾驶，到医疗应用，包括改善疾病审查和诊断。&lt;br /&gt;
-在建筑领域的人工智能应用，同样的，经历了一个从理论上新奇的事物到成为所有组件设计、控制和模拟背后的推动力的转变。&lt;br /&gt;
-我们现在观察到的这种令人难以置信的增殖最终找到了它的基础，这是我们的 AI 在建筑中的故事开始的地方。&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;kbd blue&#34;&gt; 译文&lt;/span&gt;&lt;br /&gt;
+在过去的十年里，人工智能迅速在许多领域有了革命性因素，在商业领域中，比如汽车自动驾驶，到医疗应用，包括改善疾病审查和诊断。在建筑领域的人工智能应用，同样的，经历了一个从理论上新奇的事物到成为所有组件设计、控制和模拟背后的推动力的转变。我们现在观察到的这种令人难以置信的增殖最终找到了它的基础，这是我们的 AI 在建筑中的故事开始的地方。&lt;br /&gt;
 &lt;span class=&#34;kbd green&#34;&gt;无法理解：This incredible proliferation that we now observe ultimately finds its foundation somewhat earlier&lt;/span&gt;&lt;/p&gt;
 &lt;table&gt;
 &lt;tbody&gt;
