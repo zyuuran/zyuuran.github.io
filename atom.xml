@@ -8,8 +8,201 @@
     <author>
       <name>ジュウ・ラン</name>
     </author>
-    <updated>2022-10-13T08:08:15.000Z</updated>
+    <updated>2022-10-14T00:35:08.000Z</updated>
     <category term="ラン　の　ノート" />
+    <entry>
+        <id>https://ranshao2002.github.io/2022/10/14/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/001Introduction/</id>
+        <title>001Introduction</title>
+        <link rel="alternate" href="https://ranshao2002.github.io/2022/10/14/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/001Introduction/"/>
+        <content type="html">&lt;h1 id=&#34;首先我的英语水平几乎为0因此该分类文章通用学习英语并不单纯只是学习ai&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#首先我的英语水平几乎为0因此该分类文章通用学习英语并不单纯只是学习ai&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;首先我的英语水平几乎为 0，因此该分类文章通用学习英语，并不单纯只是学习 AI&lt;/span&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;文章标记定义规则&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#文章标记定义规则&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;文章标记定义规则&lt;/span&gt;&lt;/h2&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;原文&lt;/td&gt;
+&lt;td&gt;aabbccddeeff&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;翻译&lt;/td&gt;
+&lt;td&gt;&lt;span class=&#34;kbd&#34;&gt;aabbccddeeff&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;笔记&lt;/td&gt;
+&lt;td&gt;&lt;span class=&#34;blue&#34;&gt;aabbccddeeff&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1 id=&#34;the-rise-of-ai-in-architecture&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#the-rise-of-ai-in-architecture&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;THE RISE OF AI IN ARCHITECTURE&lt;/span&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;span class=&#34;kbd&#34;&gt;人工智能在建筑领域的兴起&lt;/span&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;the rise&lt;/td&gt;
+&lt;td&gt;兴起&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;of AI&lt;/td&gt;
+&lt;td&gt;人工智能的&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;in architecture&lt;/td&gt;
+&lt;td&gt;在建筑领域&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;In the past decade, artificial intelligence (AI) has rapidly become a revolutionary factor in manyfields, with examples ranging from commercial applications, such as self-driving cars, to medical applications, including improved disease screening and diagnosis.&lt;br /&gt;
+AI application in architecture has, likewise, undergone a transition from being a theoretical novelty to being a driving force behind design, control, and simulation in practically all components. This incredible proliferation that we now observe ultimately finds its foundation somewhat earlier, which is where our story of AI in architecture begins.&lt;br /&gt;
+&lt;span class=&#34;kbd&#34;&gt; 在过去的十年里，人工智能迅速在许多领域有了革命性因素，在商业领域中，比如汽车自动驾驶，到医疗应用，包括改善疾病审查和诊断。&lt;br /&gt;
+在建筑领域的人工智能应用，同样的，经历了一个从理论上新奇的事物到成为所有组件设计、控制和模拟背后的推动力的转变。&lt;br /&gt;
+我们现在观察到的这种令人难以置信的增殖最终找到了它的基础，这是我们的 AI 在建筑中的故事开始的地方。&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;kbd green&#34;&gt;无法理解：This incredible proliferation that we now observe ultimately finds its foundation somewhat earlier&lt;/span&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;past decade&lt;/td&gt;
+&lt;td&gt;过去的十年&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;rapidly&lt;/td&gt;
+&lt;td&gt;迅速的&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;become&lt;/td&gt;
+&lt;td&gt;成为&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;revolutionary factor&lt;/td&gt;
+&lt;td&gt;革命性的因素&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;anyfields&lt;/td&gt;
+&lt;td&gt;许多领域&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;with examples ranging&lt;/td&gt;
+&lt;td&gt;通过示例包括&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;from commercial applications&lt;/td&gt;
+&lt;td&gt;从商业应用&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;such as&lt;/td&gt;
+&lt;td&gt;比如&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;self-driving car&lt;/td&gt;
+&lt;td&gt;自动驾驶汽车&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;medical&lt;/td&gt;
+&lt;td&gt;医学&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;including&lt;/td&gt;
+&lt;td&gt;包括&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;improved&lt;/td&gt;
+&lt;td&gt;改良&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;disease&lt;/td&gt;
+&lt;td&gt;疾病&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;screening&lt;/td&gt;
+&lt;td&gt;审查&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;diagnosis&lt;/td&gt;
+&lt;td&gt;诊断&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;likewise&lt;/td&gt;
+&lt;td&gt;同样的&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;undergone&lt;/td&gt;
+&lt;td&gt;经历&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;a transition&lt;/td&gt;
+&lt;td&gt;一个过渡&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;theoretical&lt;/td&gt;
+&lt;td&gt;理论的&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;novelty&lt;/td&gt;
+&lt;td&gt;新奇的&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;driving force&lt;/td&gt;
+&lt;td&gt;驱动力&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;behind design&lt;/td&gt;
+&lt;td&gt;在设计后面&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;control&lt;/td&gt;
+&lt;td&gt;控制&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;simulation&lt;/td&gt;
+&lt;td&gt;模拟&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;in practically&lt;/td&gt;
+&lt;td&gt;几乎&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;all components&lt;/td&gt;
+&lt;td&gt;所有组件&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;incredible&lt;/td&gt;
+&lt;td&gt;难以置信&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;proliferation&lt;/td&gt;
+&lt;td&gt;扩散&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;observe&lt;/td&gt;
+&lt;td&gt;注意&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ultimately&lt;/td&gt;
+&lt;td&gt;最终&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;finds&lt;/td&gt;
+&lt;td&gt;发现&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;foundation&lt;/td&gt;
+&lt;td&gt;基础&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;somewhat&lt;/td&gt;
+&lt;td&gt;有点&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;earlier&lt;/td&gt;
+&lt;td&gt;早些时候&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</content>
+        <category term="人工智能" scheme="https://ranshao2002.github.io/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/" />
+        <category term="AI for Computer Architecture" scheme="https://ranshao2002.github.io/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/AI-for-Computer-Architecture/" />
+        <category term="AI" scheme="https://ranshao2002.github.io/tags/AI/" />
+        <category term="Englishi" scheme="https://ranshao2002.github.io/tags/Englishi/" />
+        <updated>2022-10-14T00:35:08.000Z</updated>
+    </entry>
     <entry>
         <id>https://ranshao2002.github.io/2022/10/13/HTML/002%E6%96%87%E6%9C%AC%E6%A0%87%E8%AE%B0/</id>
         <title>002文本标记</title>
