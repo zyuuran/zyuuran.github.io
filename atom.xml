@@ -1,19 +1,36 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://ranshao2002.github.io</id>
+    <id>https://zyuuran.github.io</id>
     <title>ジュウ・ラン</title>
     <subtitle>一切都是浮云罢了</subtitle>
-    <icon>https://ranshao2002.github.io/images/favicon.ico</icon>
-    <link href="https://ranshao2002.github.io" />
+    <icon>https://zyuuran.github.io/images/favicon.ico</icon>
+    <link href="https://zyuuran.github.io" />
     <author>
       <name>ジュウ・ラン</name>
     </author>
-    <updated>2022-10-14T03:53:25.000Z</updated>
+    <updated>2022-10-15T01:41:24.000Z</updated>
     <category term="ラン　の　ノート" />
     <entry>
-        <id>https://ranshao2002.github.io/2022/10/14/HTML/007%E6%A1%88%E5%88%97/</id>
+        <id>https://zyuuran.github.io/computer-science/Software%20development/css/Step1-CSS%20overview/</id>
+        <title>001CSS概述</title>
+        <link rel="alternate" href="https://zyuuran.github.io/computer-science/Software%20development/css/Step1-CSS%20overview/"/>
+        <content type="html">&lt;h1 id=&#34;css概述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#css概述&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;red&#34;&gt;CSS 概述&lt;/span&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;css的作用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#css的作用&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;CSS 的作用&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&#34;blue&#34;&gt;1、如果使用 HTML 的属性来定义样式，各元素对应的属性定义都不相同&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;blue&#34;&gt; 2、使用 CSS 各元素使用统一的样式声明，提高可重用性和可维护性&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;什么是css&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#什么是css&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;什么是 CSS&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&#34;kbd red&#34;&gt;CSS&lt;/span&gt;&lt;span class=&#34;kbd&#34;&gt;Cascading Style Sheets&lt;/span&gt;&lt;span class=&#34;blue&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+</content>
+        <category term="开发" scheme="https://zyuuran.github.io/categories/%E5%BC%80%E5%8F%91/" />
+        <category term="css" scheme="https://zyuuran.github.io/categories/%E5%BC%80%E5%8F%91/css/" />
+        <category term="web" scheme="https://zyuuran.github.io/tags/web/" />
+        <category term="css" scheme="https://zyuuran.github.io/tags/css/" />
+        <updated>2022-10-15T01:41:24.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://zyuuran.github.io/computer-science/Software%20development/html/Step7-Case/</id>
         <title>007案列</title>
-        <link rel="alternate" href="https://ranshao2002.github.io/2022/10/14/HTML/007%E6%A1%88%E5%88%97/"/>
+        <link rel="alternate" href="https://zyuuran.github.io/computer-science/Software%20development/html/Step7-Case/"/>
         <content type="html">&lt;h1 id=&#34;创建-html-文档并设置头元素&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#创建-html-文档并设置头元素&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;red&#34;&gt;创建 HTML 文档并设置头元素&lt;/span&gt;&lt;/h1&gt;
 &lt;h1 id=&#34;问题创建一个标准结构的html文档并为创建的html文档添加文件标题设置文档的编码格式以及页面的刷新率解决方案-code0-code1-使用文本标记为html页面添加内容&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#问题创建一个标准结构的html文档并为创建的html文档添加文件标题设置文档的编码格式以及页面的刷新率解决方案-code0-code1-使用文本标记为html页面添加内容&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;问题&lt;/span&gt;&lt;br /&gt;
 &lt;span class=&#34;blue&#34;&gt;创建一个标准结构的 HTML 文档，并为创建的 HTML 文档添加文件标题，设置文档的编码格式以及页面的刷新率&lt;/span&gt;&lt;br /&gt;
@@ -41,16 +58,16 @@ Java≉语言基础 &amp;lt;span style=&amp;quot;color:red;&amp;quot;&amp;gt;&am
 &amp;lt;/body&amp;gt;&lt;br /&gt;
 &amp;lt;/html&amp;gt;&lt;/p&gt;
 </content>
-        <category term="开发" scheme="https://ranshao2002.github.io/categories/%E5%BC%80%E5%8F%91/" />
-        <category term="html" scheme="https://ranshao2002.github.io/categories/%E5%BC%80%E5%8F%91/html/" />
-        <category term="web" scheme="https://ranshao2002.github.io/tags/web/" />
-        <category term="html" scheme="https://ranshao2002.github.io/tags/html/" />
+        <category term="开发" scheme="https://zyuuran.github.io/categories/%E5%BC%80%E5%8F%91/" />
+        <category term="html" scheme="https://zyuuran.github.io/categories/%E5%BC%80%E5%8F%91/html/" />
+        <category term="web" scheme="https://zyuuran.github.io/tags/web/" />
+        <category term="html" scheme="https://zyuuran.github.io/tags/html/" />
         <updated>2022-10-14T03:53:25.000Z</updated>
     </entry>
     <entry>
-        <id>https://ranshao2002.github.io/2022/10/14/HTML/006%E8%A1%A8%E5%8D%95/</id>
+        <id>https://zyuuran.github.io/computer-science/Software%20development/html/Step6-Forms/</id>
         <title>006表单</title>
-        <link rel="alternate" href="https://ranshao2002.github.io/2022/10/14/HTML/006%E8%A1%A8%E5%8D%95/"/>
+        <link rel="alternate" href="https://zyuuran.github.io/computer-science/Software%20development/html/Step6-Forms/"/>
         <content type="html">&lt;h1 id=&#34;表单概述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#表单概述&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;red&#34;&gt;表单概述&lt;/span&gt;&lt;/h1&gt;
 &lt;h2 id=&#34;表单的作用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#表单的作用&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;表单的作用&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;span class=&#34;blue&#34;&gt;表单用于显示、收集信息，并提交信息到服务器&lt;/span&gt;&lt;br /&gt;
@@ -127,16 +144,16 @@ Java≉语言基础 &amp;lt;span style=&amp;quot;color:red;&amp;quot;&amp;gt;&am
 &lt;span class=&#34;kbd red&#34;&gt; &amp;lt;legend&amp;gt;&lt;/span&gt;&lt;span class=&#34;blue&#34;&gt; 指定标题&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption&gt;&lt;span&gt;分组&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;&amp;lt;!DOCTYPE &lt;span class=&#34;keyword&#34;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;title&lt;/span&gt;&amp;gt;&lt;/span&gt;分组&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;title&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;meta&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;http-equiv&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;Content-Type&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;content&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;text/html;charset=UTF-8&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;fieldset&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;legend&lt;/span&gt;&amp;gt;&lt;/span&gt;性别登记&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;legend&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            姓名：&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;input&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;type&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;text&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;name&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;sex&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;id&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;1&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;br&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            性别：女&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;input&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;type&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;radio&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;name&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;sex&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;id&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;2&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            男&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;input&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;type&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;radio&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;name&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;sex&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;id&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;3&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;br&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;input&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;type&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;submit&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;value&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;提交&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;input&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;type&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;reset&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;value&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;重置&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;fieldset&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 </content>
-        <category term="开发" scheme="https://ranshao2002.github.io/categories/%E5%BC%80%E5%8F%91/" />
-        <category term="html" scheme="https://ranshao2002.github.io/categories/%E5%BC%80%E5%8F%91/html/" />
-        <category term="web" scheme="https://ranshao2002.github.io/tags/web/" />
-        <category term="html" scheme="https://ranshao2002.github.io/tags/html/" />
+        <category term="开发" scheme="https://zyuuran.github.io/categories/%E5%BC%80%E5%8F%91/" />
+        <category term="html" scheme="https://zyuuran.github.io/categories/%E5%BC%80%E5%8F%91/html/" />
+        <category term="web" scheme="https://zyuuran.github.io/tags/web/" />
+        <category term="html" scheme="https://zyuuran.github.io/tags/html/" />
         <updated>2022-10-14T03:52:18.000Z</updated>
     </entry>
     <entry>
-        <id>https://ranshao2002.github.io/2022/10/14/HTML/005%E8%A1%A8%E6%A0%BC/</id>
+        <id>https://zyuuran.github.io/computer-science/Software%20development/html/Step5-form/</id>
         <title>005表格</title>
-        <link rel="alternate" href="https://ranshao2002.github.io/2022/10/14/HTML/005%E8%A1%A8%E6%A0%BC/"/>
+        <link rel="alternate" href="https://zyuuran.github.io/computer-science/Software%20development/html/Step5-form/"/>
         <content type="html">&lt;h1 id=&#34;表格的作用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#表格的作用&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;red&#34;&gt;表格的作用&lt;/span&gt;&lt;/h1&gt;
 &lt;p&gt;&lt;span class=&#34;blue&#34;&gt;表格通常是用来组织结构话的信息&lt;/span&gt;&lt;br /&gt;
 &lt;span class=&#34;blue&#34;&gt;表格是一些被称为单元格的矩形框架按照从左到右，从上到下的顺序排列在一起而形成的&lt;/span&gt;&lt;br /&gt;
@@ -202,16 +219,16 @@ Java≉语言基础 &amp;lt;span style=&amp;quot;color:red;&amp;quot;&amp;gt;&am
 &lt;h2 id=&#34;表格的嵌套&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#表格的嵌套&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;表格的嵌套&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption&gt;&lt;span&gt;表格嵌套&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;&amp;lt;!DOCTYPE &lt;span class=&#34;keyword&#34;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;title&lt;/span&gt;&amp;gt;&lt;/span&gt;表格嵌套&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;title&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;meta&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;http-equiv&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;Content-Type&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;content&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;text/html;charset=UTF-8&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;table&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;border&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;1&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;tr&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;td&lt;/span&gt;&amp;gt;&lt;/span&gt;1&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;td&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;td&lt;/span&gt;&amp;gt;&lt;/span&gt;2&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;td&lt;/span&gt;&amp;gt;&lt;/span&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;tr&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;tr&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;td&lt;/span&gt;&amp;gt;&lt;/span&gt;3&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;td&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;td&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;table&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;border&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;1&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                        &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;tr&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                            &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;td&lt;/span&gt;&amp;gt;&lt;/span&gt;a&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;td&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                            &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;td&lt;/span&gt;&amp;gt;&lt;/span&gt;b&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;td&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                        &lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;tr&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                    &lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;table&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                &lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;td&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;tr&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;table&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 </content>
-        <category term="开发" scheme="https://ranshao2002.github.io/categories/%E5%BC%80%E5%8F%91/" />
-        <category term="html" scheme="https://ranshao2002.github.io/categories/%E5%BC%80%E5%8F%91/html/" />
-        <category term="web" scheme="https://ranshao2002.github.io/tags/web/" />
-        <category term="html" scheme="https://ranshao2002.github.io/tags/html/" />
+        <category term="开发" scheme="https://zyuuran.github.io/categories/%E5%BC%80%E5%8F%91/" />
+        <category term="html" scheme="https://zyuuran.github.io/categories/%E5%BC%80%E5%8F%91/html/" />
+        <category term="web" scheme="https://zyuuran.github.io/tags/web/" />
+        <category term="html" scheme="https://zyuuran.github.io/tags/html/" />
         <updated>2022-10-14T03:52:04.000Z</updated>
     </entry>
     <entry>
-        <id>https://ranshao2002.github.io/2022/10/14/HTML/004%E5%88%97%E8%A1%A8/</id>
+        <id>https://zyuuran.github.io/computer-science/Software%20development/html/Step4-list/</id>
         <title>004列表</title>
-        <link rel="alternate" href="https://ranshao2002.github.io/2022/10/14/HTML/004%E5%88%97%E8%A1%A8/"/>
+        <link rel="alternate" href="https://zyuuran.github.io/computer-science/Software%20development/html/Step4-list/"/>
         <content type="html">&lt;h1 id=&#34;列表的作用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#列表的作用&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;red&#34;&gt;列表的作用&lt;/span&gt;&lt;/h1&gt;
 &lt;h2 id=&#34;列表的作用-2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#列表的作用-2&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;列表的作用&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;span class=&#34;blue&#34;&gt;列表是指将具有相似特征或者具有先后顺序的几行文字进行对齐排列&lt;/span&gt;&lt;br /&gt;
@@ -227,16 +244,16 @@ Java≉语言基础 &amp;lt;span style=&amp;quot;color:red;&amp;quot;&amp;gt;&am
 &lt;p&gt;&lt;span class=&#34;blue&#34;&gt;将列表元素嵌套使用，可以创作多层列表&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;figure class=&#34;highlight html&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;ul&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        Web基本知识&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;ul&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;Web的工作原理&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;ul&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        HTML快速入门&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;ul&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;基础语法&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;ul&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;ul&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 </content>
-        <category term="开发" scheme="https://ranshao2002.github.io/categories/%E5%BC%80%E5%8F%91/" />
-        <category term="html" scheme="https://ranshao2002.github.io/categories/%E5%BC%80%E5%8F%91/html/" />
-        <category term="web" scheme="https://ranshao2002.github.io/tags/web/" />
-        <category term="html" scheme="https://ranshao2002.github.io/tags/html/" />
+        <category term="开发" scheme="https://zyuuran.github.io/categories/%E5%BC%80%E5%8F%91/" />
+        <category term="html" scheme="https://zyuuran.github.io/categories/%E5%BC%80%E5%8F%91/html/" />
+        <category term="web" scheme="https://zyuuran.github.io/tags/web/" />
+        <category term="html" scheme="https://zyuuran.github.io/tags/html/" />
         <updated>2022-10-14T03:27:35.000Z</updated>
     </entry>
     <entry>
-        <id>https://ranshao2002.github.io/2022/10/14/HTML/003%E5%9B%BE%E5%83%8F%E5%92%8C%E9%93%BE%E6%8E%A5/</id>
+        <id>https://zyuuran.github.io/computer-science/Software%20development/html/Step3-Images%20and%20links/</id>
         <title>003图像和链接</title>
-        <link rel="alternate" href="https://ranshao2002.github.io/2022/10/14/HTML/003%E5%9B%BE%E5%83%8F%E5%92%8C%E9%93%BE%E6%8E%A5/"/>
+        <link rel="alternate" href="https://zyuuran.github.io/computer-science/Software%20development/html/Step3-Images%20and%20links/"/>
         <content type="html">&lt;h1 id=&#34;url&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#url&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;red&#34;&gt;URL&lt;/span&gt;&lt;/h1&gt;
 &lt;h2 id=&#34;url-2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#url-2&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;url&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;span class=&#34;kbd red&#34;&gt;url&lt;/span&gt;&lt;span class=&#34;kbd&#34;&gt;(Uniform Resource Locator)&lt;/span&gt;&lt;span class=&#34;blue&#34;&gt; 统一资源定位器，用来识别网络中的任何文件&lt;/span&gt;&lt;/p&gt;
@@ -273,16 +290,16 @@ target : 目标&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;blue&#34;&gt;是文档中某行的一个记号&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption&gt;&lt;span&gt;html&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;name&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;top&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;&amp;lt;!-- 定义锚点 --&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;br&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;br&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;href&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;#top&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;回到顶部&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;&amp;lt;!-- 回到锚点 --&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 </content>
-        <category term="开发" scheme="https://ranshao2002.github.io/categories/%E5%BC%80%E5%8F%91/" />
-        <category term="html" scheme="https://ranshao2002.github.io/categories/%E5%BC%80%E5%8F%91/html/" />
-        <category term="web" scheme="https://ranshao2002.github.io/tags/web/" />
-        <category term="html" scheme="https://ranshao2002.github.io/tags/html/" />
+        <category term="开发" scheme="https://zyuuran.github.io/categories/%E5%BC%80%E5%8F%91/" />
+        <category term="html" scheme="https://zyuuran.github.io/categories/%E5%BC%80%E5%8F%91/html/" />
+        <category term="web" scheme="https://zyuuran.github.io/tags/web/" />
+        <category term="html" scheme="https://zyuuran.github.io/tags/html/" />
         <updated>2022-10-14T02:58:33.000Z</updated>
     </entry>
     <entry>
-        <id>https://ranshao2002.github.io/2022/10/14/AI%20for%20Computer%20Architecture/001Introduction/</id>
+        <id>https://zyuuran.github.io/computer-science/artificial%20intelligence/AI%20for%20Computer%20Architecture/Step1-Introduction/</id>
         <title>001Introduction</title>
-        <link rel="alternate" href="https://ranshao2002.github.io/2022/10/14/AI%20for%20Computer%20Architecture/001Introduction/"/>
+        <link rel="alternate" href="https://zyuuran.github.io/computer-science/artificial%20intelligence/AI%20for%20Computer%20Architecture/Step1-Introduction/"/>
         <content type="html">&lt;h1 id=&#34;首先我的英语水平几乎为0因此该分类文章通用学习英语并不单纯只是学习ai&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#首先我的英语水平几乎为0因此该分类文章通用学习英语并不单纯只是学习ai&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;red&#34;&gt;首先我的英语水平几乎为 0，因此该分类文章通用学习英语，并不单纯只是学习 AI&lt;/span&gt;&lt;/h1&gt;
 &lt;h2 id=&#34;文章标记定义规则&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#文章标记定义规则&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;文章标记定义规则&lt;/span&gt;&lt;/h2&gt;
 &lt;table&gt;
@@ -462,16 +479,16 @@ AI application in architecture has, likewise, undergone a transition from being 
 &lt;/tbody&gt;
 &lt;/table&gt;
 </content>
-        <category term="人工智能" scheme="https://ranshao2002.github.io/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/" />
-        <category term="AI for Computer Architecture" scheme="https://ranshao2002.github.io/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/AI-for-Computer-Architecture/" />
-        <category term="AI" scheme="https://ranshao2002.github.io/tags/AI/" />
-        <category term="Englishi" scheme="https://ranshao2002.github.io/tags/Englishi/" />
+        <category term="人工智能" scheme="https://zyuuran.github.io/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/" />
+        <category term="AI for Computer Architecture" scheme="https://zyuuran.github.io/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/AI-for-Computer-Architecture/" />
+        <category term="AI" scheme="https://zyuuran.github.io/tags/AI/" />
+        <category term="Englishi" scheme="https://zyuuran.github.io/tags/Englishi/" />
         <updated>2022-10-14T00:35:08.000Z</updated>
     </entry>
     <entry>
-        <id>https://ranshao2002.github.io/2022/10/13/HTML/002%E6%96%87%E6%9C%AC%E6%A0%87%E8%AE%B0/</id>
+        <id>https://zyuuran.github.io/computer-science/Software%20development/html/Step2-Text%20tags/</id>
         <title>002文本标记</title>
-        <link rel="alternate" href="https://ranshao2002.github.io/2022/10/13/HTML/002%E6%96%87%E6%9C%AC%E6%A0%87%E8%AE%B0/"/>
+        <link rel="alternate" href="https://zyuuran.github.io/computer-science/Software%20development/html/Step2-Text%20tags/"/>
         <content type="html">&lt;h1 id=&#34;文本标记概述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#文本标记概述&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;red&#34;&gt;文本标记概述&lt;/span&gt;&lt;/h1&gt;
 &lt;h2 id=&#34;文本标记的作用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#文本标记的作用&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;文本标记的作用&lt;/span&gt;&lt;/h2&gt;
 &lt;table&gt;
@@ -533,17 +550,20 @@ AI application in architecture has, likewise, undergone a transition from being 
 &lt;/tbody&gt;
 &lt;/table&gt;
 </content>
-        <category term="开发" scheme="https://ranshao2002.github.io/categories/%E5%BC%80%E5%8F%91/" />
-        <category term="html" scheme="https://ranshao2002.github.io/categories/%E5%BC%80%E5%8F%91/html/" />
-        <category term="web" scheme="https://ranshao2002.github.io/tags/web/" />
-        <category term="html" scheme="https://ranshao2002.github.io/tags/html/" />
+        <category term="开发" scheme="https://zyuuran.github.io/categories/%E5%BC%80%E5%8F%91/" />
+        <category term="html" scheme="https://zyuuran.github.io/categories/%E5%BC%80%E5%8F%91/html/" />
+        <category term="web" scheme="https://zyuuran.github.io/tags/web/" />
+        <category term="html" scheme="https://zyuuran.github.io/tags/html/" />
         <updated>2022-10-13T08:08:15.000Z</updated>
     </entry>
     <entry>
-        <id>https://ranshao2002.github.io/2022/10/13/HTML/001HTML%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/</id>
+        <id>https://zyuuran.github.io/computer-science/Software%20development/html/Step1-Basic%20HTML%20syntax/</id>
         <title>001HTML基础语法</title>
-        <link rel="alternate" href="https://ranshao2002.github.io/2022/10/13/HTML/001HTML%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/"/>
-        <content type="html">&lt;h1 id=&#34;html概述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#html概述&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;red&#34;&gt;HTML 概述&lt;/span&gt;&lt;/h1&gt;
+        <link rel="alternate" href="https://zyuuran.github.io/computer-science/Software%20development/html/Step1-Basic%20HTML%20syntax/"/>
+        <content type="html">&lt;div class=&#34;note primary&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;&#34;&gt;&lt;/a&gt;-&lt;a href=&#34;&#34;&gt;&lt;/a&gt;-&lt;a href=&#34;&#34;&gt;&lt;/a&gt;-&lt;a href=&#34;&#34;&gt;&lt;/a&gt;-&lt;a href=&#34;&#34;&gt;&lt;/a&gt;-&lt;a href=&#34;&#34;&gt;&lt;/a&gt;-&lt;a href=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;h1 id=&#34;html概述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#html概述&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;red&#34;&gt;HTML 概述&lt;/span&gt;&lt;/h1&gt;
 &lt;h2 id=&#34;web的工作原理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#web的工作原理&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;Web 的工作原理&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;span class=&#34;kbd&#34;&gt;服务器通过 HTTP 协议进行通信，HTTP 协议采用的是请求、响应模式，即客户端发起 HTTP 请求，web 服务器接收并解析处理 HTTP 请求，然后将 HTTP 响应发送给客户端。&lt;/span&gt;&lt;/p&gt;
 &lt;h2 id=&#34;相关技术&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#相关技术&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;相关技术&lt;/span&gt;&lt;/h2&gt;
@@ -742,26 +762,26 @@ AI application in architecture has, likewise, undergone a transition from being 
 &lt;/table&gt;
 &lt;p&gt;&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption&gt;&lt;span&gt;html&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;&amp;lt;!DOCTYPE &lt;span class=&#34;keyword&#34;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;meta&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;http-equiv&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;Content-Type&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;content&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;text/html;charset=UTF-8&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;&amp;lt;!-- 文档头部内容&amp;lt;meta&amp;gt; --&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 </content>
-        <category term="开发" scheme="https://ranshao2002.github.io/categories/%E5%BC%80%E5%8F%91/" />
-        <category term="html" scheme="https://ranshao2002.github.io/categories/%E5%BC%80%E5%8F%91/html/" />
-        <category term="web" scheme="https://ranshao2002.github.io/tags/web/" />
-        <category term="html" scheme="https://ranshao2002.github.io/tags/html/" />
+        <category term="开发" scheme="https://zyuuran.github.io/categories/%E5%BC%80%E5%8F%91/" />
+        <category term="html" scheme="https://zyuuran.github.io/categories/%E5%BC%80%E5%8F%91/html/" />
+        <category term="web" scheme="https://zyuuran.github.io/tags/web/" />
+        <category term="html" scheme="https://zyuuran.github.io/tags/html/" />
         <updated>2022-10-13T06:42:32.000Z</updated>
     </entry>
     <entry>
-        <id>https://ranshao2002.github.io/2022/10/13/Web%E5%AE%89%E5%85%A8/005%E7%82%B9%E5%87%BB%E5%8A%AB%E6%8C%81-ClikJacking/</id>
+        <id>https://zyuuran.github.io/computer-science/Network%20security/Web%20security/Step5-ClikJacking/</id>
         <title>005点击劫持(ClikJacking)</title>
-        <link rel="alternate" href="https://ranshao2002.github.io/2022/10/13/Web%E5%AE%89%E5%85%A8/005%E7%82%B9%E5%87%BB%E5%8A%AB%E6%8C%81-ClikJacking/"/>
+        <link rel="alternate" href="https://zyuuran.github.io/computer-science/Network%20security/Web%20security/Step5-ClikJacking/"/>
         <content type="html"></content>
-        <category term="黑客" scheme="https://ranshao2002.github.io/categories/%E9%BB%91%E5%AE%A2/" />
-        <category term="白帽子讲黑客安全" scheme="https://ranshao2002.github.io/categories/%E9%BB%91%E5%AE%A2/%E7%99%BD%E5%B8%BD%E5%AD%90%E8%AE%B2%E9%BB%91%E5%AE%A2%E5%AE%89%E5%85%A8/" />
-        <category term="web安全" scheme="https://ranshao2002.github.io/tags/web%E5%AE%89%E5%85%A8/" />
+        <category term="黑客" scheme="https://zyuuran.github.io/categories/%E9%BB%91%E5%AE%A2/" />
+        <category term="白帽子讲黑客安全" scheme="https://zyuuran.github.io/categories/%E9%BB%91%E5%AE%A2/%E7%99%BD%E5%B8%BD%E5%AD%90%E8%AE%B2%E9%BB%91%E5%AE%A2%E5%AE%89%E5%85%A8/" />
+        <category term="web安全" scheme="https://zyuuran.github.io/tags/web%E5%AE%89%E5%85%A8/" />
         <updated>2022-10-13T06:28:18.000Z</updated>
     </entry>
     <entry>
-        <id>https://ranshao2002.github.io/2022/10/13/Web%E5%AE%89%E5%85%A8/004%E8%B7%A8%E7%AB%99%E7%82%B9%E8%AF%B7%E6%B1%82%E4%BC%AA%E9%80%A0-CSRF/</id>
+        <id>https://zyuuran.github.io/computer-science/Network%20security/Web%20security/Step4-CSRF/</id>
         <title>004跨站点请求伪造(CSRF)</title>
-        <link rel="alternate" href="https://ranshao2002.github.io/2022/10/13/Web%E5%AE%89%E5%85%A8/004%E8%B7%A8%E7%AB%99%E7%82%B9%E8%AF%B7%E6%B1%82%E4%BC%AA%E9%80%A0-CSRF/"/>
+        <link rel="alternate" href="https://zyuuran.github.io/computer-science/Network%20security/Web%20security/Step4-CSRF/"/>
         <content type="html">&lt;p&gt;&lt;span class=&#34;kbd red&#34;&gt;CSRF&lt;/span&gt;&lt;span class=&#34;red&#34;&gt; (Cross Site Request Forgery) 跨站请求伪造&lt;/span&gt;&lt;/p&gt;
 &lt;h1 id=&#34;csrf-简介&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#csrf-简介&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;red&#34;&gt;CSRF 简介&lt;/span&gt;&lt;/h1&gt;
 &lt;p&gt;什么是 CSRF？&lt;br /&gt;
@@ -847,15 +867,15 @@ AI application in architecture has, likewise, undergone a transition from being 
 &lt;/tbody&gt;
 &lt;/table&gt;
 </content>
-        <category term="黑客" scheme="https://ranshao2002.github.io/categories/%E9%BB%91%E5%AE%A2/" />
-        <category term="白帽子讲黑客安全" scheme="https://ranshao2002.github.io/categories/%E9%BB%91%E5%AE%A2/%E7%99%BD%E5%B8%BD%E5%AD%90%E8%AE%B2%E9%BB%91%E5%AE%A2%E5%AE%89%E5%85%A8/" />
-        <category term="web安全" scheme="https://ranshao2002.github.io/tags/web%E5%AE%89%E5%85%A8/" />
+        <category term="黑客" scheme="https://zyuuran.github.io/categories/%E9%BB%91%E5%AE%A2/" />
+        <category term="白帽子讲黑客安全" scheme="https://zyuuran.github.io/categories/%E9%BB%91%E5%AE%A2/%E7%99%BD%E5%B8%BD%E5%AD%90%E8%AE%B2%E9%BB%91%E5%AE%A2%E5%AE%89%E5%85%A8/" />
+        <category term="web安全" scheme="https://zyuuran.github.io/tags/web%E5%AE%89%E5%85%A8/" />
         <updated>2022-10-13T05:28:49.000Z</updated>
     </entry>
     <entry>
-        <id>https://ranshao2002.github.io/2022/10/13/Web%E5%AE%89%E5%85%A8/003%E8%B7%A8%E7%AB%99%E8%84%9A%E6%9C%AC%E6%94%BB%E5%87%BB-XSS/</id>
+        <id>https://zyuuran.github.io/computer-science/Network%20security/Web%20security/Step3-XSS/</id>
         <title>003跨站脚本攻击(XSS)</title>
-        <link rel="alternate" href="https://ranshao2002.github.io/2022/10/13/Web%E5%AE%89%E5%85%A8/003%E8%B7%A8%E7%AB%99%E8%84%9A%E6%9C%AC%E6%94%BB%E5%87%BB-XSS/"/>
+        <link rel="alternate" href="https://zyuuran.github.io/computer-science/Network%20security/Web%20security/Step3-XSS/"/>
         <content type="html">&lt;h1 id=&#34;xss简介&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#xss简介&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;red&#34;&gt;XSS 简介&lt;/span&gt;&lt;/h1&gt;
 &lt;p&gt;&lt;span class=&#34;kbd red&#34;&gt;网站脚本攻击&lt;/span&gt;（Cross Site Script）缩写 (XSS)&lt;span class=&#34;blue&#34;&gt; 本来缩写为 CSS，但是为了和层叠样式表&lt;/span&gt;&lt;span class=&#34;kbd red&#34;&gt; Cascading Style Sheet,CSS&lt;/span&gt;&lt;span class=&#34;blue&#34;&gt; 有区别，所以叫做&lt;/span&gt;&lt;span class=&#34;kbd red&#34;&gt; XSS&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;kbd red&#34;&gt;XSS&lt;/span&gt; &lt;span class=&#34;blue&#34;&gt;指黑客通过 “HTML 注入” 篡改了网页，插入了恶意脚本，从而在用户浏览网页时，控制用户浏览器的一种攻击&lt;/span&gt;&lt;/p&gt;
@@ -1068,15 +1088,15 @@ XSS Filter 转义&lt;br /&gt;
 &lt;h1 id=&#34;小结&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#小结&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;red&#34;&gt;小结&lt;/span&gt;&lt;/h1&gt;
 &lt;p&gt;&lt;span class=&#34;blue&#34;&gt;XSS 漏洞是可以彻底解决的。应该深入理解 XSS 攻击的原理&lt;/span&gt;&lt;/p&gt;
 </content>
-        <category term="黑客" scheme="https://ranshao2002.github.io/categories/%E9%BB%91%E5%AE%A2/" />
-        <category term="白帽子讲黑客安全" scheme="https://ranshao2002.github.io/categories/%E9%BB%91%E5%AE%A2/%E7%99%BD%E5%B8%BD%E5%AD%90%E8%AE%B2%E9%BB%91%E5%AE%A2%E5%AE%89%E5%85%A8/" />
-        <category term="web安全" scheme="https://ranshao2002.github.io/tags/web%E5%AE%89%E5%85%A8/" />
+        <category term="黑客" scheme="https://zyuuran.github.io/categories/%E9%BB%91%E5%AE%A2/" />
+        <category term="白帽子讲黑客安全" scheme="https://zyuuran.github.io/categories/%E9%BB%91%E5%AE%A2/%E7%99%BD%E5%B8%BD%E5%AD%90%E8%AE%B2%E9%BB%91%E5%AE%A2%E5%AE%89%E5%85%A8/" />
+        <category term="web安全" scheme="https://zyuuran.github.io/tags/web%E5%AE%89%E5%85%A8/" />
         <updated>2022-10-13T00:30:48.000Z</updated>
     </entry>
     <entry>
-        <id>https://ranshao2002.github.io/2022/10/13/Web%E5%AE%89%E5%85%A8/002%E6%B5%8F%E8%A7%88%E5%99%A8%E5%AE%89%E5%85%A8/</id>
+        <id>https://zyuuran.github.io/computer-science/Network%20security/Web%20security/Step2-Browser%20security/</id>
         <title>002浏览器安全</title>
-        <link rel="alternate" href="https://ranshao2002.github.io/2022/10/13/Web%E5%AE%89%E5%85%A8/002%E6%B5%8F%E8%A7%88%E5%99%A8%E5%AE%89%E5%85%A8/"/>
+        <link rel="alternate" href="https://zyuuran.github.io/computer-science/Network%20security/Web%20security/Step2-Browser%20security/"/>
         <content type="html">&lt;pre&gt;&lt;code&gt;浏览器：
     1、浏览器天生就是一个客户端，如果具备安全功能，就可以像安全软件一样对用户上网起到很好的保护作用
     2、浏览器安全也成为了浏览器厂商之间竞争的遗憾啊个底牌，浏览器厂商希望能够针对安全建立起技术门槛，以获得竞争优势
@@ -1088,15 +1108,15 @@ XSS Filter 转义&lt;br /&gt;
 &lt;h1 id=&#34;浏览器沙箱&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#浏览器沙箱&#34;&gt;#&lt;/a&gt; 浏览器沙箱&lt;/h1&gt;
 &lt;h1 id=&#34;该章节已废&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#该章节已废&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;red&#34;&gt;该章节已废&lt;/span&gt;&lt;/h1&gt;
 </content>
-        <category term="黑客" scheme="https://ranshao2002.github.io/categories/%E9%BB%91%E5%AE%A2/" />
-        <category term="白帽子讲黑客安全" scheme="https://ranshao2002.github.io/categories/%E9%BB%91%E5%AE%A2/%E7%99%BD%E5%B8%BD%E5%AD%90%E8%AE%B2%E9%BB%91%E5%AE%A2%E5%AE%89%E5%85%A8/" />
-        <category term="web安全" scheme="https://ranshao2002.github.io/tags/web%E5%AE%89%E5%85%A8/" />
+        <category term="黑客" scheme="https://zyuuran.github.io/categories/%E9%BB%91%E5%AE%A2/" />
+        <category term="白帽子讲黑客安全" scheme="https://zyuuran.github.io/categories/%E9%BB%91%E5%AE%A2/%E7%99%BD%E5%B8%BD%E5%AD%90%E8%AE%B2%E9%BB%91%E5%AE%A2%E5%AE%89%E5%85%A8/" />
+        <category term="web安全" scheme="https://zyuuran.github.io/tags/web%E5%AE%89%E5%85%A8/" />
         <updated>2022-10-13T00:11:33.000Z</updated>
     </entry>
     <entry>
-        <id>https://ranshao2002.github.io/2022/10/12/Web%E5%AE%89%E5%85%A8/001%E6%88%91%E7%9A%84%E5%AE%89%E5%85%A8%E4%B8%96%E7%95%8C%E8%A7%82/</id>
+        <id>https://zyuuran.github.io/computer-science/Network%20security/Web%20security/Step1-Secure%20worldview/</id>
         <title>001我的安全世界观</title>
-        <link rel="alternate" href="https://ranshao2002.github.io/2022/10/12/Web%E5%AE%89%E5%85%A8/001%E6%88%91%E7%9A%84%E5%AE%89%E5%85%A8%E4%B8%96%E7%95%8C%E8%A7%82/"/>
+        <link rel="alternate" href="https://zyuuran.github.io/computer-science/Network%20security/Web%20security/Step1-Secure%20worldview/"/>
         <content type="html">&lt;h1 id=&#34;web-安全简史&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#web-安全简史&#34;&gt;#&lt;/a&gt; Web 安全简史&lt;/h1&gt;
 &lt;p&gt;Hacker：研究计算机系统和网络的人 &amp;lt;br&amp;gt;&lt;br /&gt;
  在计算机安全领域，黑客是一群破坏规则、不喜欢被拘束的 &amp;lt;br&amp;gt;&lt;/p&gt;
@@ -1256,15 +1276,15 @@ XSS Filter 转义&lt;br /&gt;
 &lt;h1 id=&#34;小结&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#小结&#34;&gt;#&lt;/a&gt; 小结&lt;/h1&gt;
 &lt;pre&gt;&lt;code&gt;安全是一门朴素的学问，也是一种平衡的艺术。&lt;/code&gt;&lt;/pre&gt;
 </content>
-        <category term="黑客" scheme="https://ranshao2002.github.io/categories/%E9%BB%91%E5%AE%A2/" />
-        <category term="白帽子讲黑客安全" scheme="https://ranshao2002.github.io/categories/%E9%BB%91%E5%AE%A2/%E7%99%BD%E5%B8%BD%E5%AD%90%E8%AE%B2%E9%BB%91%E5%AE%A2%E5%AE%89%E5%85%A8/" />
-        <category term="web安全" scheme="https://ranshao2002.github.io/tags/web%E5%AE%89%E5%85%A8/" />
+        <category term="黑客" scheme="https://zyuuran.github.io/categories/%E9%BB%91%E5%AE%A2/" />
+        <category term="白帽子讲黑客安全" scheme="https://zyuuran.github.io/categories/%E9%BB%91%E5%AE%A2/%E7%99%BD%E5%B8%BD%E5%AD%90%E8%AE%B2%E9%BB%91%E5%AE%A2%E5%AE%89%E5%85%A8/" />
+        <category term="web安全" scheme="https://zyuuran.github.io/tags/web%E5%AE%89%E5%85%A8/" />
         <updated>2022-10-12T00:49:26.000Z</updated>
     </entry>
     <entry>
-        <id>https://ranshao2002.github.io/2022/10/11/%E7%BB%8F%E6%B5%8E%E6%B3%95/002-%E6%B3%95%E5%BE%8B%E6%A6%82%E8%AE%BA-%E6%B3%95%E5%BE%8B%E5%85%B3%E7%B3%BB/</id>
+        <id>https://zyuuran.github.io/accounting/economic%20law/Step2-Legal%20Relations/</id>
         <title>002-法律概论-法律关系</title>
-        <link rel="alternate" href="https://ranshao2002.github.io/2022/10/11/%E7%BB%8F%E6%B5%8E%E6%B3%95/002-%E6%B3%95%E5%BE%8B%E6%A6%82%E8%AE%BA-%E6%B3%95%E5%BE%8B%E5%85%B3%E7%B3%BB/"/>
+        <link rel="alternate" href="https://zyuuran.github.io/accounting/economic%20law/Step2-Legal%20Relations/"/>
         <content type="html">&lt;p&gt;社会关系：人们在社会中结成的种种联系&lt;br /&gt;
 法律关系：在诸多社会 关系中，根据法律规范进行调整而产生的社会关系&lt;br /&gt;
 一、法律关系的概念和特征&lt;br /&gt;
@@ -1322,15 +1342,15 @@ XSS Filter 转义&lt;br /&gt;
  2、自然灾害与意外事件：通常自然灾害等可构成法律上的不可抗力，常成为免除法律责任和消灭法律关系的原因&lt;br /&gt;
  3、时间的经过：时间的经过可引起一些请求权的发生和消灭&lt;/p&gt;
 </content>
-        <category term="会计" scheme="https://ranshao2002.github.io/categories/%E4%BC%9A%E8%AE%A1/" />
-        <category term="经济法" scheme="https://ranshao2002.github.io/categories/%E4%BC%9A%E8%AE%A1/%E7%BB%8F%E6%B5%8E%E6%B3%95/" />
-        <category term="经济法" scheme="https://ranshao2002.github.io/tags/%E7%BB%8F%E6%B5%8E%E6%B3%95/" />
+        <category term="会计" scheme="https://zyuuran.github.io/categories/%E4%BC%9A%E8%AE%A1/" />
+        <category term="经济法" scheme="https://zyuuran.github.io/categories/%E4%BC%9A%E8%AE%A1/%E7%BB%8F%E6%B5%8E%E6%B3%95/" />
+        <category term="经济法" scheme="https://zyuuran.github.io/tags/%E7%BB%8F%E6%B5%8E%E6%B3%95/" />
         <updated>2022-10-11T10:20:40.000Z</updated>
     </entry>
     <entry>
-        <id>https://ranshao2002.github.io/2022/10/11/%E7%BB%8F%E6%B5%8E%E6%B3%95/%E6%B3%95%E5%BE%8B%E6%A6%82%E8%AE%BA-%E6%B3%95%E5%BE%8B%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</id>
+        <id>https://zyuuran.github.io/accounting/economic%20law/Step1-Basic%20concepts%20of%20law/</id>
         <title>001-法律概论-法律基本概念</title>
-        <link rel="alternate" href="https://ranshao2002.github.io/2022/10/11/%E7%BB%8F%E6%B5%8E%E6%B3%95/%E6%B3%95%E5%BE%8B%E6%A6%82%E8%AE%BA-%E6%B3%95%E5%BE%8B%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/"/>
+        <link rel="alternate" href="https://zyuuran.github.io/accounting/economic%20law/Step1-Basic%20concepts%20of%20law/"/>
         <content type="html">&lt;p&gt;一、法的概念与特征&lt;br /&gt;
 法是反应由一定物质生活条件所决定的统治阶级意志的体现，同时又具有代表全社会的属性。&lt;br /&gt;
 （一）法是由一定物质生活条件所决定的通知阶级的意志&lt;br /&gt;
@@ -1431,15 +1451,15 @@ XSS Filter 转义&lt;br /&gt;
 模式：法律规范 所规定的行为规则&lt;br /&gt;
 后果：法律规范所规定的行为应当承担的法律后果&lt;/p&gt;
 </content>
-        <category term="会计" scheme="https://ranshao2002.github.io/categories/%E4%BC%9A%E8%AE%A1/" />
-        <category term="经济法" scheme="https://ranshao2002.github.io/categories/%E4%BC%9A%E8%AE%A1/%E7%BB%8F%E6%B5%8E%E6%B3%95/" />
-        <category term="经济法" scheme="https://ranshao2002.github.io/tags/%E7%BB%8F%E6%B5%8E%E6%B3%95/" />
+        <category term="会计" scheme="https://zyuuran.github.io/categories/%E4%BC%9A%E8%AE%A1/" />
+        <category term="经济法" scheme="https://zyuuran.github.io/categories/%E4%BC%9A%E8%AE%A1/%E7%BB%8F%E6%B5%8E%E6%B3%95/" />
+        <category term="经济法" scheme="https://zyuuran.github.io/tags/%E7%BB%8F%E6%B5%8E%E6%B3%95/" />
         <updated>2022-10-11T10:16:55.000Z</updated>
     </entry>
     <entry>
-        <id>https://ranshao2002.github.io/2022/09/16/hexo/hexo%E6%BA%90%E7%A0%81%E5%A4%87%E4%BB%BD/</id>
+        <id>https://zyuuran.github.io/computer-science/hexo/Step2-%E5%A4%87%E4%BB%BD/</id>
         <title>hexo源码备份</title>
-        <link rel="alternate" href="https://ranshao2002.github.io/2022/09/16/hexo/hexo%E6%BA%90%E7%A0%81%E5%A4%87%E4%BB%BD/"/>
+        <link rel="alternate" href="https://zyuuran.github.io/computer-science/hexo/Step2-%E5%A4%87%E4%BB%BD/"/>
         <content type="html">&lt;h1 id=&#34;font-colorbluehexo源码备份问题font&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#font-colorbluehexo源码备份问题font&#34;&gt;#&lt;/a&gt; &amp;lt;font color=&#39;blue&#39;&amp;gt;hexo 源码备份问题 &amp;lt;/font&amp;gt;&lt;/h1&gt;
 &lt;h2 id=&#34;在搭建hexo之后发现上传的文件是编译后的文件也就不包括源码那么更换设备之后怎么去更新呢&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#在搭建hexo之后发现上传的文件是编译后的文件也就不包括源码那么更换设备之后怎么去更新呢&#34;&gt;#&lt;/a&gt; 在搭建 hexo 之后，发现上传的文件是编译后的文件，也就不包括源码，那么更换设备之后怎么去更新呢？&lt;/h2&gt;
 &lt;p&gt;首先，在现有仓库内创建一个分支，名称随意 (我这边是 blog)&amp;lt;br&amp;gt;&lt;br /&gt;
@@ -1496,9 +1516,9 @@ fatal: unable to access &#39;https://github.com/Ranshao2002/Ranshao2002.github.i
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&#34;更换设备后&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#更换设备后&#34;&gt;#&lt;/a&gt; 更换设备后&lt;/h3&gt;
 &lt;h3 id=&#34;1-安装-git-nodejs&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1-安装-git-nodejs&#34;&gt;#&lt;/a&gt; 1、安装 git、nodejs&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;https://ranshao2002.github.io/2022/09/15/hexo%E5%8D%9A%E5%AE%A2%E5%86%85%E5%AE%B9%E5%AD%A6%E4%B9%A0/&#34;&gt;https://ranshao2002.github.io/2022/09/15/hexo 博客内容学习 /&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9yYW5zaGFvMjAwMi5naXRodWIuaW8vMjAyMi8wOS8xNS9oZXhvJUU1JThEJTlBJUU1JUFFJUEyJUU1JTg2JTg1JUU1JUFFJUI5JUU1JUFEJUE2JUU0JUI5JUEwLw==&#34;&gt;https://ranshao2002.github.io/2022/09/15/hexo 博客内容学习 /&lt;/span&gt;&lt;/p&gt;
 &lt;h3 id=&#34;2-获取ssh密钥&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2-获取ssh密钥&#34;&gt;#&lt;/a&gt; 2、获取 SSh 密钥&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;https://ranshao2002.github.io/2022/09/15/hexo%E5%8D%9A%E5%AE%A2%E5%86%85%E5%AE%B9%E5%AD%A6%E4%B9%A0/&#34;&gt;https://ranshao2002.github.io/2022/09/15/hexo 博客内容学习 /&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9yYW5zaGFvMjAwMi5naXRodWIuaW8vMjAyMi8wOS8xNS9oZXhvJUU1JThEJTlBJUU1JUFFJUEyJUU1JTg2JTg1JUU1JUFFJUI5JUU1JUFEJUE2JUU0JUI5JUEwLw==&#34;&gt;https://ranshao2002.github.io/2022/09/15/hexo 博客内容学习 /&lt;/span&gt;&lt;/p&gt;
 &lt;h3 id=&#34;3-安装hexo&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#3-安装hexo&#34;&gt;#&lt;/a&gt; 3、安装 hexo&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;   $ npm install hexo-cli -g
    $ git clone https://github.com/Ranshao2002/Ranshao2002.github.io.git
@@ -1535,14 +1555,14 @@ git push origin blog
 体验	Windows Feature Experience Pack 1000.25197.1000.0
 &lt;/code&gt;&lt;/pre&gt;
 </content>
-        <category term="hexo" scheme="https://ranshao2002.github.io/categories/hexo/" />
-        <category term="hexo" scheme="https://ranshao2002.github.io/tags/hexo/" />
+        <category term="hexo" scheme="https://zyuuran.github.io/categories/hexo/" />
+        <category term="hexo" scheme="https://zyuuran.github.io/tags/hexo/" />
         <updated>2022-09-16T01:58:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://ranshao2002.github.io/2022/09/15/python/1-python%E5%9F%BA%E7%A1%80/</id>
-        <title>1_python基础</title>
-        <link rel="alternate" href="https://ranshao2002.github.io/2022/09/15/python/1-python%E5%9F%BA%E7%A1%80/"/>
+        <id>https://zyuuran.github.io/computer-science/Software%20development/python/Step1-Python%20Fundamentals%20(Overview)/</id>
+        <title>Step1-python基础(总览)</title>
+        <link rel="alternate" href="https://zyuuran.github.io/computer-science/Software%20development/python/Step1-Python%20Fundamentals%20(Overview)/"/>
         <content type="html">&lt;h1 id=&#34;font-color-blue-python基础font&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#font-color-blue-python基础font&#34;&gt;#&lt;/a&gt; &amp;lt;font color = blue&amp;gt;python 基础 &amp;lt;/font&amp;gt;&lt;/h1&gt;
 &lt;h2 id=&#34;变量字符串&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#变量字符串&#34;&gt;#&lt;/a&gt; 变量 / 字符串&lt;/h2&gt;
 &lt;h3 id=&#34;变量&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#变量&#34;&gt;#&lt;/a&gt; 变量&lt;/h3&gt;
@@ -1795,14 +1815,14 @@ b.cost(2) #s_b().cost(2)&amp;amp;&amp;amp;b().cost(2)
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h5 id=&#34;font-color-blue本文档到此处就结束了虽然没啥文字解析但是我感觉看这些代码应该差不多能理解了blue&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#font-color-blue本文档到此处就结束了虽然没啥文字解析但是我感觉看这些代码应该差不多能理解了blue&#34;&gt;#&lt;/a&gt; &amp;lt;font color = &#39;blue&#39;&amp;gt; 本文档到此处就结束了，虽然没啥文字解析，但是我感觉看这些代码应该差不多能理解了 &amp;lt;/blue&amp;gt;&lt;/h5&gt;
 </content>
-        <category term="python" scheme="https://ranshao2002.github.io/categories/python/" />
-        <category term="python" scheme="https://ranshao2002.github.io/tags/python/" />
+        <category term="python" scheme="https://zyuuran.github.io/categories/python/" />
+        <category term="python" scheme="https://zyuuran.github.io/tags/python/" />
         <updated>2022-09-15T12:24:33.000Z</updated>
     </entry>
     <entry>
-        <id>https://ranshao2002.github.io/2022/09/15/hexo/hexo%E5%8D%9A%E5%AE%A2%E5%86%85%E5%AE%B9%E5%AD%A6%E4%B9%A0/</id>
+        <id>https://zyuuran.github.io/computer-science/hexo/Step1-Installation/</id>
         <title>hexo博客内容学习</title>
-        <link rel="alternate" href="https://ranshao2002.github.io/2022/09/15/hexo/hexo%E5%8D%9A%E5%AE%A2%E5%86%85%E5%AE%B9%E5%AD%A6%E4%B9%A0/"/>
+        <link rel="alternate" href="https://zyuuran.github.io/computer-science/hexo/Step1-Installation/"/>
         <content type="html">&lt;h1 id=&#34;hexo博客创建总结&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#hexo博客创建总结&#34;&gt;#&lt;/a&gt; hexo 博客创建总结&lt;/h1&gt;
 &lt;p&gt;首先我这边使用的操作系统是 &lt;em&gt;Centos9&lt;/em&gt;&lt;/p&gt;
 &lt;h3 id=&#34;第一步-git-nodejs-的安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第一步-git-nodejs-的安装&#34;&gt;#&lt;/a&gt; 第一步 git、Node.js 的安装&lt;/h3&gt;
@@ -1843,8 +1863,8 @@ hexo g
 hexo d
 &lt;/code&gt;&lt;/pre&gt;
 </content>
-        <category term="hexo" scheme="https://ranshao2002.github.io/categories/hexo/" />
-        <category term="hexo" scheme="https://ranshao2002.github.io/tags/hexo/" />
+        <category term="hexo" scheme="https://zyuuran.github.io/categories/hexo/" />
+        <category term="hexo" scheme="https://zyuuran.github.io/tags/hexo/" />
         <updated>2022-09-14T17:55:20.000Z</updated>
     </entry>
 </feed>
