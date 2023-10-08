@@ -2,7 +2,7 @@
 <rss version="2.0">
     <channel>
         <title>ジュウラン的随手笔记 • Posts by &#34;hexo&#34; category</title>
-        <link>http://zyuuran.cn</link>
+        <link>https://blog.zyuuran.cn</link>
         <description>ジュウラン的随手笔记</description>
         <language>zh-CN</language>
         <pubDate>Sat, 07 Oct 2023 21:10:55 +0800</pubDate>
@@ -10,9 +10,9 @@
         <category>hexo</category>
         <category>shoka</category>
         <item>
-            <guid isPermalink="true">http://zyuuran.cn/2023/10/07/shoka_img/</guid>
+            <guid isPermalink="true">https://blog.zyuuran.cn/2023/10/07/shoka_img/</guid>
             <title>记录shoka主题图床更换</title>
-            <link>http://zyuuran.cn/2023/10/07/shoka_img/</link>
+            <link>https://blog.zyuuran.cn/2023/10/07/shoka_img/</link>
             <category>hexo</category>
             <category>shoka</category>
             <pubDate>Sat, 07 Oct 2023 21:10:55 +0800</pubDate>
@@ -28,9 +28,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://zyuuran.cn/2023/10/07/web_hexo_editor/</guid>
+            <guid isPermalink="true">https://blog.zyuuran.cn/2023/10/07/web_hexo_editor/</guid>
             <title>Web-Hexo-Editor部署</title>
-            <link>http://zyuuran.cn/2023/10/07/web_hexo_editor/</link>
+            <link>https://blog.zyuuran.cn/2023/10/07/web_hexo_editor/</link>
             <category>hexo</category>
             <pubDate>Sat, 07 Oct 2023 08:59:24 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;记录一下部署 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRlZS5jb20vbWwxMy93ZWItaGV4by1lZGl0b3I=&#34;&gt;web-hexo-editor&lt;/span&gt; 的部署虽然其有&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93ZWItaGV4by1lZGl0b3IuaW1hbHVuLmNvbS8=&#34;&gt;在线版本&lt;/span&gt;，但是在不魔法的情况下我连接不上我首先用 Centos 去部署，但是我先 yum 了一个版本，然后再通过手动下载弄了一个版本，最后我还想用宝塔面板加载 node.js 的项目，所以这个 Centos 系统算暂时无法使用 node.js 的项目了再然后，我想到我需要该服务的情况是在 Windows 端编辑 hexo 博客的内容，所以干脆就直接部署到本地咯&lt;/p&gt;

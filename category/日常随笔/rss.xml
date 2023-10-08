@@ -2,7 +2,7 @@
 <rss version="2.0">
     <channel>
         <title>ジュウラン的随手笔记 • Posts by &#34;日常随笔&#34; category</title>
-        <link>http://zyuuran.cn</link>
+        <link>https://blog.zyuuran.cn</link>
         <description>ジュウラン的随手笔记</description>
         <language>zh-CN</language>
         <pubDate>Sat, 07 Oct 2023 18:15:53 +0800</pubDate>
@@ -10,9 +10,9 @@
         <category>hexo</category>
         <category>shoka</category>
         <item>
-            <guid isPermalink="true">http://zyuuran.cn/2023/10/07/hexo_issue/</guid>
+            <guid isPermalink="true">https://blog.zyuuran.cn/2023/10/07/hexo_issue/</guid>
             <title>我hexo搭建有问题</title>
-            <link>http://zyuuran.cn/2023/10/07/hexo_issue/</link>
+            <link>https://blog.zyuuran.cn/2023/10/07/hexo_issue/</link>
             <category>hexo</category>
             <pubDate>Sat, 07 Oct 2023 18:15:53 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;我在 2022 年的时候使用&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL3poLWNuL2luZGV4Lmh0bWw=&#34;&gt; hexo&lt;/span&gt; 和&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9wYWdlcy5naXRodWIuY29tLw==&#34;&gt; Gihub Pages&lt;/span&gt; 搭建过一次&lt;br&gt;

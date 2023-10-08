@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://zyuuran.cn</id>
+    <id>https://blog.zyuuran.cn</id>
     <title>ジュウラン的随手笔记 • Posts by &#34;shoka&#34; tag</title>
-    <link href="http://zyuuran.cn" />
+    <link href="https://blog.zyuuran.cn" />
     <updated>2023-10-07T13:10:55.000Z</updated>
     <category term="hexo" />
     <category term="shoka" />
     <entry>
-        <id>http://zyuuran.cn/2023/10/07/shoka_img/</id>
+        <id>https://blog.zyuuran.cn/2023/10/07/shoka_img/</id>
         <title>记录shoka主题图床更换</title>
-        <link rel="alternate" href="http://zyuuran.cn/2023/10/07/shoka_img/"/>
+        <link rel="alternate" href="https://blog.zyuuran.cn/2023/10/07/shoka_img/"/>
         <content type="html">&lt;p&gt;shoka 原本的微博图床挂了很久了，只能通过 locolhost 来访问，看了下 &lt;code&gt;images.yml&lt;/code&gt;  文件，九十多张图片&lt;br&gt;
 通过 edge 的 &lt;code&gt;开发工具-源代码&lt;/code&gt; ，可以看到一次只刷几张图片&lt;br&gt;
 用脚本下载下来&lt;br&gt;

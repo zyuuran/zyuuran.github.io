@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://zyuuran.cn</id>
+    <id>https://blog.zyuuran.cn</id>
     <title>ジュウラン的随手笔记 • Posts by &#34;hexo&#34; tag</title>
-    <link href="http://zyuuran.cn" />
+    <link href="https://blog.zyuuran.cn" />
     <updated>2023-10-07T13:10:55.000Z</updated>
     <category term="hexo" />
     <category term="shoka" />
     <entry>
-        <id>http://zyuuran.cn/2023/10/07/shoka_img/</id>
+        <id>https://blog.zyuuran.cn/2023/10/07/shoka_img/</id>
         <title>记录shoka主题图床更换</title>
-        <link rel="alternate" href="http://zyuuran.cn/2023/10/07/shoka_img/"/>
+        <link rel="alternate" href="https://blog.zyuuran.cn/2023/10/07/shoka_img/"/>
         <content type="html">&lt;p&gt;shoka 原本的微博图床挂了很久了，只能通过 locolhost 来访问，看了下 &lt;code&gt;images.yml&lt;/code&gt;  文件，九十多张图片&lt;br&gt;
 通过 edge 的 &lt;code&gt;开发工具-源代码&lt;/code&gt; ，可以看到一次只刷几张图片&lt;br&gt;
 用脚本下载下来&lt;br&gt;
@@ -25,9 +25,9 @@
         <updated>2023-10-07T13:10:55.000Z</updated>
     </entry>
     <entry>
-        <id>http://zyuuran.cn/2023/10/07/hexo_issue/</id>
+        <id>https://blog.zyuuran.cn/2023/10/07/hexo_issue/</id>
         <title>我hexo搭建有问题</title>
-        <link rel="alternate" href="http://zyuuran.cn/2023/10/07/hexo_issue/"/>
+        <link rel="alternate" href="https://blog.zyuuran.cn/2023/10/07/hexo_issue/"/>
         <content type="html">&lt;p&gt;我在 2022 年的时候使用&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL3poLWNuL2luZGV4Lmh0bWw=&#34;&gt; hexo&lt;/span&gt; 和&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9wYWdlcy5naXRodWIuY29tLw==&#34;&gt; Gihub Pages&lt;/span&gt; 搭建过一次&lt;br&gt;
 当时主题和现在一样使用的是&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==&#34;&gt; shoka&lt;/span&gt;&lt;br&gt;
  但是这样导致了一个问题，这是一个 JavaScript 的项目&lt;br&gt;
@@ -44,9 +44,9 @@
         <updated>2023-10-07T10:15:53.000Z</updated>
     </entry>
     <entry>
-        <id>http://zyuuran.cn/2023/10/07/web_hexo_editor/</id>
+        <id>https://blog.zyuuran.cn/2023/10/07/web_hexo_editor/</id>
         <title>Web-Hexo-Editor部署</title>
-        <link rel="alternate" href="http://zyuuran.cn/2023/10/07/web_hexo_editor/"/>
+        <link rel="alternate" href="https://blog.zyuuran.cn/2023/10/07/web_hexo_editor/"/>
         <content type="html">&lt;p&gt;记录一下部署 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRlZS5jb20vbWwxMy93ZWItaGV4by1lZGl0b3I=&#34;&gt;web-hexo-editor&lt;/span&gt; 的部署虽然其有&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93ZWItaGV4by1lZGl0b3IuaW1hbHVuLmNvbS8=&#34;&gt;在线版本&lt;/span&gt;，但是在不魔法的情况下我连接不上我首先用 Centos 去部署，但是我先 yum 了一个版本，然后再通过手动下载弄了一个版本，最后我还想用宝塔面板加载 node.js 的项目，所以这个 Centos 系统算暂时无法使用 node.js 的项目了再然后，我想到我需要该服务的情况是在 Windows 端编辑 hexo 博客的内容，所以干脆就直接部署到本地咯&lt;/p&gt;
 &lt;p&gt;node 版本&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;命令提示符&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td data-command=&#34;C:\Users\zr200&gt;&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;node&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-v&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td data-command=&#34;&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;v20.8.0&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;npm 版本&lt;/p&gt;

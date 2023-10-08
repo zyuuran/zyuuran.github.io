@@ -2,11 +2,11 @@
     "version": "https://jsonfeed.org/version/1",
     "title": "ジュウラン的随手笔记 • All posts by \"日常随笔\" category",
     "description": "ジュウラン的随手笔记",
-    "home_page_url": "http://zyuuran.cn",
+    "home_page_url": "https://blog.zyuuran.cn",
     "items": [
         {
-            "id": "http://zyuuran.cn/2023/10/07/hexo_issue/",
-            "url": "http://zyuuran.cn/2023/10/07/hexo_issue/",
+            "id": "https://blog.zyuuran.cn/2023/10/07/hexo_issue/",
+            "url": "https://blog.zyuuran.cn/2023/10/07/hexo_issue/",
             "title": "我hexo搭建有问题",
             "date_published": "2023-10-07T10:15:53.000Z",
             "content_html": "<p>我在 2022 年的时候使用<span class=\"exturl\" data-url=\"aHR0cHM6Ly9oZXhvLmlvL3poLWNuL2luZGV4Lmh0bWw=\"> hexo</span> 和<span class=\"exturl\" data-url=\"aHR0cHM6Ly9wYWdlcy5naXRodWIuY29tLw==\"> Gihub Pages</span> 搭建过一次<br>\n当时主题和现在一样使用的是<span class=\"exturl\" data-url=\"aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==\"> shoka</span><br>\n 但是这样导致了一个问题，这是一个 JavaScript 的项目<br>\n用宝塔面板后各种加载异常<br>\n我用了其默认配置的 PHP<br>\n 是了，我苦苦的在 centos 装了半天的 nodejs，导致版本都两三个了<br>\n现在你告诉我宝塔可以直接安装 v20.8.0 版本<br>\n并同时执行 <code>hexo g &amp; hexo s</code>  命令<br>\n我心情是崩溃的</p>\n<p>说到这我想去试试我直接往 <code>source/_posts</code>  目录下扔一个 <code>.md</code>  文件，看他会不会自动运行<br>\n测试出来了，emmm，扔上去直接加载</p>\n",

@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://zyuuran.cn</id>
+    <id>https://blog.zyuuran.cn</id>
     <title>ジュウラン的随手笔记 • Posts by &#34;日常随笔&#34; category</title>
-    <link href="http://zyuuran.cn" />
+    <link href="https://blog.zyuuran.cn" />
     <updated>2023-10-07T10:15:53.000Z</updated>
     <category term="hexo" />
     <category term="shoka" />
     <entry>
-        <id>http://zyuuran.cn/2023/10/07/hexo_issue/</id>
+        <id>https://blog.zyuuran.cn/2023/10/07/hexo_issue/</id>
         <title>我hexo搭建有问题</title>
-        <link rel="alternate" href="http://zyuuran.cn/2023/10/07/hexo_issue/"/>
+        <link rel="alternate" href="https://blog.zyuuran.cn/2023/10/07/hexo_issue/"/>
         <content type="html">&lt;p&gt;我在 2022 年的时候使用&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL3poLWNuL2luZGV4Lmh0bWw=&#34;&gt; hexo&lt;/span&gt; 和&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9wYWdlcy5naXRodWIuY29tLw==&#34;&gt; Gihub Pages&lt;/span&gt; 搭建过一次&lt;br&gt;
 当时主题和现在一样使用的是&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==&#34;&gt; shoka&lt;/span&gt;&lt;br&gt;
  但是这样导致了一个问题，这是一个 JavaScript 的项目&lt;br&gt;

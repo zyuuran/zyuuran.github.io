@@ -2,7 +2,7 @@
 <rss version="2.0">
     <channel>
         <title>ジュウラン的随手笔记 • Posts by &#34;shoka&#34; tag</title>
-        <link>http://zyuuran.cn</link>
+        <link>https://blog.zyuuran.cn</link>
         <description>ジュウラン的随手笔记</description>
         <language>zh-CN</language>
         <pubDate>Sat, 07 Oct 2023 21:10:55 +0800</pubDate>
@@ -10,9 +10,9 @@
         <category>hexo</category>
         <category>shoka</category>
         <item>
-            <guid isPermalink="true">http://zyuuran.cn/2023/10/07/shoka_img/</guid>
+            <guid isPermalink="true">https://blog.zyuuran.cn/2023/10/07/shoka_img/</guid>
             <title>记录shoka主题图床更换</title>
-            <link>http://zyuuran.cn/2023/10/07/shoka_img/</link>
+            <link>https://blog.zyuuran.cn/2023/10/07/shoka_img/</link>
             <category>hexo</category>
             <category>shoka</category>
             <pubDate>Sat, 07 Oct 2023 21:10:55 +0800</pubDate>
