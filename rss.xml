@@ -8,10 +8,13 @@
         <pubDate>Sat, 07 Oct 2023 21:10:55 +0800</pubDate>
         <lastBuildDate>Sat, 07 Oct 2023 21:10:55 +0800</lastBuildDate>
         <category>hexo</category>
+        <category>shoka</category>
         <item>
             <guid isPermalink="true">http://zyuuran.cn/2023/10/07/shoka_img/</guid>
             <title>记录shoka主题图床更换</title>
             <link>http://zyuuran.cn/2023/10/07/shoka_img/</link>
+            <category>hexo</category>
+            <category>shoka</category>
             <pubDate>Sat, 07 Oct 2023 21:10:55 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;shoka 原本的微博图床挂了很久了，只能通过 locolhost 来访问，看了下 &lt;code&gt;images.yml&lt;/code&gt;  文件，九十多张图片&lt;br&gt;
 通过 edge 的 &lt;code&gt;开发工具-源代码&lt;/code&gt; ，可以看到一次只刷几张图片&lt;br&gt;
