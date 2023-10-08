@@ -2,15 +2,50 @@
 <rss version="2.0">
     <channel>
         <title>ジュウラン的随手笔记</title>
-        <link>http://zyuuran.cn/hexo/public</link>
+        <link>http://zyuuran.cn</link>
         <description>ジュウラン的随手笔记</description>
         <language>zh-CN</language>
-        <pubDate>Sat, 07 Oct 2023 08:59:24 +0800</pubDate>
-        <lastBuildDate>Sat, 07 Oct 2023 08:59:24 +0800</lastBuildDate>
+        <pubDate>Sat, 07 Oct 2023 21:10:55 +0800</pubDate>
+        <lastBuildDate>Sat, 07 Oct 2023 21:10:55 +0800</lastBuildDate>
+        <category>hexo</category>
         <item>
-            <guid isPermalink="true">http://zyuuran.cn/hexo/public/2023/10/07/web_hexo_editor/</guid>
+            <guid isPermalink="true">http://zyuuran.cn/2023/10/07/shoka_img/</guid>
+            <title>记录shoka主题图床更换</title>
+            <link>http://zyuuran.cn/2023/10/07/shoka_img/</link>
+            <pubDate>Sat, 07 Oct 2023 21:10:55 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;shoka 原本的微博图床挂了很久了，只能通过 locolhost 来访问，看了下 &lt;code&gt;images.yml&lt;/code&gt;  文件，九十多张图片&lt;br&gt;
+通过 edge 的 &lt;code&gt;开发工具-源代码&lt;/code&gt; ，可以看到一次只刷几张图片&lt;br&gt;
+用脚本下载下来&lt;br&gt;
+&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3MyNndxZ2poZS5zYWJrdC5nZGlwcGVyLmNvbS9wdWJsaWNfVDV4dHg4LnRhci5nej9lPTE2OTY4MjE4NDAmYW1wO3Rva2VuPWktU3dfc28zRjJRcGh0a3h5Sm1jTWVqMnFxQTZldXVHY25vc0pyQ206Sm5PYXJBcHFjOVc5bURrYTBJQU9KampNaEVnPQ==&#34;&gt;点击下载 shoka 主题原图片压缩包&lt;/span&gt;&lt;br&gt;
+将 &lt;code&gt;mw690&lt;/code&gt;  和 &lt;code&gt;large&lt;/code&gt;  目录放置在网页根目录下&lt;br&gt;
+ shoka 主题的随机方式在&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYS9ibG9iL21hc3Rlci9zY3JpcHRzL2hlbHBlcnMvZW5naW5lLmpz&#34;&gt; scripts/helpers/engine.js&lt;/span&gt; 文件里面&lt;/p&gt;
+&lt;figure class=&#34;highlight js&#34;&gt;&lt;figcaption data-lang=&#34;JavaScript&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;token function-variable function&#34;&gt;parseImage&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;function&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;img&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; size&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;img&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;startsWith&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;//&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;||&lt;/span&gt; img&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;startsWith&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;http&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; img&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;else&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;https://tva&#39;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt;randomServer&lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;.sinaimg.cn/&#39;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt;size&lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;/&#39;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt;img&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;将其修改成&lt;/p&gt;
+&lt;figure class=&#34;highlight js&#34;&gt;&lt;figcaption data-lang=&#34;JavaScript&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;token function-variable function&#34;&gt;parseImage&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;function&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;img&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; size&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;img&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;startsWith&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;//&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;||&lt;/span&gt; img&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;startsWith&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;http&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; img&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;else&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;http(s)://你的域名或者IP地址/&#39;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt;size&lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;/&#39;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt;img&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://zyuuran.cn/2023/10/07/hexo_issue/</guid>
+            <title>我hexo搭建有问题</title>
+            <link>http://zyuuran.cn/2023/10/07/hexo_issue/</link>
+            <category>hexo</category>
+            <pubDate>Sat, 07 Oct 2023 18:15:53 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;我在 2022 年的时候使用&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL3poLWNuL2luZGV4Lmh0bWw=&#34;&gt; hexo&lt;/span&gt; 和&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9wYWdlcy5naXRodWIuY29tLw==&#34;&gt; Gihub Pages&lt;/span&gt; 搭建过一次&lt;br&gt;
+当时主题和现在一样使用的是&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==&#34;&gt; shoka&lt;/span&gt;&lt;br&gt;
+ 但是这样导致了一个问题，这是一个 JavaScript 的项目&lt;br&gt;
+用宝塔面板后各种加载异常&lt;br&gt;
+我用了其默认配置的 PHP&lt;br&gt;
+ 是了，我苦苦的在 centos 装了半天的 nodejs，导致版本都两三个了&lt;br&gt;
+现在你告诉我宝塔可以直接安装 v20.8.0 版本&lt;br&gt;
+并同时执行 &lt;code&gt;hexo g &amp;amp; hexo s&lt;/code&gt;  命令&lt;br&gt;
+我心情是崩溃的&lt;/p&gt;
+&lt;p&gt;说到这我想去试试我直接往 &lt;code&gt;source/_posts&lt;/code&gt;  目录下扔一个 &lt;code&gt;.md&lt;/code&gt;  文件，看他会不会自动运行&lt;br&gt;
+测试出来了，emmm，扔上去直接加载&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://zyuuran.cn/2023/10/07/web_hexo_editor/</guid>
             <title>Web-Hexo-Editor部署</title>
-            <link>http://zyuuran.cn/hexo/public/2023/10/07/web_hexo_editor/</link>
+            <link>http://zyuuran.cn/2023/10/07/web_hexo_editor/</link>
+            <category>hexo</category>
             <pubDate>Sat, 07 Oct 2023 08:59:24 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;记录一下部署 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRlZS5jb20vbWwxMy93ZWItaGV4by1lZGl0b3I=&#34;&gt;web-hexo-editor&lt;/span&gt; 的部署虽然其有&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93ZWItaGV4by1lZGl0b3IuaW1hbHVuLmNvbS8=&#34;&gt;在线版本&lt;/span&gt;，但是在不魔法的情况下我连接不上我首先用 Centos 去部署，但是我先 yum 了一个版本，然后再通过手动下载弄了一个版本，最后我还想用宝塔面板加载 node.js 的项目，所以这个 Centos 系统算暂时无法使用 node.js 的项目了再然后，我想到我需要该服务的情况是在 Windows 端编辑 hexo 博客的内容，所以干脆就直接部署到本地咯&lt;/p&gt;
 &lt;p&gt;node 版本&lt;/p&gt;
